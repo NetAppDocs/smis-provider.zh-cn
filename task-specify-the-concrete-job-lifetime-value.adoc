@@ -1,0 +1,31 @@
+---
+permalink: task-specify-the-concrete-job-lifetime-value.html 
+sidebar: sidebar 
+keywords: smi-s provider, asynchronous, operation, concrete job, increase, lifetime, 60 minutes, 24 hours 
+summary: SMI-S Provider 可通过创建具体作业来跟踪异步操作的进度。您可以将具体作业的使用寿命从默认值 60 分钟（ 3600 秒）增加到 86400 秒（ 24 小时）。 
+---
+= 指定具体的作业生命周期值
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+SMI-S Provider 可通过创建 _concerte jobs_来 跟踪异步操作的进度。您可以将具体作业的使用寿命从默认值 60 分钟（ 3600 秒）增加到 86400 秒（ 24 小时）。
+
+
+
+== 开始之前
+
+* 您必须已具有管理员登录凭据。
+* 您必须已以管理员身份登录到主机系统。
+
+
+
+
+== 步骤
+
+. 使用新的生命周期值（以秒为单位）创建名为 `job_lifee_sec` 的系统或用户环境变量。
++
+有关创建环境变量的信息，请参见 Windows 文档。
+
+

@@ -1,0 +1,49 @@
+---
+permalink: reference-hardware-requirements.html 
+sidebar: sidebar 
+keywords: smi-s provider, smi-s agent 
+summary: 在安装 NetApp SMI-S Provider 之前，您必须验证 Windows 主机是否满足最低硬件要求。 
+---
+= 硬件要求
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+在安装 NetApp SMI-S Provider 之前，您必须验证 Windows 主机是否满足最低硬件要求。
+
+[cols="2*"]
+|===
+| 硬件 | 要求 
+
+
+ a| 
+内存
+ a| 
+* 4 GB RAM （最小）
+* 8 GB RAM （建议）
+
+
+
+
+ a| 
+磁盘空间
+ a| 
+* 1 GB （最小）
+* 4 GB （建议）
+
+
+启用日志记录和跟踪需要最多 1 GB 的额外磁盘空间，具体取决于日志和跟踪文件轮换设置。
+
+您必须有 100 MB 的临时磁盘空间可供安装。
+
+
+
+ a| 
+CPU
+ a| 
+* 双核 2.0 GHz （最低）
+* 四核 2.0 GHz （建议）
+
+
+|===

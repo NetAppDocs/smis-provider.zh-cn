@@ -1,0 +1,33 @@
+---
+permalink: reference-no-response-from-the-server.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: NetApp SMI-S Provider 遇到的问题。 
+---
+= 服务器无响应
+:icons: font
+:imagesdir: ./media/
+
+
+* * 问题描述 *
++
+查询时，服务器不响应。
+
+* * 发生原因 *
++
+如果未向问题描述存储库添加任何存储系统，则会发生此 。
+
+* * 更正操作 *
++
+输入以下命令以验证是否已添加存储系统：
+
++
+`s错误列表`
+
++
+如果未列出任何存储系统，请输入以下命令以添加存储系统：
+
++
+`smis add _storage_sys storage_sys_user storage_sys_pwd_`
+
+

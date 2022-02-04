@@ -1,0 +1,36 @@
+---
+permalink: reference-cannot-add-a-storage-system-using-a-nondefault-http-or-https-port.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: NetApp SMI-S Provider 遇到的问题。 
+---
+= 无法使用非默认 HTTP 或 HTTPS 端口添加存储系统
+:icons: font
+:imagesdir: ./media/
+
+
+* * 问题描述 *
++
+您不能在非默认端口上添加运行 HTTP 或 HTTPS 的存储系统。
+
+* * 发生原因 *
++
+默认情况下， NetApp SMI-S Provider 使用端口 80 通过 HTTP 与存储系统通信，并使用端口 443 通过 HTTPS 通信。
+
+* * 更正操作 *
++
+使用以下命令添加使用 80 以外的端口传输 HTTP 流量或使用 443 端口传输 HTTPS 流量的存储系统：
+
++
+`cimcli ci -n root/ONTAP ontap_FilerData hostname=_storage_sys_ip_address_ port=_non_default_port_ username=_storage_sys_pwd_ comMechanism=HTTP -u _agent_user__ -p _agent_pwd-llocalhost ： 5989 -s`
+
++
+` -u` ， ` -p` ， ` -l` 和 ` -s` 是可选参数。
+
+
+
+
+
+== 添加使用端口 8000 传输 HTTP 流量的存储系统
+
+`cimcli ci -n root/ONTAP ontap_FilerData hostname=10.0.0.167.12 port=8000 username=root password=netapp1 ！comMechanism=HTTP -u root -p netapp1 ！-l localhost ： 5989 -s -timeout 180`

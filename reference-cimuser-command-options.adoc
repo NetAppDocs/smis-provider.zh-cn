@@ -1,0 +1,85 @@
+---
+permalink: reference-cimuser-command-options.html 
+sidebar: sidebar 
+keywords: cimuser, options, add, remove, modify, list, cim server 
+summary: 您可以使用 CIMUser 选项添加，删除，修改和列出 CIM 服务器用户。 
+---
+= CIMSUser
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以使用 `CIMUser` 选项添加，删除，修改和列出 CIM 服务器用户。
+
+
+
+== 语法
+
+`CIMUser _options_`
+
+
+
+== 位置
+
+`C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
+
+
+
+== 权限级别
+
+管理员（ Windows ）
+
+
+
+== 选项
+
+* * — A*
++
+添加 CIM 用户。
+
+* * — h ，—帮助 *
++
+显示 `CIMUser` 命令的帮助。
+
+* * — l*
++
+列出 CIM 用户。
+
+* * — m*
++
+修改 CIM 用户的密码。密码长度可介于 4 到 32 个字符之间。
+
+* * - n*
++
+为指定用户创建新密码。密码长度可介于 4 到 32 个字符之间。
+
+* * — r*
++
+删除指定的 CIM 用户。
+
+* * — u*
++
+指定 CIM 用户名。
+
+* * —版本 *
++
+显示 CIM 服务器的版本。
+
+* * — w*
++
+指定指定用户的密码。
+
+
+
+
+
+== 示例
+
+使用密码 password1 创建一个名为悉尼的 CIM 用户：
+
+[listing]
+----
+cimuser -a -u sydney -w password1
+User added successfully.
+----

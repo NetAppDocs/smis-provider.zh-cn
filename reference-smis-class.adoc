@@ -1,0 +1,92 @@
+---
+permalink: reference-smis-class.html 
+sidebar: sidebar 
+keywords: smis class, command, lists, information, 
+summary: sms class 命令可列出有关指定类或所有类的信息。 
+---
+= SMIS 类
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+`smis class` 命令可列出有关指定类或所有类的信息。
+
+
+
+== 语法
+
+`smis 类`
+
+` _name_space_｛ * Niall* * _ ｛ * ei* * _ * ni* _ * gi* _ * ｝ _class_name_ ｝ ｝ （ -t ｛ * http* _ * * * * * https * ｝ ）`
+
+
+
+== 位置
+
+`C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
+
+
+
+== 权限级别
+
+具有有效用户名和密码的用户
+
+
+
+== Parameters
+
+* ` * 名称 _space_*`
++
+CIMOM 支持的名称空间
+
+* * 全部 *
++
+枚举所有实例名称
+
+* * 以 e* 表示
++
+枚举类的实例
+
+* * 尼 *
++
+枚举类的实例名称
+
+* * gi *
++
+获取类的实例
+
+* * gc*
++
+获取类名称的类
+
+* ` * _class_name_*`
++
+要查看其信息的类的名称
+
+* ` * （ -t ｛ http ： https ｝ ） *`
++
+要使用的协议： HTTPS （默认）或 HTTP
+
+
+
+
+
+== 示例
+
+`smis class` 命令及其缩写输出：
+
+[listing]
+----
+smis class root/ontap gi CIM_StorageVolume
+1:
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID="P3LfGJdC-mN5",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+2:
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID="P3LfGJcmzpHt",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+3:
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID="P3LfGJc30t26",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+4:
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID="P3LfGJcSgbiT",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+5:
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID="P3LfGJcSgrA9",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+----

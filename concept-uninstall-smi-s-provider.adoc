@@ -1,0 +1,13 @@
+---
+permalink: concept-uninstall-smi-s-provider.html 
+sidebar: sidebar 
+keywords: uninstalling, smi-s provider, version, existing installation, latest version 
+summary: 您可以根据需要卸载 SMI-S Provider 。例如，根据现有安装的版本，您可能需要先卸载 SMI-S Provider 的现有安装，然后才能安装最新版本。 
+---
+= 卸载 NetApp SMI-S Provider
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以根据需要卸载 SMI-S Provider 。例如，根据现有安装的版本，您可能需要先卸载 SMI-S Provider 的现有安装，然后才能安装最新版本。

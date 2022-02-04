@@ -1,0 +1,60 @@
+---
+permalink: reference-smis-disks.html 
+sidebar: sidebar 
+keywords: thesmis, disk, command, display, information, storage, systems 
+summary: thesmis disks 命令可显示存储系统的磁盘信息。SMIS 磁盘仅在与 Data ONTAP 7- 模式控制器结合使用时才起作用。 
+---
+= SMIS 磁盘
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+``smis disks`` 命令可显示存储系统的磁盘信息。`smis disks` 仅在与 Data ONTAP 7- 模式控制器结合使用时才起作用。
+
+
+
+== 语法
+
+SMIS 磁盘
+
+` [-t ｛ * http* | * https * ｝ ]`
+
+
+
+== 位置
+
+`C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
+
+
+
+== 权限级别
+
+具有有效用户名和密码的用户
+
+
+
+== Parameters
+
+* ` * （ -t ｛ http ： https ｝ ） *`
++
+要使用的协议： HTTPS （默认）或 HTTP
+
+
+
+
+
+== 示例
+
+`smis disks` 命令及其缩写输出：
+
+[listing]
+----
+smis disks
+ONTAP_DiskExtent.CreationClassName="ONTAP_DiskExtent",DeviceID="0c.00.3",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+ONTAP_DiskExtent.CreationClassName="ONTAP_DiskExtent",DeviceID="0c.00.5",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+ONTAP_DiskExtent.CreationClassName="ONTAP_DiskExtent",DeviceID="0c.00.7",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+ONTAP_DiskExtent.CreationClassName="ONTAP_DiskExtent",DeviceID="0c.00.6",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+ONTAP_DiskExtent.CreationClassName="ONTAP_DiskExtent",DeviceID="0c.00.1",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+ONTAP_DiskExtent.CreationClassName="ONTAP_DiskExtent",DeviceID="0c.00.8",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+----

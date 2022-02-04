@@ -1,0 +1,59 @@
+---
+permalink: reference-smis-pools.html 
+sidebar: sidebar 
+keywords: smis pools, command, list, storage, pools 
+summary: SMIS Pools 命令可列出存储系统的存储池。 
+---
+= SMIS 池
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+`smis pools` 命令可列出存储系统的存储池。
+
+
+
+== 语法
+
+`sMis Pools`
+
+` [-t ｛ * http* | * https * ｝ ]`
+
+
+
+== 位置
+
+`C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
+
+
+
+== 权限级别
+
+具有有效用户名和密码的用户
+
+
+
+== Parameters
+
+* ` * （ -t ｛ http ： https ｝ ） *`
++
+要使用的协议： HTTPS （默认）或 HTTP
+
+
+
+
+
+== 示例
+
+`smis pools` 命令及其缩写输出：
+
+[listing]
+----
+smis pools
+ONTAP_ConcretePool.InstanceID="ONTAP:0084259609:d46de7f0-3925-11df-8516-00a0980558ea"
+ONTAP_ConcretePool.InstanceID="ONTAP:0084259609:51927ab0-28b5-11df-92b2-00a0980558ea"
+ONTAP_DiskPrimordialPool.InstanceID="ONTAP:0084259609:Spare"
+ONTAP_DiskPrimordialPool.InstanceID="ONTAP:0084259609:Other"
+ONTAP_DiskPrimordialPool.InstanceID="ONTAP:0084259609:Present"
+----

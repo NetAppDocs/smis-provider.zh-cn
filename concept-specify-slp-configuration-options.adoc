@@ -1,0 +1,13 @@
+---
+permalink: concept-specify-slp-configuration-options.html 
+sidebar: sidebar 
+keywords: editing, slp.conf, configuration, file, manage, service location protocol daemon, service 
+summary: 您可以编辑 slp.conf 配置文件以管理服务位置协议守护进程（ slpd ）服务。 
+---
+= 指定 slp 配置选项
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以编辑 `slp.conf` 配置文件以管理服务位置协议守护进程（ slpd ）服务。

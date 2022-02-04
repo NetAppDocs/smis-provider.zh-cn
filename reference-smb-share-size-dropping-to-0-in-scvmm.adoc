@@ -1,0 +1,27 @@
+---
+permalink: reference-smb-share-size-dropping-to-0-in-scvmm.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: NetApp SMI-S Provider 遇到的问题。 
+---
+= 在 SCVMM 中， SMB 共享大小降至 0
+:icons: font
+:imagesdir: ./media/
+
+
+* * 问题描述 *
++
+在 System Center Virtual Machine Manager （ SCVMM ）中，新的或现有的 SMB 3.0 共享大小可以降至 0 。
+
+* * 发生原因 *
++
+如果由于 I/O 较重，问题描述中的配额重新初始化需要很长时间，则会发生此 Data ONTAP ，在 SCVMM 中，新的或现有的 SMB 3.0 共享大小可能会降至 0 。因此，无法在新的或现有的 SMB 3.0 共享上配置新的 VM 。
+
+* * 更正操作 *
++
+.. 关闭配额。
+.. 在托管 SMB 共享的每个卷上添加一个类型为 "`tree` " 的默认配额规则。
+.. 为已添加默认配额规则的卷启用配额，然后重新启动 SMI-S Provider 。
+
+
+

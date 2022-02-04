@@ -1,0 +1,24 @@
+---
+permalink: reference-clone-snapshot-operations-are-not-allowed.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: NetApp SMI-S Provider 遇到的问题。 
+---
+= 不允许执行克隆 / 快照操作
+:icons: font
+:imagesdir: ./media/
+
+
+* * 消息 *
++
+`在卷中执行 LUN 克隆拆分操作时，不允许执行克隆 / 快照操作。请等待一段时间，然后重试。`
+
+* * 问题描述 *
++
+如果在 LUN 克隆拆分期间尝试执行 Snapshot 操作，则会发生此错误。如果要拆分 LUN 的卷正在后台运行 LUN 克隆拆分，则无法在该卷中执行 Snapshot 操作。
+
+* * 更正操作 *
++
+拆分 LUN 后，尝试执行 Snapshot 操作。
+
+

@@ -1,0 +1,20 @@
+---
+permalink: reference-required-licenses.html 
+sidebar: sidebar 
+keywords: smi-s provider, required, license 
+summary: 要使用 NetApp SMI-S Provider ，您必须具有所需的许可证。 
+---
+= 所需许可证
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+要使用 NetApp SMI-S Provider ，您必须具有所需的许可证。
+
+NetApp SMI-S Provider 需要以下许可证：
+
+* 要在存储系统上创建 LUN ，需要 FCP ， iSCSI 或 FCP 和 iSCSI 许可证。
+* 要在支持的 ONTAP 存储系统上创建文件共享，需要 CIFS 许可证。
+* 要在运行受支持的 ONTAP 版本的集群存储系统上创建 LUN 克隆，需要 FlexClone 许可证。
+

@@ -1,0 +1,34 @@
+---
+permalink: reference-hostagentaccessdenied-error-id-26263.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: NetApp SMI-S Provider 遇到的问题。 
+---
+= HostAgentAccessDenied （ ID ： 26263 ）
+:icons: font
+:imagesdir: ./media/
+
+
+
+
+== message
+
+`从 _SCVMM _ _ （计算机） _ 注册用户 _name_ 的存储提供程序 _SMIS_provider_machine_ 失败，错误代码为 HostAgentAccessDenied 。为存储发现指定有效的提供程序，端口和用户凭据。ID ： 26263`
+
+
+
+== Description
+
+如果在 SCVMM 中指定用户连接到 SMI-S Provider ，但该用户不属于 SMIS 信任存储，则会出现此消息。
+
+要启用 SCVMM 和 SMI-S Provider 之间的通信，必须使用 `CIMUser` 命令将有效的 CIM 用户（本地管理员用户或本地管理员组的域用户）添加到 SMIS 信任存储中。
+
+
+
+== 更正操作
+
+使用 `CIMUser` 命令将本地管理员用户（在 SMI-S Provider 计算机上）添加到 CIM 服务器数据库： `CIMUser -a -u _admin user_-w _password_` 。然后，在将 NetApp SMI-S Provider 添加到 SCVMM 时，您必须使用该管理用户。
+
+如果域控制器对域用户进行身份验证所需时间过长，则必须在 SMI-S Provider 计算机上使用本地管理员用户。
+
+如果此错误仍然存在，则可以在 SMI-S Provider 中禁用身份验证。

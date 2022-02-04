@@ -1,0 +1,55 @@
+---
+permalink: reference-smis-cimserver.html 
+sidebar: sidebar 
+keywords: smis cimserver, command, start, stop, restart, cim server 
+summary: SMIS cimserver 命令用于启动，停止，重新启动或获取 CIM 服务器的状态。 
+---
+= SMIS Cimserver
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+`smis cimserver` 命令用于启动，停止，重新启动或获取 CIM 服务器的状态。
+
+
+
+== 语法
+
+`smis cimserver`
+
+` ｛ * 开始 * ｝ * 停止 *` * 重新启动 * * * * 状态 * ｝
+
+
+
+== 位置
+
+`C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
+
+
+
+== 权限级别
+
+管理员（ Windows ）
+
+
+
+== Parameters
+
+* * 开始 *
++
+启动 CIM 服务器。
+
+* * 停止 *
++
+停止 CIM 服务器。
+
+* * 重新启动 *
++
+重新启动 CIM 服务器。
+
+* * 状态 *
++
+获取 CIM 服务器的状态。
+
+

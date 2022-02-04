@@ -1,0 +1,31 @@
+---
+permalink: concept-smi-s-provider-commands.html 
+sidebar: sidebar 
+keywords: smis, commands, manage, storage, system, display, cim object manager 
+summary: 您可以使用 SMIS 命令管理存储系统并显示有关 CIM 对象管理器的信息。 
+---
+= SMI-S Provider 命令
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以使用 `smis` 命令管理存储系统并显示有关 CIM 对象管理器的信息。
+
+您可以使用 ` -help` 选项为 `smis` 命令提供帮助。
+
+* * SMIS ` -help` *
++
+显示命令摘要。
+
+* * SMIS ` -help` 示例 *
++
+显示使用示例。
+
+* * SMIS ` -help _subcommand_` *
++
+显示指定子命令的帮助。
+
+
+
+SMIS 工具的默认超时值为 180 秒。

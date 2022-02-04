@@ -1,0 +1,137 @@
+---
+permalink: task-manage-storage-systems.html 
+sidebar: sidebar 
+keywords: smis-provider, commands, add, delete, list, storage, systems, cimom repository 
+summary: 您可以使用 NetApp SMI-S Provider 命令在 CIMOM 存储库中添加，删除和列出存储系统。您还可以列出存储系统的 NFS 和 CIFS 导出以及导出的 LUN 。 
+---
+= 管理存储系统
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以使用 NetApp SMI-S Provider 命令在 CIMOM 存储库中添加，删除和列出存储系统。您还可以列出存储系统的 NFS 和 CIFS 导出以及导出的 LUN 。
+
+
+
+== 开始之前
+
+* 您必须已具有管理员登录凭据。
+* 您必须已以管理员身份登录到主机系统。
+
+
+
+
+== 关于此任务
+
+对于 ONTAP ，您必须为 SVM 指定管理 IP 地址，而不是为集群 IP 地址，并且必须为 vsadmin 用户提供凭据。SMI-S Provider 不支持集群 IP 地址或节点管理 IP 地址，也不支持节点管理或节点 SVM 。
+
+[NOTE]
+====
+将管理 LIF 添加到 SMI-S Provider 时，应将其数据协议值设置为 `none` 。
+
+====
+
+
+== 步骤
+
+. 访问 NetApp SMI-S Provider 。
+. 完成以下操作之一：
++
+[cols="3*"]
+|===
+| Action | 命令 | 追加信息 
+
+
+ a| 
+在提供程序和存储系统之间添加具有 HTTP 连接的存储系统
+ a| 
+` * SMIS add _storage_sys storage_sys_user_*`
+ a| 
+此命令最多会等待 15 分钟，以便提供程序更新缓存并做出响应。
+
+
+
+ a| 
+在提供程序和存储系统之间添加具有 HTTPS 连接的存储系统
+ a| 
+` * SMIS addsecure _storage_sys storage_sys_user_*`
+ a| 
+此命令最多会等待 15 分钟，以便提供程序更新缓存并做出响应。
+
+
+
+ a| 
+列出存储系统的 NFS 和 CIFS 导出
+ a| 
+` * SMIS 导出 *`
+ a| 
+无
+
+
+
+ a| 
+列出 CIMOM 存储库的存储系统
+ a| 
+` * SMIS list*`
+ a| 
+在添加或删除存储系统之前，您可以运行此命令来验证 CIMOM 存储库中的存储系统。
+
+
+
+ a| 
+列出存储系统的已导出 LUN
+ a| 
+` * SMIS LUN*`
+ a| 
+无
+
+
+
+ a| 
+从 CIMOM 存储库中删除存储系统
+ a| 
+` * SMIS delete _storage_sys_*`
+ a| 
+如果您不再需要管理某个存储系统，可以将其从 CIMOM 存储库中删除。
+
+由于 SMI-S Provider 会从 CIMOM 存储库中的所有存储系统收集信息，因此您应从存储库中删除未使用的存储系统，以保持最佳性能。
+
+
+
+ a| 
+列出当前的 CIM 服务器配置信息
+ a| 
+` * SMIS config show*`
+ a| 
+无
+
+
+
+ a| 
+列出存储系统的 FC 和 iSCSI 端口信息
+ a| 
+` * SMIS initiators*`
+ a| 
+无
+
+
+
+ a| 
+列出存储系统的存储池
+ a| 
+` * SMIS Pools *`
+ a| 
+无
+
+
+
+ a| 
+列出存储系统的传统卷和灵活卷
+ a| 
+` * SMIS volumes*`
+ a| 
+无
+
+|===
+

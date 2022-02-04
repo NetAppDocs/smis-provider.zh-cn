@@ -1,0 +1,91 @@
+---
+permalink: task-verify-that-the-storage-system-is-working-correctly.html 
+sidebar: sidebar 
+keywords: smi-s provider, configure, least storage, cimom repository storage, working, correctly 
+summary: 在配置 SMI-S Provider 之前，您必须至少向 CIMOM 存储库添加一个存储系统，然后验证存储系统是否正常工作。 
+---
+= 验证存储系统是否正常工作
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+在配置 SMI-S Provider 之前，您必须至少向 CIMOM 存储库添加一个存储系统，然后验证存储系统是否正常工作。
+
+
+
+== 开始之前
+
+* 您必须已以管理员身份登录。
+* 您必须已访问 SMI-S Provider 。
+
+
+
+
+== 步骤
+
+. 至少将一个存储系统添加到 CIMOM 存储库：
++
+[cols="2*"]
+|===
+| 要添加存储系统，请执行以下操作： | 输入此命令 ... 
+
+
+ a| 
+提供程序与存储系统之间的 HTTP 连接
+ a| 
+` * SMIS add _storage_sys storage_sys_user_*`
+
+
+
+ a| 
+提供程序与存储系统之间的 HTTPS 连接
+ a| 
+` * SMIS addsecure _storage_sys storage_sys_user_*`
+
+|===
++
+此命令最多会等待 15 分钟，以便提供程序更新缓存并做出响应。
+
+. 验证以下命令的输出：
++
+[cols="2*"]
+|===
+| 此命令 | 确认 ... 
+
+
+ a| 
+`s错误列表`
+ a| 
+项数与要管理的存储系统数匹配。
+
+
+
+ a| 
+`smis disks`
+ a| 
+磁盘数量与所有存储系统上的磁盘总数匹配。
+
+
+
+ a| 
+`smis lun`
+ a| 
+LUN 数量与所有存储系统上的 LUN 总数匹配。
+
+
+
+ a| 
+`sMis Pools`
+ a| 
+ontap_ConcretePools 的数量与所有存储系统上的聚合总数匹配。
+
+
+
+ a| 
+`smis volumes`
+ a| 
+卷数与所有存储系统上的卷总数匹配。
+
+|===
+

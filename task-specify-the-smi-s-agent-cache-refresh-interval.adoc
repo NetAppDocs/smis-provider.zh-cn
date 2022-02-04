@@ -1,0 +1,42 @@
+---
+permalink: task-specify-the-smi-s-agent-cache-refresh-interval.html 
+sidebar: sidebar 
+keywords: smi-s provider, automatic, retrieves, information, storage systems, 300 sec, cache, refresh 
+summary: 默认情况下， SMI-S Provider 每五分钟（ 300 秒）自动从存储系统检索一次信息。您可以将自动缓存刷新间隔（ cache_refresh_SEC 环境变量）设置为 300 到 86400 秒（ 24 小时）之间的值。 
+---
+= 指定 SMI-S Provider 自动缓存刷新间隔
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+默认情况下， SMI-S Provider 每五分钟（ 300 秒）自动从存储系统检索一次信息。您可以将自动缓存刷新间隔（`cache_refresh_SEC` 环境变量）设置为 300 到 86400 秒（ 24 小时）之间的值。
+
+
+
+== 开始之前
+
+* 您必须已具有管理员登录凭据。
+* 您必须已以管理员身份登录到主机系统。
+
+
+
+
+== 关于此任务
+
+如果您希望随时手动刷新存储系统的状态，可以使用 `smis refresh` 命令。
+
+
+
+== 步骤
+
+. 访问 NetApp SMI-S Provider 。
+. 使用新的刷新间隔值（以秒为单位）创建名为 `cache_refresh_SEC` 的系统或用户环境变量。
++
+有关创建环境变量的信息，请参见 Windows 文档。
+
+. 重新启动 CIM 服务器：
++
+` * SMIS cimserver restart*`
+
+

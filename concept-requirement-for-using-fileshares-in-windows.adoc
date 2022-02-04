@@ -1,0 +1,23 @@
+---
+permalink: concept-requirement-for-using-fileshares-in-windows.html 
+sidebar: sidebar 
+keywords: netApp smis-s provider, fileshare, ntfs-only volume 
+summary: 在 Windows 上使用文件共享（ CIFS 共享）时，创建文件共享的卷必须为仅限 NTFS 的卷。 
+---
+= 在 Windows 上使用文件共享的要求
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+在 Windows 上使用文件共享（ CIFS 共享）时，创建文件共享的卷必须为仅限 NTFS 的卷。
+
+如果要创建文件共享并在 Windows 上使用它，则创建文件共享的卷必须是一个仅限 NTFS 的卷。这样可以避免访问文件共享的凭据出现问题。
+
+在 System Center 2016 Virtual Machine Manager （ SCVMM ）中，您只能在仅使用 NTFS 的卷上创建的文件共享上创建虚拟机（ VM ）。不支持混合卷和 UNIX 模式卷。
+
+
+
+== 创建用于 CIFS 共享和 SCVMM 的卷
+
+在创建要用于 CIFS 共享和 System Center Virtual Machine Manager （ SCVMM ）的卷时，此卷必须为 NTFS 类型。要使用 NTFS 创建卷，请输入以下内容： ` vol_create -vserver <vserver_name> -volume <volume_name> -aggregate <aggr_name> -size<volume_size> -security-style ntfs_`

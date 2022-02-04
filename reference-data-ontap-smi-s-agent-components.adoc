@@ -1,0 +1,33 @@
+---
+permalink: reference-data-ontap-smi-s-agent-components.html 
+sidebar: sidebar 
+keywords: smi-s provider 
+summary: NetApp SMI-S Provider 包含三个组件，可用于管理和监控存储系统： CIMOM ，提供程序对象和存储库。 
+---
+= NetApp SMI-S Provider 组件
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp SMI-S Provider 包含三个组件，可用于管理和监控存储系统： CIMOM ，提供程序对象和存储库。
+
+* * CIMOM*
++
+这是 NetApp SMI-S Provider 的基础。CIMOM 收集，验证和验证每个应用程序请求，然后对应用程序做出响应。它通过调用相应的提供程序来处理每个请求，从而成为每个请求的管道。
+
+* * 提供程序对象 *
++
+当主机向 SMI-S Provider 发出命令或查询时， CIMOM 会加载共享库对象，调用该对象以处理请求，并将生成的信息返回给主机。
+
++
+[NOTE]
+====
+Windows 主机使用 DLL 对象。
+
+====
+* * 存储库 *
++
+CIMOM 使用平面文件数据库作为其存储库。它可存储 CIM 级别所需的永久性数据。
+
+

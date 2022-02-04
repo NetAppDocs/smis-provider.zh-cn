@@ -1,0 +1,33 @@
+---
+permalink: reference-vm-provisioning-in-scvmm-fails-with-insufficient-system-resources-error.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: NetApp SMI-S Provider 遇到的问题。 
+---
+= 系统资源不足，无法完成请求的服务
+:icons: font
+:imagesdir: ./media/
+
+
+* * 消息 *
++
+`系统资源不足，无法完成请求的服务`
+
+* * 问题描述 *
++
+如果在 SCVMM 中的单个文件共享上配置大量 VM 时，已达到每个连接中同一用户的用户会话的最大限制，则会出现此消息。
+
++
+SCVMM 会为每个 Hyper-V 主机创建一个 TCP 连接，而每个连接会与两个用户创建多个会话： Hyper-V 主机的计算机名称（ compute $ ）和 SCVMM "`Run as account` " 。与 compost$ 进行的会话数恰好等于该 Hyper-V 主机中部署的虚拟硬盘数的一个以上。
+
++
+默认值 `M每个连接的同一用户会话` 为 50 。此限制会阻止使用 SCVMM 进行大规模虚拟机部署。如果每个 Hyper-V 主机部署的 VM 超过 50 个，则会遇到此问题描述。
+
+* * 更正操作 *
++
+增加用于控制 CIFS 协议同一连接上的最大会话数的计数器。例如，以下命令会将同一连接上的最大用户会话数从默认值 50 更改为 100 ：
+
++
+` * SVM ：：：： 0">cifs op modify -max-same-user-sessions-per-connection 100*`
+
+

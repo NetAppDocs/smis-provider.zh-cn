@@ -1,0 +1,23 @@
+---
+permalink: reference-data-ontap-smi-s-agent-protocols.html 
+sidebar: sidebar 
+keywords: netapp smi-s provider, cim-xml, encoding, https, service, location, protocol 
+summary: NetApp SMI-S Provider 使用基于 HTTPS 和服务位置协议（ Service Location Protocol ， slp ）的 IM-XML 编码。 
+---
+= NetApp SMI-S Provider 协议
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp SMI-S Provider 使用基于 HTTPS 和服务位置协议（ Service Location Protocol ， slp ）的 IM-XML 编码。
+
+* 通过 HTTPS* 进行 * CIM XML 编码
++
+在启用了 Web 的企业管理（ WBEM ）管理客户端和 CIMOM 服务器之间交换信息的协议。基于 HTTPS 的 IM-XML 编码使用 CIM 协议作为有效负载，使用 HTTPS 作为传输。此外，还支持 HTTP 。
+
+* * SLP*
++
+检测 LAN 中的 WBEM 服务的发现协议。
+
+

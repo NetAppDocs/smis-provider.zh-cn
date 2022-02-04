@@ -1,0 +1,36 @@
+---
+permalink: reference-smi-s-agent-sizing-and-performance-information.html 
+sidebar: sidebar 
+keywords: maximum, systems, netapp smi-s provider, help, understand, performance, capability 
+summary: 了解 NetApp SMI-S Provider 管理的最大系统数量有助于您了解其性能功能。 
+---
+= NetApp SMI-S Provider 规模估算和性能
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+了解 NetApp SMI-S Provider 管理的最大系统数量有助于您了解其性能功能。
+
+* 规模估算 *
+
+NetApp SMI-S 提供程序最多可以管理集群模式 Data ONTAP 中的以下数量的对象：
+
+* 100 个 Storage Virtual Machine （ SVM ）（无指示）
+* 10 个 Storage Virtual Machine （带指示）
+* 1 ， 500 个 LUN （每个 FlexVol 卷）
+* 200 个 CIFS 文件共享（每个 FlexVol 卷）
+
+
+如果 FlexVol 同时包含 qtree 和卷，则 qtree 将显示为目录。删除卷时，请务必小心，不要意外删除 qtree 。
+
+* 性能通知 *
+
+对于包含 5 ， 000 个 FlexVol 卷或 300 ， 000 个 Snapshot 副本的配置，使用以下 `cimcli` 命令可能会遇到性能问题：
+
+* `cimcli ei ontap_Snapshot -n root/ONTAP`
+* `cimcli ei ontap_SnapshotBasedOnFlexVol -n root/ONTAP`
+* `cimcli ei ontap_StorageVolumeStats -n root/ONTAP`
+
+
+互操作性表工具（ IMT ）包含有关规模估算和性能的最新信息。

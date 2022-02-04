@@ -1,0 +1,64 @@
+---
+permalink: task-enable-or-disable-audit-log-for-smi-s-commands.html 
+sidebar: sidebar 
+keywords: incoming smi-s command, record, log files, auditor, wbem client 
+summary: 所有传入的 SMI-S 命令都会记录在审核日志文件中，这样，审核人员就可以跟踪 WBEM 客户端操作和提供程序使用的活动。您可以通过设置动态配置属性来启用或禁用这些传入命令的日志记录。 
+---
+= 启用或禁用 SMI-S 命令的审核日志
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+所有传入的 SMI-S 命令都会记录在审核日志文件中，这样，审核人员就可以跟踪 WBEM 客户端操作和提供程序使用的活动。您可以通过设置动态配置属性来启用或禁用这些传入命令的日志记录。
+
+
+
+== 开始之前
+
+* 您必须已具有管理员登录凭据。
+* 您必须已以管理员身份登录到主机系统。
+
+
+
+
+== 关于此任务
+
+审核日志数据可以记录 CIM 服务器的访问，活动和配置更改。审核文件的内容包括发出了什么命令，发出命令的人员以及发出命令的时间。
+
+动态配置属性 `enableAudit 日志` 可在运行时启用或禁用审核日志记录。默认情况下， enableAuditLog 设置为 true 。
+
+通常的做法是，保持审核日志记录处于启用状态。
+
+审核日志文件（`cimserver_auditlog` ）存储在 pegasus 日志目录（`C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\logs` ）中。
+
+审核日志文件的最大大小为 10 MB 。达到最大限制后，此文件将重命名为 `cimserver_auditlog.0` ，并创建一个新的 `cimserver auditlog` 文件以收集较新的审核日志记录信息。
+
+NetApp SMI-S Provider 会维护六个最新的审核日志文件： `cimserver_auditlog.0` 到 `cimserver_auditlog.5` 。
+
+
+
+== 步骤
+
+. 访问 NetApp SMI-S Provider 。
+. 在运行时设置 SMI-S 命令的审核日志记录：
++
+[cols="2*"]
+|===
+| Action | 命令 
+
+
+ a| 
+* 启用 SMI-S 审核日志记录 *
+ a| 
+` * cimconfig -s enableAuditLog=true*`
+
+
+
+ a| 
+* 禁用 SMI-S 审核日志记录 *
+ a| 
+` * cimconfig -s enableAuditLog=false*`
+
+|===
+

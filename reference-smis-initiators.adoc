@@ -1,0 +1,57 @@
+---
+permalink: reference-smis-initiators.html 
+sidebar: sidebar 
+keywords: smis initiators, display, fibre channel, iscsi, storage systems 
+summary: SMIS initiators 命令可显示存储系统的光纤通道和 iSCSI 端口信息。 
+---
+= SMIS 启动程序
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+`smis initiators` 命令可显示存储系统的光纤通道和 iSCSI 端口信息。
+
+
+
+== 语法
+
+SMIS 启动程序
+
+` [-t ｛ * http* | * https * ｝ ]`
+
+
+
+== 位置
+
+`C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
+
+
+
+== 权限级别
+
+具有有效用户名和密码的用户
+
+
+
+== Parameters
+
+* ` * （ -t ｛ http ： https ｝ ） *`
++
+要使用的协议： HTTPS （默认）或 HTTP
+
+
+
+
+
+== 示例
+
+`smis initiators` 命令及其缩写输出：
+
+[listing]
+----
+smis initiators
+ONTAP_StorageHardwareID.InstanceID="ONTAP:0084259609:iqn.1991-05.com.microsoft:sf-tpc1"
+ONTAP_StorageHardwareID.InstanceID="ONTAP:0084259609:21:00:00:e0:8b:86:f2:89"
+ONTAP_StorageHardwareID.InstanceID="ONTAP:0084259609:iqn.1991-05.com.microsoft:went2k3x32-01"
+----

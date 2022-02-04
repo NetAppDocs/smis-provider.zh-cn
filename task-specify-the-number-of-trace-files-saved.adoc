@@ -1,0 +1,42 @@
+---
+permalink: task-specify-the-number-of-trace-files-saved.html 
+sidebar: sidebar 
+keywords: trace, enable, seven trace file, pegasus trace file num, system, space 
+summary: 如果启用了跟踪，则默认情况下会保存七个跟踪文件。如果需要保存更多跟踪文件，可以通过设置环境变量 Pegasus_trace_file_UM 来增加所保存的最大跟踪文件数。如果增加保存的跟踪文件的最大数量，则必须确保系统的硬盘驱动器上有足够的空间来容纳跟踪文件。 
+---
+= 指定保存的跟踪文件数
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果启用了跟踪，则默认情况下会保存七个跟踪文件。如果需要保存更多跟踪文件，可以通过设置环境变量 `Pegasus_trace_file_NUM` 来增加所保存的最大跟踪文件数。如果增加保存的跟踪文件的最大数量，则必须确保系统的硬盘驱动器上有足够的空间来容纳跟踪文件。
+
+
+
+== 开始之前
+
+* 您必须已具有管理员登录凭据。
+* 您必须已以管理员身份登录到主机系统。
+
+
+
+
+== 关于此任务
+
+如果启用了跟踪，则跟踪信息将写入 `cimserver.TRC` 文件。跟踪文件会进行轮换。当 `cimserver.TRC` 达到最大跟踪文件大小时，其内容将移至 `cimserver.TRc._n_` 文件。默认情况下， `n` 是一个介于 0 到 5 之间的值。如果需要保存更多跟踪文件，请增加 ` _n_` 的值。
+
+
+
+== 步骤
+
+. 访问 NetApp SMI-S Provider 。
+. 创建名为 `Pegasus_trace_file_nUM` 的系统或用户环境变量，并保存新数量的跟踪文件。
++
+_Windows documentation_has more information about creating environment variabls.
+
+. 重新启动 CIM 服务器：
++
+` * SMIS cimserver restart*`
+
+

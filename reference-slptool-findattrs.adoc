@@ -1,0 +1,53 @@
+---
+permalink: reference-slptool-findattrs.html 
+sidebar: sidebar 
+keywords: slptool, findattrs, command, wbem attributes, run, network 
+summary: slptool findattrs 命令可查找在网络上运行的 WBEM 属性。 
+---
+= slptool 查找数据
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+`slptool findattrs` 命令可查找在网络上运行的 WBEM 属性。
+
+
+
+== 语法
+
+`slptool findattrs _service_`
+
+
+
+== 位置
+
+`C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
+
+
+
+== 权限级别
+
+具有有效用户名和密码的用户
+
+
+
+== Parameters
+
+* ` * _service_*`
++
+指定服务类型。
+
+
+
+
+
+== 示例
+
+`slptool findattrs` 命令及其缩写输出：
+
+[listing]
+----
+slptool findattrs service:wbem
+(template-url-syntax=http://10.229.90.227:5988),(service-id=PG:10-229-90-227),(service-hi-name=Pegasus),(service-hi-description=Pegasus CIM Server Version 2.12.0),(template-type=wbem),(template-version=1.0),(template-description=This template describes the attributes used for advertising Pegasus CIM Servers.),(InteropSchemaNamespace=interop),(FunctionalProfilesSupported=Basic Read,Basic Write,Schema Manipulation,Instance Manipulation,Association Traversal,Qualifier Declaration,Indications),(MultipleOperationsSupported=TRUE),(AuthenticationMechanismsSupported=Basic),(AuthenticationMechanismDescriptions=Basic),(CommunicationMechanism=CIM-XML),(ProtocolVersion=1.0),(Namespace=root/PG_Internal,interop,root/ontap,root),(RegisteredProfilesSupported=SNIA:Server,SNIA:Array,SNIA:NAS Head,SNIA:Software,SNIA:Profile Registration,SNIA:SCNAS,SNIA:Storage Virtualizer,SNIA:Indication)
+----

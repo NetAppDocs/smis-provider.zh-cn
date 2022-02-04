@@ -1,0 +1,55 @@
+---
+permalink: reference-smis-cimom.html 
+sidebar: sidebar 
+keywords: smis cimon, command, cim object manager 
+summary: SMIS CIMOM 命令用于描述 CIM 对象管理器。 
+---
+= SMIS CIMOM
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+`smis CIMOM` 命令用于描述 CIM 对象管理器。
+
+
+
+== 语法
+
+SMIS CIMOM ` [-t ｛ * http* | * https * ｝ ]`
+
+
+
+== 位置
+
+`C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
+
+
+
+== 权限级别
+
+具有有效用户名和密码的用户
+
+
+
+== Parameters
+
+* ` * （ -t ｛ http ： https ｝ ） *`
++
+要使用的协议： HTTPS （默认）或 HTTP
+
+
+
+
+
+== 示例
+
+`smis CIMOM` 命令及其输出：
+
+[listing]
+----
+smis cimom
+PG_ObjectManager.CreationClassName="PG_ObjectManager",
+Name="PG:1297121114307-10-229-89-243",
+SystemCreationClassName="PG_ComputerSystem",SystemName="10.1.2.3"
+----

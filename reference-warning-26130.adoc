@@ -1,0 +1,38 @@
+---
+permalink: reference-warning-26130.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: NetApp SMI-S Provider 遇到的问题。 
+---
+= 警告 26130
+:icons: font
+:imagesdir: ./media/
+
+
+
+
+== message
+
+`警告（ 26130 ）存储池已分配给主机组，其中主机组中的任何主机都无法访问存储阵列。`
+
+
+
+== Description
+
+如果您分配存储容量并向主机组中的主机授予阵列访问权限，则会发生此错误。如果出现此警告，则无法将虚拟机放置在存储系统上。
+
+
+
+== 更正操作
+
+. 在每个主机上，将每个存储系统的 IP 地址添加到 iSCSI 启动程序应用程序中。
+. 如果需要，在每个存储系统上，为每个主机创建一个唯一的 igroup ，并使用相应主机中的正确 iSCSI 节点名称进行链接。
+. 对于连接到 Data ONTAP 的每个主机，打开 MPIO 应用程序并添加以下硬件 ID ：
++
+** 对于集群模式 Data ONTAP ，输入 ` * NetApp LUN C-Mode*` 。
+
+
+. 重新启动主机。
+. 删除此提供程序。
+. 再次设置存储池。
+

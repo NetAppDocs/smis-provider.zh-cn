@@ -1,0 +1,25 @@
+---
+permalink: concept-preconfiguration-task-overview.html 
+sidebar: sidebar 
+keywords: smis-provider, first time, validate, preliminary, configuration 
+summary: 首次使用 SMI-S Provider 之前，必须验证初始配置。 
+---
+= 预配置验证
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+首次使用 SMI-S Provider 之前，必须验证初始配置。
+
+在使用 SMI-S Provider 之前，请执行以下任务：
+
+. 从 NetApp SMI-S Provider 中，验证是否已启动 CIM 服务器。
+. 添加 CIM 服务器用户。
+. 通过为 SMI-S Provider 至少添加一个存储系统来验证存储系统的管理。
+. * 可选： * 为 CIMOM 生成自签名证书。
+
+
+默认情况下， SMI-S Provider 会启用身份验证。
+
+成功执行此验证后，您可以开始使用 NetApp SMI-S Provider 管理存储系统。

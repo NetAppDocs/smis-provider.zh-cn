@@ -1,0 +1,46 @@
+---
+permalink: task-install-smi-s-agent-on-a-windows-host.html 
+sidebar: sidebar 
+keywords: netapp smi-s provider, software, storage systems, data ontap 
+summary: 您可以安装 NetApp SMI-S Provider 软件，以便管理运行 Data ONTAP 的存储系统。默认情况下， NetApp SMI-S Provider 软件安装在 C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus 目录中。 
+---
+= 在 Windows 主机上安装 NetApp SMI-S Provider
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以安装 NetApp SMI-S Provider 软件，以便管理运行 Data ONTAP 的存储系统。默认情况下， NetApp SMI-S Provider 软件安装在 `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus` 目录中。
+
+
+
+== 开始之前
+
+您必须已拥有以下凭据和软件：
+
+* Windows 管理员帐户的登录凭据
+* NetApp SMI-S Provider 软件包
+
+
+
+
+== 关于此任务
+
+安装过程结束后， CIMOM 服务（在 Service Control Manager 中名为 "`NetApp SMI-S Provider` " ）和 slp 守护进程（在 Service Control Manager 中名为 " `S服务位置协议` " ）将作为自动服务运行，即使在主机重新启动后，该服务也会自动启动。
+
+此安装操作步骤反映了全新安装。
+
+
+
+== 步骤
+
+. 以管理员身份登录。
+. 导航到包含 NetApp SMI-S Provider 软件包的目录（ `smisprovider-_version_number_.msi` ），然后双击软件包名称。
+. 完成设置向导中的步骤。
+
+
+
+
+== 结果
+
+NetApp SMI-S Provider 将在安装过程即将结束时自动启动。

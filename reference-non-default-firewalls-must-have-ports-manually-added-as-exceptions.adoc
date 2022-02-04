@@ -1,0 +1,29 @@
+---
+permalink: reference-non-default-firewalls-must-have-ports-manually-added-as-exceptions.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: NetApp SMI-S Provider 遇到的问题。 
+---
+= 非默认防火墙必须手动添加端口作为例外情况
+:icons: font
+:imagesdir: ./media/
+
+
+* * 问题描述 *
++
+如果您使用的防火墙不是默认 Windows 防火墙，则可能会遇到以下问题：
+
++
+** SMI-S Provider 无法与已删除的 SMI-S 客户端进行通信。
+** SMI-S 客户端无法从 SMI-S Provider 接收指示。
+
+
+* * 发生原因 *
++
+如果您使用的防火墙不是默认的 Windows 防火墙，而事先未手动添加所需的端口，则会出现此问题描述。
+
+* * 更正操作 *
++
+除了防火墙之外，添加端口 427 ， 5988 和 5989 。
+
+

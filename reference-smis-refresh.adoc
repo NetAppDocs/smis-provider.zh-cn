@@ -1,0 +1,59 @@
+---
+permalink: reference-smis-refresh.html 
+sidebar: sidebar 
+keywords: smi-s provider, automatic, information, storage systems 
+summary: 默认情况下， SMI-S Provider 每 60 分钟（ 3600 秒）自动从存储系统获取信息。您可以使用 SMIS refresh 命令手动刷新特定存储系统。 
+---
+= SMIS 刷新
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+默认情况下， SMI-S Provider 每 60 分钟（ 3600 秒）自动从存储系统获取信息。您可以使用 `smis refresh` 命令手动刷新特定存储系统。
+
+
+
+== 语法
+
+`smis refresh _storage_system_ip_`
+
+` [-t ｛ * http* | * https * ｝ ]`
+
+
+
+== 位置
+
+`C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
+
+
+
+== 权限级别
+
+具有有效用户名和密码的用户
+
+
+
+== Parameters
+
+* ` * _ 存储系统 _IP_*`
++
+刷新特定存储系统。
+
+* ` * （ -t ｛ http ： https ｝ ） *`
++
+要使用的协议： HTTPS （默认）或 HTTP
+
+
+
+
+
+== 示例
+
+`smis refresh` 命令及其输出：
+
+[listing]
+----
+smis refresh 10.32.1.4
+Return Value= 0
+----

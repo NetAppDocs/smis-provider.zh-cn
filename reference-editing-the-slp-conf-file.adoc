@@ -1,0 +1,86 @@
+---
+permalink: reference-editing-the-slp-conf-file.html 
+sidebar: sidebar 
+keywords: 'slp.conf, configuration, additional options, manage, service location,daemon (SLPD) server' 
+summary: slp.conf 配置文件提供了其他选项，可用于管理服务位置协议守护进程（ slpd ）服务器。 
+---
+= slp.conf 文件管理
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+`slp.conf` 配置文件提供了其他选项，可用于管理服务位置协议守护进程（ slpd ）服务器。
+
+
+
+== 位置
+
+`C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\cfg`
+
+
+
+== 权限级别
+
+具有有效用户名和密码的用户
+
+
+
+== Description
+
+通过 `slp.conf` 配置文件，您可以更改主机在收到 slp 请求时侦听的接口数以及主机用于多路广播的 IP 地址数。
+
+使用文本编辑器打开 `slp.conf` 。
+
+
+
+== Parameters
+
+* *`接口` *
++
+指定主机可侦听的最大 slp 请求 IP 地址数。
+
+* * `m粘性` *
++
+指定主机可用于多播的最大 IP 地址数。在多宿主系统上为 slp 多播流量配置接口时，请使用此参数。
+
+* *`BroadcastOnly` *
++
+强制在通过 slp 发送消息时使用广播选项，而不是多播选项。
+
+* * `s已启用生态系统` *
++
+为收到的 URL 和属性列表启用安全性。
+
+
+
+
+
+== 示例
+
+以下是 `slp.conf` 配置文件的缩写示例：
+
+[listing]
+----
+
+################################################################
+# OpenSLP configuration file
+# Format and contents conform to specification in IETF RFC 2614 so
+the comments use the language of the RFC. In OpenSLP, SLPD
+operates as an SA and a DA. The SLP UA functionality is
+encapsulated by SLPLIB.
+################################################################
+
+#-----------------------------------------------------------------
+# Static Scope and DA Configuration
+#-----------------------------------------------------------------
+# This option is a comma delimited list of strings indicating the
+only scopes a UA or SA is allowed when making requests or
+registering or the scopes a DA must support. (default value is
+"DEFAULT");net.slp.useScopes = myScope1, myScope2, myScope3
+
+# Allows administrator to force UA and SA agents to use specific
+DAs. If this setting is not used dynamic DA discovery will be used
+to determine which DAs to use. (Default is to use dynamic DA
+discovery)
+----

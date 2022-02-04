@@ -1,0 +1,66 @@
+---
+permalink: reference-smis-luns.html 
+sidebar: sidebar 
+keywords: smis luns, command, display, lun information, storage system 
+summary: SMIS LUNs 命令可显示存储系统的 LUN 信息。 
+---
+= SMIS LUN
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+`smis luns` 命令可显示存储系统的 LUN 信息。
+
+
+
+== 语法
+
+SMIS LUN
+
+` [-t ｛ * http* | * https * ｝ ]`
+
+
+
+== 位置
+
+`C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
+
+
+
+== 权限级别
+
+具有有效用户名和密码的用户
+
+
+
+== Parameters
+
+* ` * （ -t ｛ http ： https ｝ ） *`
++
+要使用的协议： HTTPS （默认）或 HTTP
+
+
+
+
+
+== 示例
+
+`smis luns` 命令及其缩写输出：
+
+[listing]
+----
+smis luns
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID
+="ef805c0d-5269-47c6-ba0fd9cdbf5e2515",
+SystemCreationClassName="ONTAP_StorageSystem",SystemNa
+me="ONTAP:68f6b3c0-923a-11e2-a856-123478563412"
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID
+="f81cb3bf-2f16-467c-8e30-88bae415ab05",SystemCreationClassName="ONT
+AP_StorageSystem",SystemName="ONTAP:68f6b3c0-923a-11e2-
+a856-123478563412"
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID
+="684f5fb9-0fdd-4b97-8678-188774bdcdd0",SystemCreationClassName="ONT
+AP_StorageSystem",SystemName="ONTAP:68f6b3c0-923a-11e2-
+a856-123478563412"
+----

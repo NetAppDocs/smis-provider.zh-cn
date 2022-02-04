@@ -1,0 +1,56 @@
+---
+permalink: task-enable-or-disable-authentication-for-smi-s-provider.html 
+sidebar: sidebar 
+keywords: smi-s provider, authentication, enable, errors, system, disable 
+summary: 默认情况下， SMI-S Provider 会启用身份验证。如果身份验证导致系统出现错误，您可以选择禁用它。如果已禁用身份验证，而您希望重新启用它，则可以执行此操作。 
+---
+= 启用或禁用 NetApp SMI-S Provider 的身份验证
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+默认情况下， SMI-S Provider 会启用身份验证。如果身份验证导致系统出现错误，您可以选择禁用它。如果已禁用身份验证，而您希望重新启用它，则可以执行此操作。
+
+
+
+== 开始之前
+
+* 您必须已具有管理员登录凭据。
+* 您必须已以管理员身份登录。
+* 任何客户端，包括 System Center Virtual Machine Manager （ SCVMM ），都必须使用 CIMUser 和 cimassword 连接到提供程序。
+
+
+
+
+== 步骤
+
+. 访问 NetApp SMI-S Provider 。
+. 设置 SMI-S Provider 的身份验证：
++
+[cols="2*"]
+|===
+| Action | 命令 
+
+
+ a| 
+* 如果先前已禁用，则启用身份验证 *
+ a| 
+` * cimconfig -p -s enableAuthenticity=true*`
+
+
+
+ a| 
+* 禁用身份验证 *
+ a| 
+` * cimconfig -p -s enableAuthenticity=false*`
+
+|===
++
+CIMOM 不使用 Windows 身份验证。
+
+. 重新启动 NetApp SMI-S Provider ：
++
+` * SMIS cimserver restart*`
+
+

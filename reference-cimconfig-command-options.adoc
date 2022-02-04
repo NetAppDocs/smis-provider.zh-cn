@@ -1,0 +1,86 @@
+---
+permalink: reference-cimconfig-command-options.html 
+sidebar: sidebar 
+keywords: cimconfig, command, cimom configuration, settings, variable, mis cimserver restart command 
+summary: 您可以使用 cimconfig 命令管理 CIMOM 配置设置。输入 cimconfig 命令或为 NetApp SMI-S Provider 配置值创建环境变量后，必须使用 SMIS cimserver restart 命令重新启动 CIM 服务器。 
+---
+= cimconfig
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以使用 `cimconfig` 命令管理 CIMOM 配置设置。输入 `cimconfig` 命令或为 NetApp SMI-S Provider 配置值创建环境变量后，必须使用 `smis cimserver restart` 命令重新启动 CIM 服务器。
+
+
+
+== 语法
+
+`cimconfig _options_`
+
+
+
+== 位置
+
+`C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
+
+
+
+== 权限级别
+
+管理员（ Windows ）
+
+
+
+== 选项
+
+* * — c*
++
+指定配置设置适用场景为当前 CIMOM 配置。
+
+* * — d*
++
+指定配置设置适用场景为默认 CIMOM 配置。
+
+* * — g*
++
+获取指定配置属性的值。
+
+* * — h ，—帮助 *
++
+显示 `cimconfig` 命令的帮助。
+
+* * — l*
++
+列出所有 CIMOM 配置属性。
+
+* * — p*
++
+指定在下次启动 CIM 服务器时应用配置设置。
+
+* * — s*
++
+设置指定的配置属性值。
+
+* * — u*
++
+将配置属性重置为其默认值。
+
+* * —版本 *
++
+显示 CIM 服务器的版本。
+
+
+
+
+
+== 示例
+
+将最大日志文件大小更改为 15000 KB ：
+
+[listing]
+----
+cimconfig -s maxLogFileSizeKBytes=15000
+Current value for the property maxLogFileSizeKBytes is set to "15000" in CIMServer.
+smis cimserver restart
+----

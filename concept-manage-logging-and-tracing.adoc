@@ -1,0 +1,13 @@
+---
+permalink: concept-manage-logging-and-tracing.html 
+sidebar: sidebar 
+keywords: configure, smis-provider, trace files, specify, levels, message logging, component, trace, file location 
+summary: 您可以配置 SMI-S Provider 管理日志和跟踪文件的方式，例如指定要记录的消息级别以及日志保存到的目录。您还可以指定要跟踪的组件，跟踪消息写入的目标，跟踪级别以及跟踪文件位置。 
+---
+= 管理日志记录和跟踪
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以配置 SMI-S Provider 管理日志和跟踪文件的方式，例如指定要记录的消息级别以及日志保存到的目录。您还可以指定要跟踪的组件，跟踪消息写入的目标，跟踪级别以及跟踪文件位置。

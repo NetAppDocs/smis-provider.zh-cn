@@ -1,0 +1,72 @@
+---
+permalink: reference-slptool-findsrvs.html 
+sidebar: sidebar 
+keywords: slptool, findsrvs, command, wbem, service, run, network 
+summary: slptool findsrvs 命令可查找在网络上运行的 WBEM 服务。 
+---
+= slptool findsrvs
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+`slptool findsrvs` 命令可查找在网络上运行的 WBEM 服务。
+
+
+
+== 语法
+
+`slptool findsrvs _service_`
+
+
+
+== 位置
+
+`C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
+
+
+
+== 权限级别
+
+具有有效用户名和密码的用户
+
+
+
+== Parameters
+
+* ` * _service_*`
++
+指定服务类型。
+
+
+
+
+
+== 示例
+
+`slptool findsrvs` 命令及其输出：
+
+[listing]
+----
+slptool findsrvs service:wbem
+service:wbem:http://10.60.167.143:5988,65535
+service:wbem:http://10.60.167.246:5988,65535
+service:wbem:https://10.60.167.143:5989,65535
+service:wbem:https://10.60.167.246:5989,65535
+service:wbem:http://10.60.167.151:5988,65535
+service:wbem:http://10.60.167.250:5988,65535
+service:wbem:https://10.60.167.151:5989,65535
+service:wbem:https://10.60.167.250:5989,65535
+service:wbem:http://10.60.167.141:5988,65535
+service:wbem:https://10.60.167.141:5989,65535
+service:wbem:http://10.60.167.147:5988,65535
+service:wbem:https://10.60.167.147:5989,65535
+service:wbem:http://10.60.167.139:5988,65535
+service:wbem:http://[fe80::7804:75ad:ab59:28c]:5988,65535
+service:wbem:http://[fe80::3cb1:12da:f5c3:5874]:5988,65535
+service:wbem:http://[2001::4137:9e76:3cb1:12da:f5c3:5874]:5988,65535
+service:wbem:https://10.60.167.139:5989,65535
+service:wbem:https://[fe80::7804:75ad:ab59:28c]:5989,65535
+service:wbem:https://[fe80::3cb1:12da:f5c3:5874]:5989,65535
+service:wbem:https://[2001::4137:9e76:3cb1:12da:f5c3:5874]:5989,65535
+----

@@ -1,0 +1,21 @@
+---
+permalink: reference-runtime-library-issues.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: NetApp SMI-S Provider 遇到的问题。 
+---
+= 运行时库问题
+:icons: font
+:imagesdir: ./media/
+:pp: &#43;&#43;
+
+
+* * 问题描述 *
++
+您遇到运行时库问题。
+
+* * 更正操作 *
++
+从 www.microsoft.com 安装 Microsoft Visual C ｛ pp ｝ 2010 可重新分发软件包（ x86 ）。
+
+

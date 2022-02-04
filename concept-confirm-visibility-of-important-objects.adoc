@@ -1,0 +1,15 @@
+---
+permalink: concept-confirm-visibility-of-important-objects.html 
+sidebar: sidebar 
+keywords: manage, storage, system, confirm, important, logic, physical, object, netapp smis-s provider 
+summary: 添加受管存储系统后，您应确认可以在 NetApp SMI-S Provider 中看到所有重要的逻辑和物理对象。 
+---
+= 确认重要对象的可见性
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+添加受管存储系统后，您应确认可以在 NetApp SMI-S Provider 中看到所有重要的逻辑和物理对象。
+
+您可以使用 `smis` 命令查看 NetApp SMI-S Provider CIMOM 存储库中的对象。例如，使用 `smis list` 显示已添加的存储系统，使用 `smis LUNs` 显示 LUN 信息。

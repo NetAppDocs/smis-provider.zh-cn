@@ -1,0 +1,39 @@
+---
+permalink: task-enable-indications-in-smi-s-agent.html 
+sidebar: sidebar 
+keywords: netApp smi-s provider, lifecycle, disable, default, indication 
+summary: 默认情况下，警报，文件系统配额和生命周期指示处于禁用状态。您可以通过将环境变量 Pegasus_disable_indications 设置为 false 来启用这些指示。 
+---
+= 在 SMI-S Provider 中启用指示
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+默认情况下，警报，文件系统配额和生命周期指示处于禁用状态。您可以通过将环境变量 `Pegasus_disable_indications` 设置为 `false` 来启用这些指示。
+
+
+
+== 开始之前
+
+* 您必须已具有管理员登录凭据。
+* 您必须已以管理员身份登录到主机系统。
+
+
+
+
+== 关于此任务
+
+当 `Pegasus_disable_indication` 设置为 `false` 时， NetApp SMI-S Provider 会启用警报（`ontap_Alertindication` ），文件系统配额（`ontap_FSQuotaindication` ）和生命周期指示。
+
+
+
+== 步骤
+
+. 访问 NetApp SMI-S Provider 。
+. 将 `Pegasus_disable_indications` 环境变量设置为 `false` 。
+. 重新启动 CIM 服务器：
++
+` * SMIS cimserver restart*`
+
+

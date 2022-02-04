@@ -1,0 +1,66 @@
+---
+permalink: task-specify-trace-settings.html 
+sidebar: sidebar 
+keywords: trace, enable, important, gathering, information, troubleshooting, performance, impact 
+summary: 启用跟踪对于收集故障排除信息非常重要。但是，启用跟踪可能会影响性能，因此请仔细考虑必须跟踪的内容以及需要启用跟踪的时间长度。 
+---
+= 指定跟踪设置
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+启用跟踪对于收集故障排除信息非常重要。但是，启用跟踪可能会影响性能，因此请仔细考虑必须跟踪的内容以及需要启用跟踪的时间长度。
+
+
+
+== 开始之前
+
+* 您必须已具有管理员登录凭据。
+* 您必须已以管理员身份登录到主机系统。
+
+
+
+
+== 步骤
+
+. 访问 NetApp SMI-S Provider 。
+. 根据需要指定各种跟踪设置：
++
+[cols="2*"]
+|===
+| Action | 命令 
+
+
+ a| 
+指定要跟踪的组件
+ a| 
+` * cimconfig -s traceComponents=_components_ -p*`
+
+
+
+ a| 
+指定跟踪工具
+ a| 
+` * cimconfig -s traceFacility = _Facility _ -p*`
+
+
+
+ a| 
+指定跟踪文件的位置
+ a| 
+` * cimconfig -s traceFilePath=_path_name_ -p*`
+
+
+
+ a| 
+指定跟踪级别
+ a| 
+` * cimconfig -s traceLevel=_level_ -p*`
+
+|===
+. 重新启动 CIM 服务器：
++
+` * SMIS cimserver restart*`
+
+

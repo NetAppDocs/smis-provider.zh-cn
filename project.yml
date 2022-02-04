@@ -1,0 +1,241 @@
+---
+settings:
+  name: NetApp SMI-S Provider
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: zh-cn,us-en,ja-jp,ko-kr
+sidebar:
+  entries:
+  - title: NetApp SMI-S Provider 文档
+    url: "/index.html"
+  - title: 发行说明
+    url: "/releasenotes.html"
+  - title: NetApp SMI-S Provider 概述
+    url: "/concept-data-ontap-smi-s-agent-overview.html"
+    entries:
+    - title: 此版本中的新增功能
+      url: "/reference-new-in-this-release-smis.html"
+    - title: 使用 NetApp SMI-S Provider
+      url: "/reference-uses-of-data-ontap-smi-s-agent.html"
+    - title: NetApp SMI-S Provider 规模估算和性能
+      url: "/reference-smi-s-agent-sizing-and-performance-information.html"
+    - title: NetApp SMI-S Provider 组件
+      url: "/reference-data-ontap-smi-s-agent-components.html"
+    - title: NetApp SMI-S Provider 协议
+      url: "/reference-data-ontap-smi-s-agent-protocols.html"
+    - title: NetApp SMI-S Provider 如何与主机交互
+      url: "/concept-how-smi-s-provider-interacts-with-a-host.html"
+    - title: SMI-S 配置文件
+      url: "/concept-smi-s-profiles.html"
+  - title: 部署工作流
+    url: "/concept-deployment-workflow.html"
+  - title: 准备部署
+    url: "/concept-prepare-for-deployment.html"
+    entries:
+    - title: 支持的操作系统版本
+      url: "/reference-supported-operating-systems.html"
+    - title: 硬件要求
+      url: "/reference-hardware-requirements.html"
+    - title: 所需许可证
+      url: "/reference-required-licenses.html"
+    - title: 支持的集群平台
+      url: "/reference-supported-platforms.html"
+    - title: 下载 NetApp SMI-S Provider 软件包
+      url: "/task-download-smi-s-provider.html"
+  - title: 安装 NetApp SMI-S Provider
+    url: "/concept-install-and-uninstall-ontap-smi-s-agent.html"
+    entries:
+    - title: 在 Windows 主机上安装 NetApp SMI-S Provider
+      url: "/task-install-smi-s-agent-on-a-windows-host.html"
+  - title: 卸载 NetApp SMI-S Provider
+    url: "/concept-uninstall-smi-s-provider.html"
+    entries:
+    - title: 从 Windows 主机卸载 NetApp SMI-S Provider
+      url: "/task-uninstall-smi-s-agent-from-a-windows-host.html"
+  - title: 预配置验证
+    url: "/concept-preconfiguration-task-overview.html"
+    entries:
+    - title: 验证 CIM 服务器状态
+      url: "/task-verify-the-cim-server-status.html"
+    - title: 添加 CIM 服务器用户
+      url: "/task-add-cim-server-users.html"
+    - title: 验证存储系统是否正常工作
+      url: "/task-verify-that-the-storage-system-is-working-correctly.html"
+    - title: 为 CIM 服务器生成自签名证书
+      url: "/task-generate-a-self-signed-certificate-for-the-cim-server-windows.html"
+  - title: 管理 CIM 服务器
+    url: "/task-manage-the-cim-server.html"
+  - title: 管理存储系统
+    url: "/task-manage-storage-systems.html"
+  - title: 管理 CIM 服务器用户
+    url: "/task-manage-cim-server-users.html"
+    entries:
+    - title: CIM 用户的类型以及关联的操作
+      url: "/reference-types-of-cim-users-and-associated-operations.html"
+  - title: 管理 CIMOM 配置设置
+    url: "/task-manage-cimom-configuration-settings.html"
+  - title: 管理日志记录和跟踪
+    url: "/concept-manage-logging-and-tracing.html"
+    entries:
+    - title: 配置日志设置
+      url: "/task-configure-log-settings.html"
+      entries:
+      - title: 日志记录级别
+        url: "/reference-logging-levels.html"
+    - title: 管理跟踪
+      url: "/concept-manage-tracing.html"
+      entries:
+      - title: 指定跟踪设置
+        url: "/task-specify-trace-settings.html"
+        entries:
+        - title: 跟踪设置值
+          url: "/reference-trace-setting-values.html"
+      - title: 指定跟踪文件大小
+        url: "/task-specify-trace-file-size.html"
+      - title: 指定保存的跟踪文件数
+        url: "/task-specify-the-number-of-trace-files-saved.html"
+    - title: 启用或禁用 SMI-S 命令的审核日志
+      url: "/task-enable-or-disable-audit-log-for-smi-s-commands.html"
+  - title: 管理 SMI-S Provider 高级设置
+    url: "/concept-manage-smi-s-agent-advanced-settings.html"
+    entries:
+    - title: 指定 SMI-S Provider 自动缓存刷新间隔
+      url: "/task-specify-the-smi-s-agent-cache-refresh-interval.html"
+    - title: 指定具体的作业生命周期值
+      url: "/task-specify-the-concrete-job-lifetime-value.html"
+    - title: 指定 ONTAPI 超时值
+      url: "/task-specify-the-ontapi-timeout-value.html"
+    - title: 指定每个消息服务队列的最大线程数
+      url: "/task-specify-the-maximum-number-of-threads-per-message-service-queue.html"
+    - title: 启用或禁用 NetApp SMI-S Provider 的身份验证
+      url: "/task-enable-or-disable-authentication-for-smi-s-provider.html"
+    - title: 在 SMI-S Provider 中启用指示
+      url: "/task-enable-indications-in-smi-s-agent.html"
+  - title: 管理 SLp
+    url: "/concept-manage-slp.html"
+    entries:
+    - title: 指定 slp 配置选项
+      url: "/concept-specify-slp-configuration-options.html"
+      entries:
+      - title: slp.conf 文件管理
+        url: "/reference-editing-the-slp-conf-file.html"
+  - title: CIMOM 命令
+    url: "/concept-cimom-commands.html"
+    entries:
+    - title: cimconfig
+      url: "/reference-cimconfig-command-options.html"
+  - title: CIM 用户命令
+    url: "/concept-cim-user-commands.html"
+    entries:
+    - title: CIMSUser
+      url: "/reference-cimuser-command-options.html"
+  - title: SMI-S Provider 命令
+    url: "/concept-smi-s-provider-commands.html"
+    entries:
+    - title: SMIS 添加
+      url: "/reference-smis-add.html"
+    - title: SMIS addsecure
+      url: "/reference-smis-addsecure.html"
+    - title: SMIS CIMOM
+      url: "/reference-smis-cimom.html"
+    - title: SMIS Cimserver
+      url: "/reference-smis-cimserver.html"
+    - title: SMIS 类
+      url: "/reference-smis-class.html"
+    - title: SMIS config show
+      url: "/reference-smis-config-show.html"
+    - title: SMIS CRP.
+      url: "/reference-smis-crp.html"
+    - title: SMIS 命令
+      url: "/reference-smis-crsp.html"
+    - title: SMIS 删除
+      url: "/reference-smis-delete.html"
+    - title: SMIS 磁盘
+      url: "/reference-smis-disks.html"
+    - title: SMIS 导出
+      url: "/reference-smis-exports.html"
+    - title: SMIS 启动程序
+      url: "/reference-smis-initiators.html"
+    - title: 已获得 SMIS 许可
+      url: "/reference-smis-licensed.html"
+    - title: SMIS 列表
+      url: "/reference-smis-list.html"
+    - title: SMIS LUN
+      url: "/reference-smis-luns.html"
+    - title: SMIS 命名空间
+      url: "/reference-smis-namespaces.html"
+    - title: SMIS 池
+      url: "/reference-smis-pools.html"
+    - title: SMIS 刷新
+      url: "/reference-smis-refresh.html"
+    - title: SMIS slpd
+      url: "/reference-smis-slpd.html"
+    - title: SMIS 版本
+      url: "/reference-smis-version.html"
+    - title: SMIS 卷
+      url: "/reference-smis-volumes.html"
+  - title: slp 命令
+    url: "/concept-slp-commands.html"
+    entries:
+    - title: slptool
+      url: "/reference-slptool-command-options.html"
+    - title: slptool 查找数据
+      url: "/reference-slptool-findattrs.html"
+    - title: slptool findsrvs
+      url: "/reference-slptool-findsrvs.html"
+  - title: 对 SMI-S Provider 进行故障排除
+    url: "/concept-troubleshoot-smi-s-agent.html"
+    entries:
+    - title: 访问被拒绝错误
+      url: "/reference-access-is-denied-error.html"
+    - title: 加载共享库时可能出现的错误
+      url: "/reference-possible-errors-when-loading-shared-libraries.html"
+    - title: 连接被拒绝
+      url: "/reference-connection-refused-error.html"
+    - title: filer return ：无 ONTAP 元素响应
+      url: "/reference-no-ontap-element-in-response-error.html"
+    - title: 不允许执行克隆 / 快照操作
+      url: "/reference-clone-snapshot-operations-are-not-allowed.html"
+    - title: 警告 26130
+      url: "/reference-warning-26130.html"
+    - title: HostAgentAccessDenied （ ID ： 26263 ）
+      url: "/reference-hostagentaccessdenied-error-id-26263.html"
+    - title: 无法连接到 localhost ： 5988
+      url: "/reference-cannot-connect-to-localhost-5988-error.html"
+    - title: 无法连接到 localhost ： 5989
+      url: "/reference-cannot-connect-to-localhost-5989-error.html"
+    - title: SMI-S Provider 在 Windows 中崩溃
+      url: "/reference-handling-smi-s-agent-crashes-in-windows.html"
+    - title: 问题描述输入包含特殊字符的密码
+      url: "/reference-entering-passwords-containing-special-characters.html"
+    - title: SMI-S Provider 中使用的克隆技术
+      url: "/concept-clone-technology-used-in-smi-s-agent-4-0.html"
+    - title: 确认重要对象的可见性
+      url: "/concept-confirm-visibility-of-important-objects.html"
+    - title: 在 Windows 上使用文件共享的要求
+      url: "/concept-requirement-for-using-fileshares-in-windows.html"
+    - title: 非默认防火墙必须手动添加端口作为例外情况
+      url: "/reference-non-default-firewalls-must-have-ports-manually-added-as-exceptions.html"
+    - title: 无法使用非默认 HTTP 或 HTTPS 端口添加存储系统
+      url: "/reference-cannot-add-a-storage-system-using-a-nondefault-http-or-https-port.html"
+    - title: 服务器无响应
+      url: "/reference-no-response-from-the-server.html"
+    - title: 运行时库问题
+      url: "/reference-runtime-library-issues.html"
+    - title: NetApp SMI-S Provider 启动需要很长时间
+      url: "/reference-smi-s-agent-takes-a-long-time-to-start.html"
+    - title: 存储池（卷）的总受管空间差异
+      url: "/reference-total-managed-space-for-a-storage-pool-aggregate-discrepancy.html"
+    - title: 未找到网络路径
+      url: "/reference-network-path-not-found-error-during-vm-deployment.html"
+    - title: 系统资源不足，无法完成请求的服务
+      url: "/reference-vm-provisioning-in-scvmm-fails-with-insufficient-system-resources-error.html"
+    - title: 在 SCVMM 中， SMB 共享大小降至 0
+      url: "/reference-smb-share-size-dropping-to-0-in-scvmm.html"
+    - title: SCVMM 重新扫描操作无法找到 SMI-S Provider 或与之通信
+      url: "/reference-scvmm-rescan-operation-failed-to-locate-or-communicate-with-smi-s-provider.html"
+  - title: 法律声明
+    url: "/reference-legal-notices.html"

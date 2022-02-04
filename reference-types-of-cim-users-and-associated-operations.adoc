@@ -1,0 +1,80 @@
+---
+permalink: reference-types-of-cim-users-and-associated-operations.html 
+sidebar: sidebar 
+keywords: smi-s provider, various types, control, access 
+summary: 使用 SMI-S Provider 时，您可以为用户分配各种类型的用户，以控制其对 CIM 服务器的访问。 
+---
+= CIM 用户的类型以及关联的操作
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用 SMI-S Provider 时，您可以为用户分配各种类型的用户，以控制其对 CIM 服务器的访问。
+
+从此版本开始，允许域用户以本地管理员组的域用户身份修改 SMI-S Provider 用户数据库和其他配置设置。
+
+下表列出了 CIM 服务器支持的用户以及每种类型可以执行的操作。
+
+[cols="2*"]
+|===
+| 用户类型 | 操作 
+
+
+ a| 
+管理员组的域管理员
+ a| 
+使用 `cimconfig` 和 `CIMUser` 命令配置 SMI-S Provider 并管理用户。例如：
+
+* 在 SMI-S Provider 的信任存储中添加或删除用户。
+* 启用，禁用或更改日志级别和跟踪配置。
+* 在 SMI-S Provider 中启用或禁用身份验证引擎。
+
+
+使用 `smis` 和 `cimcli` 命令进行存储管理和验证。例如：
+
+* 在 SMI-S Provider 存储库，数据库或缓存中添加或删除存储控制器或 SVM 。
+* 刷新 SMI-S Provider 缓存中的存储控制器或 SVM 。
+* 验证存储控制器或 SVM 管理。
+
+
+使用 SCVMM 图形用户界面执行 SCVMM 发现操作。
+
+
+
+ a| 
+本地管理员组的域用户
+
+
+
+ a| 
+本地管理员组的本地用户
+
+
+
+ a| 
+内置域管理员用户
+
+
+
+ a| 
+内置本地管理员用户
+
+
+
+ a| 
+用户组的域用户
+ a| 
+使用 SCVMM 图形用户界面执行 SCVMM 发现操作。
+
+
+
+ a| 
+用户组的本地用户
+
+|===
+[NOTE]
+====
+如果您在 Windows 主机上安装了 SMI-S Provider 并更改了任何 "`管理员` " 用户名，则必须从系统中注销，然后重新登录。在此期间， SMI-S Windows 服务会继承身份验证；因此，在管理员注销并重新登录之前，不会识别对凭据所做的任何更改。
+
+====

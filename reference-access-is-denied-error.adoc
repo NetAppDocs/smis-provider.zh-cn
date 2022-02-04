@@ -1,0 +1,34 @@
+---
+permalink: reference-access-is-denied-error.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: NetApp SMI-S Provider 遇到的问题。 
+---
+= 访问被拒绝错误
+:icons: font
+:imagesdir: ./media/
+
+
+* * 消息 *
++
+`访问被拒绝。`
+
+* * 问题描述 *
++
+在两种可能的情况下会出现此消息：
+
++
+** 如果您在从 " 开始 " 菜单快捷方式访问 SMI-S Provider 时未以管理员身份登录
+** 如果 SMI-S Provider 目录未指向 `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
+
+
+* * 更正操作 *
++
+完成与情况对应的操作：
+
++
+** 使用管理员级别权限登录并从 " 开始 " 菜单重新打开 SMI-S Provider ，或者右键单击并选择 * 以管理员身份运行 * 。
+** 使用管理员级别权限登录，然后手动将目录更改为 `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin` 。
+
+
+

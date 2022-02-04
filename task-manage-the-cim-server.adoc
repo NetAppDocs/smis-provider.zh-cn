@@ -1,0 +1,70 @@
+---
+permalink: task-manage-the-cim-server.html 
+sidebar: sidebar 
+keywords: smi-s provider, start, stop, cim server, review, status 
+summary: 您可以使用 SMI-S Provider 启动，停止和重新启动 CIM 服务器并查看其状态。 
+---
+= 管理 CIM 服务器
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以使用 SMI-S Provider 启动，停止和重新启动 CIM 服务器并查看其状态。
+
+
+
+== 开始之前
+
+* 您必须已具有管理员登录凭据。
+* 您必须已以管理员身份登录到主机系统。
+
+
+
+
+== 步骤
+
+. 访问 NetApp SMI-S Provider 。
+. 完成以下操作之一：
++
+[cols="3*"]
+|===
+| Action | 命令 | 追加信息 
+
+
+ a| 
+启动 CIM 服务器
+ a| 
+` * SMIS cimserver start*`
+ a| 
+输入命令后，每三分钟显示一次状态消息。如果尝试访问 CIM 服务器失败，则会再尝试五次与该服务器联系。
+
+
+
+ a| 
+停止 CIM 服务器
+ a| 
+` * SMIS cimserver stop*`
+ a| 
+不适用
+
+
+
+ a| 
+重新启动 CIM 服务器
+ a| 
+` * SMIS cimserver restart*`
+ a| 
+不适用
+
+
+
+ a| 
+查看 CIM 服务器状态
+ a| 
+` * SMIS cimserver status*`
+ a| 
+不适用
+
+|===
+

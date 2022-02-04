@@ -1,0 +1,57 @@
+---
+permalink: reference-slptool-command-options.html 
+sidebar: sidebar 
+keywords: slptool, command 
+summary: 您可以将这些选项与 slptool 命令结合使用。 
+---
+= slptool
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以将这些选项与 `slptool` 命令结合使用。
+
+
+
+== 语法
+
+`slptool` options_subcommand_
+
+
+
+== 位置
+
+`C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
+
+
+
+== 权限级别
+
+管理员（ Windows ）
+
+
+
+== 选项
+
+* * - i *
++
+指定一个或多个接口。
+
+* * — l*
++
+指定语言标记。
+
+* * — s*
++
+指定范围列表（以逗号分隔）。
+
+* * — u*
++
+指定一个接口。
+
+* * — v*
++
+显示 `slptool` 和 Openslp 的版本。
+
+

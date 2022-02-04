@@ -1,0 +1,58 @@
+---
+permalink: task-configure-log-settings.html 
+sidebar: sidebar 
+keywords: system message, directory, netapp si-s provider, cim server log 
+summary: 默认情况下，系统会记录所有系统消息。此外，默认情况下，系统消息日志位于安装 NetApp SMI-S Provider 的目录中的 logs 目录中。您可以更改写入 CIM 服务器日志的系统消息的位置和级别。例如，您可以选择将日志存储在您指定的目录中，并且只将致命系统消息写入 CIM 服务器日志。 
+---
+= 配置日志设置
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+默认情况下，系统会记录所有系统消息。此外，默认情况下，系统消息日志位于安装 NetApp SMI-S Provider 的目录中的 `logs` 目录中。您可以更改写入 CIM 服务器日志的系统消息的位置和级别。例如，您可以选择将日志存储在您指定的目录中，并且只将致命系统消息写入 CIM 服务器日志。
+
+
+
+== 开始之前
+
+* 您必须已具有管理员登录凭据。
+* 您必须已以管理员身份登录到主机系统。
+
+
+
+
+== 步骤
+
+. 访问 NetApp SMI-S Provider 。
+. 完成以下操作之一：
++
+[cols="3*"]
+|===
+| Action | 命令 | 追加信息 
+
+
+ a| 
+更改系统消息日志记录级别
+ a| 
+` * cimconfig -s logLevel=_new_log_level_ -p*`
+ a| 
+例如，如果要将日志记录级别更改为 "`information` " ，则应输入以下命令： + ` * cimconfig -s logLevel=information -p*`
+
+
+
+ a| 
+更改系统消息日志目录
+ a| 
+` * cimconfig -s logdir=new_log_directory -p*` 如果 ` _new_log_directory_` 包含空格，则必须用引号（` "_new log directory_"` ）将其括起来。
+ a| 
+例如，如果要将日志目录更改为 `serverlogs` ，则应输入以下命令：
+
+` * cimconfig -s logdir=serverlogs -p*`
+
+|===
+. 重新启动 CIM 服务器：
++
+` * SMIS cimserver restart*`
+
+

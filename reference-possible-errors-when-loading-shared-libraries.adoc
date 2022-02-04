@@ -1,0 +1,34 @@
+---
+permalink: reference-possible-errors-when-loading-shared-libraries.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: NetApp SMI-S Provider 遇到的问题。 
+---
+= 加载共享库时可能出现的错误
+:icons: font
+:imagesdir: ./media/
+
+
+* * 消息 *
++
+`加载共享库时出错： libssl.so 1.0.0 ：无法打开共享对象文件：无此文件或目录。`
+
++
+`smis cimserver` status 会显示 cimserver 正在正常运行，但所有其他 ` /usr/netapp/smims/pegasus/bin/cim` 命令都会显示各种故障消息。
+
++
+例如，在执行 `cimserver` 时，您可能会收到消息 `cimserver not running` ，或者您可能会收到消息 ` /usr/netapp/smims/pegasus/bin/ cimcli ：符号查找错误： /usr/netapp/smis/pegasus/cimcli ：未定义的符号： _ZNConver7asingTo16StringU64` 。这些示例并不全面。
+
+* * 问题描述 *
++
+如果未将 `LD_library_path` 环境设置为安装目录，则会显示此消息（以及类似消息）。
+
+* * 更正操作 *
++
+输入以下命令之一将 `LD_library_path` 环境变量设置为安装目录：
+
+
+
+`export LD_library_path=$LD_library_path ： /usr/netapp/smis/pegasus/lib`
+
+`setenv LD_library_path=$LD_library_path ： /usr/netapp/smis/pegasus/lib`

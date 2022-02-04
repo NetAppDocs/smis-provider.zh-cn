@@ -1,0 +1,54 @@
+---
+permalink: reference-supported-operating-systems.html 
+sidebar: sidebar 
+keywords: installing, smi-s provider, verify, windows, host, operating systems 
+summary: 在安装 SMI-S Provider 之前，您必须验证 Windows 主机是否正在运行受支持的操作系统。 
+---
+= 支持的操作系统版本
+:icons: font
+:imagesdir: ./media/
+:pp: &#43;&#43;
+
+
+[role="lead"]
+在安装 SMI-S Provider 之前，您必须验证 Windows 主机是否正在运行受支持的操作系统。
+
+[cols="3*"]
+|===
+| 操作系统 | 支持的版本 | 所需的客户端软件 
+
+
+ a| 
+Windows
+ a| 
+* Microsoft Windows Server 2016
+* Microsoft Windows Server 2019
+
+ a| 
+Microsoft Visual C ｛ pp ｝ 2010 运行时库会在 SMI-S Provider 安装期间自动安装。为了避免与运行时库相关的潜在问题，您必须安装 Microsoft Visual C ｛ pp ｝ 2010 可重新分配的软件包（ x86 ）。从以下位置： http://www.microsoft.com[]
+
+|===
+
+
+== SCVMM 2016 UR2.1 要求
+
+要使用 NetApp SMI-S Provider 5.2.4 及更高版本管理 NetApp 文件服务器，需要 System Center Virtual Machine Manager （ SCVMM ） 2016 Update Rollup （ UR） 2.1 。
+
+如果不使用此 `， SCVMM 2016 会将 NetApp 文件服务器中现有文件共享的` 总容量 `和` 可用容量 ` 选项值显示为` * 0 GB* 。
+
+要运行 SMI-S Provider ，提供程序主机必须满足以下规格：
+
+* 提供程序主机不能用于托管 Hyper-V 节点。
+* SCVMM 不能在提供程序主机上运行。
+* 提供程序主机不能运行内存密集型的其他程序。
+* 提供程序主机不能运行任何其他供应商提供的 SMI-S 提供程序。
+
+
+支持以下虚拟机管理程序：
+
+* Microsoft Windows Server 2016 Hyper-V
+* VMware ESX 5.0
+* VMware ESX 5.1
+* VMware ESX 5.5
+* VMware ESX 6.0
+

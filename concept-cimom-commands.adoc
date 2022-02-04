@@ -1,0 +1,13 @@
+---
+permalink: concept-cimom-commands.html 
+sidebar: sidebar 
+keywords: cimconfig, command, configure, cimom, settings, enable, disable, http, https, port numbers 
+summary: 您可以使用 cimconfig 命令配置 CIMOM 设置，例如启用和禁用 HTTP 和 HTTPS 以及更改 HTTP 和 HTTPS 端口号。 
+---
+= CIMOM 命令
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以使用 `cimconfig` 命令配置 CIMOM 设置，例如启用和禁用 HTTP 和 HTTPS 以及更改 HTTP 和 HTTPS 端口号。

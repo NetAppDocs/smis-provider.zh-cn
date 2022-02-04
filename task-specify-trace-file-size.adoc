@@ -1,0 +1,36 @@
+---
+permalink: task-specify-trace-file-size.html 
+sidebar: sidebar 
+keywords: trace, enable, trace, file, size, environment, variable, 10 mb 
+summary: 如果启用了跟踪，则默认情况下，最大跟踪文件大小为 100 MB 。您可以通过设置环境变量 Pegasus_trace_file_size 来增加或减小最大跟踪文件大小。跟踪文件大小的值可以是 10 MB 到 2 GB 。 
+---
+= 指定跟踪文件大小
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果启用了跟踪，则默认情况下，最大跟踪文件大小为 100 MB 。您可以通过设置环境变量 `Pegasus_trace_file_size` 来增加或减小最大跟踪文件大小。跟踪文件大小的值可以是 10 MB 到 2 GB 。
+
+
+
+== 开始之前
+
+* 您必须已具有管理员登录凭据。
+* 您必须已以管理员身份登录到主机系统。
+
+
+
+
+== 步骤
+
+. 访问 NetApp SMI-S Provider 。
+. 使用新的跟踪文件大小（以字节为单位）创建名为 `Pegasus_trace_file_size` 的系统或用户环境变量。
++
+_Windows documentation_has more information about creating environment variabls.
+
+. 重新启动 CIM 服务器：
++
+` * SMIS cimserver restart*`
+
+

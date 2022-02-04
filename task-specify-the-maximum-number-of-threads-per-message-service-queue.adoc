@@ -1,0 +1,44 @@
+---
+permalink: task-specify-the-maximum-number-of-threads-per-message-service-queue.html 
+sidebar: sidebar 
+keywords: default, smi-s provider, 80 threads, per message, service queue, machine performance 
+summary: 默认情况下， SMI-S Provider 允许每个消息服务队列使用 80 个线程。您可以将最大线程值指定为 1 到 5000 。增加最大线程数可能会影响 SMI-S Provider 计算机的性能，因此请仔细考虑是否需要增加此值。 
+---
+= 指定每个消息服务队列的最大线程数
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+默认情况下， SMI-S Provider 允许每个消息服务队列使用 80 个线程。您可以将最大线程值指定为 1 到 5000 。增加最大线程数可能会影响 SMI-S Provider 计算机的性能，因此请仔细考虑是否需要增加此值。
+
+
+
+== 开始之前
+
+* 您必须已具有管理员登录凭据。
+* 您必须已以管理员身份登录到主机系统。
+
+
+
+
+== 关于此任务
+
+如果跟踪文件显示多行 `资源不足` 输出，则必须以 500 为增量增加线程数。
+
+如果使用 ` * cimcli -n root/ONTAP Niall*` 命令将最大线程数设置为小于 20 ，则提供程序将无响应并在跟踪文件中返回 `线程池不足` 消息。如果发生这种情况，您必须以 500 为增量增加线程数，然后重新启动提供程序。
+
+
+
+== 步骤
+
+. 访问 NetApp SMI-S Provider 。
+. 使用新的最大线程值创建名为 `Pegasus_MAX_threads_per_SVC_queue` 的系统或用户环境变量。
++
+有关创建环境变量的信息，请参见 Windows 文档。
+
+. 重新启动 CIM 服务器：
++
+` * SMIS cimserver restart*`
+
+

@@ -1,0 +1,40 @@
+---
+permalink: reference-handling-smi-s-agent-crashes-in-windows.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: NetApp SMI-S Provider 遇到的问题。 
+---
+= SMI-S Provider 在 Windows 中崩溃
+:icons: font
+:imagesdir: ./media/
+
+
+* * 问题描述 *
++
+SMI-S Provider 在 Windows 中崩溃。
+
+* * 发生原因 *
++
+发生此问题描述的原因有多种，记录在崩溃时生成的文件中。
+
+* * 更正操作 *
++
+重新启动提供程序并将以下信息发送给技术支持以供进一步分析：
+
++
+** 从 `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\pegasus\logs` 目录转储文件
+** `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\pegasus\logs` 目录中的日志文件
+** 跟踪 `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\pegasus\traces` 目录中的文件
++
+跟踪文件中也会显示类似以下内容的消息：
+
++
+`2013 年 5 月 23 日 20 ： 46 ： 36.874 信息 Cimserver ： createMiniDump ： SMI-S Agent 已崩溃，正在尝试生成转储文件`
+
++
+`2013 年 5 月 23 日 20 ： 46 ： 37.14 信息 Cimserver ： createMiniDump ：进程转储到 C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\logs\SMI-S Agent-8be55da-2011_05_23-20_46_36.dmp`
+
+** `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\pegasus` 目录中的文件 `version.txt` 和 `cimserver_current.conf`
+
+
+

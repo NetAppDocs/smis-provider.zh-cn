@@ -1,0 +1,15 @@
+---
+permalink: concept-deployment-workflow.html 
+sidebar: sidebar 
+keywords: manage, monitor, storage, systems, smis-provider, software, validate, preliminary, configuration 
+summary: 在使用 SMI-S Provider 管理和监控存储系统之前，您必须先安装 SMI-S Provider 软件并验证初始配置。 
+---
+= 部署工作流
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+在使用 SMI-S Provider 管理和监控存储系统之前，您必须先安装 SMI-S Provider 软件并验证初始配置。
+
+image::../media/smi_s_provider_workflow.gif[SMI 提供程序工作流]

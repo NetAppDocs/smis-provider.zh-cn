@@ -1,0 +1,55 @@
+---
+permalink: reference-smis-version.html 
+sidebar: sidebar 
+keywords: smis version, command, display, netapp smi-s provider 
+summary: smi version 命令可显示 NetApp SMI-S Provider 的版本。 
+---
+= SMIS 版本
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用 `smis version` 命令可显示 NetApp SMI-S Provider 的版本。
+
+
+
+== 语法
+
+`smis 版本`
+
+` [-t ｛ * http* | * https * ｝ ]`
+
+
+
+== 位置
+
+`C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
+
+
+
+== 权限级别
+
+具有有效用户名和密码的用户
+
+
+
+== Parameters
+
+* ` * （ -t ｛ http ： https ｝ ） *`
++
+要使用的协议： HTTPS （默认）或 HTTP
+
+
+
+
+
+== 示例
+
+`smis version` 命令及其输出：
+
+[listing]
+----
+smis version
+ONTAP_SMIAgentSoftware.InstanceID="ONTAP5.2.2"
+----

@@ -1,0 +1,51 @@
+---
+permalink: reference-cannot-connect-to-localhost-5989-error.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: NetApp SMI-S Provider 遇到的问题。 
+---
+= 无法连接到 localhost ： 5989
+:icons: font
+:imagesdir: ./media/
+
+
+* * 消息 *
++
+`无法连接到 localhost ： 5989 。连接失败。正在尝试连接到 localhost ： 5989`
+
+* * 问题描述 *
++
+如果禁用了 HTTPS 连接或 HTTPS 端口未设置为 5989 ，或者提供程序已停止工作且仍处于挂起状态，则会显示此消息。
+
+* * 更正操作 *
++
+验证 `enableHttpsConnection` 和 `https 端口` 的值是否正确：
+
++
+`cimconfig -g enableHttpsConnection`
+
++
+`cimconfig -g https 端口`
+
++
+如果 `enableHttpsConnection` 未设置为 "`true` " ，请输入以下命令：
+
++
+`cimconfig -s enableHttpsConnection -p`
+
++
+`smis cimserver restart`
+
++
+如果 `https 端口` 未设置为 5989 ，请输入以下命令：
+
++
+`cimconfig -s https Port=5989 -p`
+
++
+`smis cimserver restart`
+
++
+如果提供程序已停止工作且仍处于挂起状态，请打开任务管理器并结束此过程，然后重新启动提供程序。
+
+

@@ -1,0 +1,32 @@
+---
+permalink: reference-network-path-not-found-error-during-vm-deployment.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: NetApp SMI-S Provider 遇到的问题。 
+---
+= 未找到网络路径
+:icons: font
+:imagesdir: ./media/
+
+
+* * 消息 *
++
+`未找到网络路径`
+
+* * 问题描述 *
++
+此消息反映的是 DNS 问题描述，在 SMB 共享上部署 VM 期间，如果主机在 DNS 服务器上没有记录，则会显示此消息。
+
++
+通常，在域中配置新主机时，域 DNS 服务器应在 24 到 48 小时内自动更新主机记录。但是，此更新并不总是自动进行的。
+
+* * 更正操作 *
++
+** 如果您是域管理员，请手动更新 DNS 主机记录。
+** 如果您不是域管理员，请更新主机文件（`C ： \Windows\System32\drivers\etc\hosts` ）。
++
+主机文件没有文件扩展名（` 。 txt` ）。
+
+
+
+

@@ -1,0 +1,112 @@
+---
+permalink: reference-smis-addsecure.html 
+sidebar: sidebar 
+keywords: smis, addsecure, command, https connection configuration, manage, monitor 
+summary: SMIS addsecure 命令可将具有 HTTPS 连接的存储系统添加到您的配置中，以使您能够管理和监控设备。除非有必要，否则应使用 SMIS addsecure ，而不是 SMIS add 。 
+---
+= SMIS addsecure
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用 `smis addsecure` 命令可将具有 HTTPS 连接的存储系统添加到您的配置中，以便管理和监控设备。除非有必要，否则应使用 `smis addsecure` ，而不是 `smis add` 。
+
+
+
+== 语法
+
+`smisaddsecure`
+
+` _storage_sys storage_sys_uster_` + ` （ -t ｛ * http* _ * * * * ｝ ）`
+
+[NOTE]
+====
+使用美国以外语言的操作系统英语不能使用 `addsecure` 命令。
+
+====
+
+
+== 位置
+
+`C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
+
+
+
+== 权限级别
+
+管理员（ Windows ）
+
+
+
+== Parameters
+
+* ` * _storage_sys_*`
++
+要添加的存储系统的名称或 IP 地址
+
++
+如果要指定 IP 地址，则可以使用 IPv4 或 IPv6 。支持压缩和完整 IPv6 地址，例如 `1001 ： 0002 ： 0000 ： 0000 ： 0000 ： 0000 ： 0003 ： 0004` 或 `1001 ： 2 ： 3 ： 4` 。
+
+* ` * _storage_sys_user_*`
++
+管理要添加的存储系统的管理员的用户名
+
+* ` * _storage_sys_pwd_*`
++
+可选：管理要添加的存储系统的管理员的密码
+
++
+作为最佳实践，出于安全原因，请勿使用此参数。此参数仅用于实现自动化和向后兼容性。
+
+* ` * （ -t ｛ http ： https ｝ ） *`
++
+要使用的协议： HTTPS （默认）或 HTTP
+
+
+
+
+
+== 存储系统代理和代理 - 客户端协议
+
+`smis add` 和 `smis addsecure` 命令可确定存储系统与提供程序之间使用的协议。` 项（ -t ｛ * http* | * https* ｝ ）` 参数用于确定提供程序与客户端之间使用的协议。
+
+`smis addsecure` 命令和 ` [-t ｛ * https* ｝ ]` 参数使用 SSL 加密进行连接，不允许使用未加密的流量。`smis add` 命令和 ` [-t ｛ * http* ｝ ]` 参数在不使用 SSL 加密的情况下进行连接，并且允许使用未加密的流量。
+
+在禁用 SSL 加密连接之前，应考虑环境的安全需求。
+
+
+
+== 示例
+
+通过 HTTPS 使用 IP 地址为 10.32.1.4 的 IPv4 添加存储系统：
+
+[listing]
+----
+smis addsecure 10.32.1.4 user2 password2
+----
+此时将显示一条确认消息，指出已成功添加存储系统。如果发生错误，则会显示一条错误消息。
+
+
+
+== 示例
+
+使用基于 HTTPS 的 IPv6 添加存储系统：
+
+[listing]
+----
+smis addsecure 1001:0002:0000:0000:0000:0000:0003:0004 user2 password2
+smis addsecure 1001:2::3:4 user2 password2
+----
+此时将显示一条确认消息，指出已成功添加存储系统。如果发生错误，则会显示一条错误消息。
+
+
+
+== 示例
+
+在非英语系统上，通过 HTTPS 添加 IP 地址为 10.32.1.4 的存储系统：
+
+[listing]
+----
+cimcli -n root/ontap ci ontap_filerdata hostname="10.32.1.4" username="vsadmin" password="PasSw0Rd" port=443 comMechanism="HTTPS" --timeout 180
+----

@@ -1,0 +1,14 @@
+---
+permalink: index.html 
+sidebar: sidebar 
+keywords: netapp smis-provider, documentation, installation, command based interface, netapp storage system 
+summary: 介绍如何安装和管理 NetApp SMI-S Provider ， NetApp SMI-S Provider 是一个基于命令的界面，用于检测和管理 NetApp 存储系统。 
+---
+= NetApp SMIS-Provider 文档
+:icons: font
+:imagesdir: ./media/
+
+
+欢迎使用 NetApp SMIS-Provider 信息库。您可以在此处找到有关 NetApp SMIS-Provider 软件的文档，其中包括如何安装和管理 NetApp SMI-S Provider ， NetApp SMI-S Provider 是一个基于命令的界面，用于检测和管理 NetApp 存储系统。
+
+有关早期版本的 NetApp SMIS-Provider 的文档，请参见 https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62215["NetApp 支持站点"]。
