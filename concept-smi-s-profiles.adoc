@@ -1,7 +1,7 @@
 ---
 permalink: concept-smi-s-profiles.html 
 sidebar: sidebar 
-keywords: smis-provider, profile, subprofile, comply, smis-s v1.7 
+keywords: smi-s provider, profile, subprofile, comply, smis-s v1.7 
 summary: SMI-S Provider 使用符合 SMI-S v1.7 的配置文件和子配置文件。有关 SMI-S v1.7 的信息，请参见 SNIA ：技术标准和软件页面。 
 ---
 = SMI-S 配置文件
