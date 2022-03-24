@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
   <head class="at-element-marker">
-  <title>slp 命令</title>
+  <title>概述</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="slp 命令" />
+  <meta property="og:title" content="概述" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/zh-cn/smis-provider/concept-slp-commands.html" />
-	<meta property="og:description" content="您可以使用 slptool 命令显示有关 WBEM 服务的信息。" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-cn/smis-provider/concept-manage-slp-overview.html" />
+	<meta property="og:description" content="此 slp 服务广播 WBEM 服务。启用此 slp 服务后，客户端应用程序可以发现此 CIMOM 服务器。您也可以使用 slp.conf 文件指定 slp 配置设置。" />
   <meta property="og:image" content="https://docs.netapp.com/zh-cn/smis-provider/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="您可以使用 slptool 命令显示有关 WBEM 服务的信息。">
-  <meta name="keywords" content=" slptool, command, display information, wbem services"><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="此 slp 服务广播 WBEM 服务。启用此 slp 服务后，客户端应用程序可以发现此 CIMOM 服务器。您也可以使用 slp.conf 文件指定 slp 配置设置。">
+  <meta name="keywords" content=" slp, service broadcasts, wbem services, slp, ebable, client, application, discover, cimom, configuration, settings"><!-- Icons -->
   <link rel="icon" href="/zh-cn/smis-provider/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -148,8 +148,8 @@
   <div class="page-nav-toolbar">
     <div id="version-dropdown"></div>
     <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/smis-provider/issues/new?body=Page%3A%20[slp 命令](https://docs.netapp.com/zh-cn/smis-provider/concept-slp-commands.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/smis-provider/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/smis-provider/blob/main/concept-slp-commands.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/smis-provider/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/smis-provider/issues/new?body=Page%3A%20[概述](https://docs.netapp.com/zh-cn/smis-provider/concept-manage-slp-overview.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/smis-provider/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/smis-provider/blob/main/concept-manage-slp-overview.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/smis-provider/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/smis-provider/images/article-sm.svg" class="github-icon" />提供者指南</a>
     </div>
     <div class="page-nav-container">
@@ -272,13 +272,13 @@
           <ul class="n-menu__list">
             <li class="n-menu__list-column">
               <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/smis-provider/concept-slp-commands.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                  <a href="https://docs.netapp.com/zh-cn/smis-provider/concept-manage-slp-overview.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/smis-provider/concept-slp-commands.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                  <a href="https://docs.netapp.com/us-en/smis-provider/concept-manage-slp-overview.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/smis-provider/concept-slp-commands.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                  <a href="https://docs.netapp.com/ja-jp/smis-provider/concept-manage-slp-overview.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/smis-provider/concept-slp-commands.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                  <a href="https://docs.netapp.com/ko-kr/smis-provider/concept-manage-slp-overview.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
                 </li></ul>
             </li>
           </ul>
@@ -367,6 +367,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -390,6 +392,8 @@
             准备部署
           </a>
           
+
+
 
 
 
@@ -479,6 +483,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -507,6 +513,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -530,6 +538,8 @@
             管理日志记录和跟踪
           </a>
           
+
+
 
     
       <ul class="subfolders" style="display:none;">
@@ -641,6 +651,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -662,6 +674,17 @@
             管理 SLp
           </a>
           
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/zh-cn/smis-provider/pdfs/pages/concept-manage-slp-overview.pdf" >
+    <img src="/zh-cn/smis-provider/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
+
+
 
     
       <ul class="subfolders" style="display:none;">
@@ -799,6 +822,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -828,15 +853,6 @@
 
 
           
-            <li class="active pdf-hide">
-  <a target="_blank" href="/zh-cn/smis-provider/pdfs/pages/concept-slp-commands.pdf" >
-    <img src="/zh-cn/smis-provider/images/pdf.png" width="16" height="16"/>
-    PDF of this page
-  </a>
-</li>
-
-
-          
         </li>
       </ul>
     
@@ -857,6 +873,8 @@
             对 SMI-S Provider 进行故障排除
           </a>
           
+
+
 
 
 
@@ -957,10 +975,12 @@
         NetApp SMI-S Provider 文档
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/releasenotes.html">
         发行说明
-      </a></li><li class="subfolders "><a href="/zh-cn/smis-provider/concept-data-ontap-smi-s-agent-overview.html">
+      </a></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> NetApp SMI-S Provider 概述</div>
       </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/reference-new-in-this-release-smis.html">
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/concept-overview.html">
+        概述
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/reference-new-in-this-release-smis.html">
         此版本中的新增功能
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/reference-uses-of-data-ontap-smi-s-agent.html">
         使用 NetApp SMI-S Provider
@@ -976,10 +996,12 @@
         SMI-S 配置文件
       </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/concept-deployment-workflow.html">
         部署工作流
-      </a></li><li class="subfolders "><a href="/zh-cn/smis-provider/concept-prepare-for-deployment.html">
+      </a></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 准备部署</div>
       </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/reference-supported-operating-systems.html">
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/concept-prepare-for-deployment-overview.html">
+        概述
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/reference-supported-operating-systems.html">
         支持的操作系统版本
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/reference-hardware-requirements.html">
         硬件要求
@@ -989,20 +1011,22 @@
         支持的集群平台
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/task-download-smi-s-provider.html">
         下载 NetApp SMI-S Provider 软件包
-      </a></li></ul></li><li class="subfolders "><a href="/zh-cn/smis-provider/concept-install-and-uninstall-ontap-smi-s-agent.html">
+      </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 安装 NetApp SMI-S Provider</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/task-install-smi-s-agent-on-a-windows-host.html">
         在 Windows 主机上安装 NetApp SMI-S Provider
-      </a></li></ul></li><li class="subfolders "><a href="/zh-cn/smis-provider/concept-uninstall-smi-s-provider.html">
+      </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 卸载 NetApp SMI-S Provider</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/task-uninstall-smi-s-agent-from-a-windows-host.html">
         从 Windows 主机卸载 NetApp SMI-S Provider
-      </a></li></ul></li><li class="subfolders "><a href="/zh-cn/smis-provider/concept-preconfiguration-task-overview.html">
+      </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 预配置验证</div>
       </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/task-verify-the-cim-server-status.html">
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/concept-preconfiguration-task-overview.html">
+        概述
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/task-verify-the-cim-server-status.html">
         验证 CIM 服务器状态
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/task-add-cim-server-users.html">
         添加 CIM 服务器用户
@@ -1014,17 +1038,21 @@
         管理 CIM 服务器
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/task-manage-storage-systems.html">
         管理存储系统
-      </a></li><li class="subfolders "><a href="/zh-cn/smis-provider/task-manage-cim-server-users.html">
+      </a></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 管理 CIM 服务器用户</div>
       </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/reference-types-of-cim-users-and-associated-operations.html">
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/task-manage-cim-server-users-overview.html">
+        概述
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/reference-types-of-cim-users-and-associated-operations.html">
         CIM 用户的类型以及关联的操作
       </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/task-manage-cimom-configuration-settings.html">
         管理 CIMOM 配置设置
-      </a></li><li class="subfolders "><a href="/zh-cn/smis-provider/concept-manage-logging-and-tracing.html">
+      </a></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 管理日志记录和跟踪</div>
       </a>
-      <ul><li class="subfolders "><a href="/zh-cn/smis-provider/task-configure-log-settings.html">
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/concept-manage-logging-and-tracing-overview.html">
+        概述
+      </a></li><li class="subfolders "><a href="/zh-cn/smis-provider/task-configure-log-settings.html">
         <div class="na-navbar-padding"> 配置日志设置</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/reference-logging-levels.html">
@@ -1043,10 +1071,12 @@
         指定保存的跟踪文件数
       </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/task-enable-or-disable-audit-log-for-smi-s-commands.html">
         启用或禁用 SMI-S 命令的审核日志
-      </a></li></ul></li><li class="subfolders "><a href="/zh-cn/smis-provider/concept-manage-smi-s-agent-advanced-settings.html">
+      </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 管理 SMI-S Provider 高级设置</div>
       </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/task-specify-the-smi-s-agent-cache-refresh-interval.html">
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/concept-manage-smi-s-agent-advanced-settings-overview.html">
+        概述
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/task-specify-the-smi-s-agent-cache-refresh-interval.html">
         指定 SMI-S Provider 自动缓存刷新间隔
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/task-specify-the-concrete-job-lifetime-value.html">
         指定具体的作业生命周期值
@@ -1058,28 +1088,32 @@
         启用或禁用 NetApp SMI-S Provider 的身份验证
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/task-enable-indications-in-smi-s-agent.html">
         在 SMI-S Provider 中启用指示
-      </a></li></ul></li><li class="subfolders "><a href="/zh-cn/smis-provider/concept-manage-slp.html">
+      </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 管理 SLp</div>
       </a>
-      <ul><li class="subfolders "><a href="/zh-cn/smis-provider/concept-specify-slp-configuration-options.html">
+      <ul><li class="  active "><a class="na-navbar-padding" href="/zh-cn/smis-provider/concept-manage-slp-overview.html">
+        概述
+      </a></li><li class="subfolders "><a href="/zh-cn/smis-provider/concept-specify-slp-configuration-options.html">
         <div class="na-navbar-padding"> 指定 slp 配置选项</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/reference-editing-the-slp-conf-file.html">
         slp.conf 文件管理
-      </a></li></ul></li></ul></li><li class="subfolders "><a href="/zh-cn/smis-provider/concept-cimom-commands.html">
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> CIMOM 命令</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/reference-cimconfig-command-options.html">
         cimconfig
-      </a></li></ul></li><li class="subfolders "><a href="/zh-cn/smis-provider/concept-cim-user-commands.html">
+      </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> CIM 用户命令</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/reference-cimuser-command-options.html">
         CIMSUser
-      </a></li></ul></li><li class="subfolders "><a href="/zh-cn/smis-provider/concept-smi-s-provider-commands.html">
+      </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> SMI-S Provider 命令</div>
       </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/reference-smis-add.html">
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/concept-smi-s-provider-commands-overview.html">
+        概述
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/reference-smis-add.html">
         SMIS 添加
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/reference-smis-addsecure.html">
         SMIS addsecure
@@ -1121,7 +1155,7 @@
         SMIS 版本
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/reference-smis-volumes.html">
         SMIS 卷
-      </a></li></ul></li><li class="subfolders  active "><a href="/zh-cn/smis-provider/concept-slp-commands.html">
+      </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> slp 命令</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/reference-slptool-command-options.html">
@@ -1130,10 +1164,12 @@
         slptool 查找数据
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/reference-slptool-findsrvs.html">
         slptool findsrvs
-      </a></li></ul></li><li class="subfolders "><a href="/zh-cn/smis-provider/concept-troubleshoot-smi-s-agent.html">
+      </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 对 SMI-S Provider 进行故障排除</div>
       </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/reference-access-is-denied-error.html">
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/concept-troubleshoot-smi-s-agent-overview.html">
+        概述
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/reference-access-is-denied-error.html">
         访问被拒绝错误
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/reference-possible-errors-when-loading-shared-libraries.html">
         加载共享库时可能出现的错误
@@ -1236,14 +1272,14 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">slp 命令</h1>
+  <h1 class="n-doc__component-detail-heading">概述</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-02-04 16:48:22 +0000">02/04/2022</time>
+    <time datetime="2022-03-24 22:01:10 +0000">03/24/2022</time>
     
   
 
@@ -1251,7 +1287,10 @@
 </p>
 
 <div class="paragraph lead">
-<p>您可以使用 <code>slptool</code> 命令显示有关 WBEM 服务的信息。</p>
+<p>此 slp 服务广播 WBEM 服务。启用此 slp 服务后，客户端应用程序可以发现此 CIMOM 服务器。您也可以使用 <code>slp.conf</code> 文件指定 slp 配置设置。</p>
+</div>
+<div class="paragraph">
+<p>如果尚未启用此 slp 服务，则可以使用 <code>smis slpd start</code> 命令启动此 slp 服务。要停止此 slp 服务，请使用 <code>smis slpd stop</code> 命令。</p>
 </div>
 
     </article>
