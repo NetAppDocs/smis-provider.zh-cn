@@ -1,10 +1,10 @@
 ---
-permalink: task-manage-cim-server-users.html 
+permalink: task-manage-cim-server-users-overview.html 
 sidebar: sidebar 
 keywords: smi-s provider, add, remove, remove, cim users, authorized, cim server, cim user, password, modify 
 summary: 您可以使用 SMI-S Provider 添加和删除有权使用 CIM 服务器的 CIM 用户。您还可以列出所有当前的 CIM 用户并修改其密码。 
 ---
-= 管理 CIM 服务器用户
+= 概述
 :icons: font
 :imagesdir: ./media/
 
@@ -12,18 +12,12 @@ summary: 您可以使用 SMI-S Provider 添加和删除有权使用 CIM 服务�
 [role="lead"]
 您可以使用 SMI-S Provider 添加和删除有权使用 CIM 服务器的 CIM 用户。您还可以列出所有当前的 CIM 用户并修改其密码。
 
-
-
-== 开始之前
-
+.开始之前
 * 您必须已具有管理员登录凭据。
 * 您必须已以管理员身份登录到主机系统。
 
 
-
-
-== 步骤
-
+.步骤
 . 访问 NetApp SMI-S Provider 。
 . 创建本地用户帐户。
 . 将此用户添加到管理员组。

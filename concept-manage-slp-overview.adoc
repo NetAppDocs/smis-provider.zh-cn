@@ -1,10 +1,10 @@
 ---
-permalink: concept-manage-slp.html 
+permalink: concept-manage-slp-overview.html 
 sidebar: sidebar 
 keywords: slp, service broadcasts, wbem services, slp, ebable, client, application, discover, cimom, configuration, settings 
 summary: 此 slp 服务广播 WBEM 服务。启用此 slp 服务后，客户端应用程序可以发现此 CIMOM 服务器。您也可以使用 slp.conf 文件指定 slp 配置设置。 
 ---
-= 管理 SLp
+= 概述
 :icons: font
 :imagesdir: ./media/
 

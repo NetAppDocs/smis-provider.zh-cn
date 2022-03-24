@@ -12,24 +12,14 @@ summary: 您可以使用 SMI-S Provider 管理 CIMOM 配置，例如启用或禁
 [role="lead"]
 您可以使用 SMI-S Provider 管理 CIMOM 配置，例如启用或禁用 HTTP 和 HTTPS 连接以及更改 HTTP 和 HTTPS 端口号。默认情况下， HTTP 连接处于启用状态，允许客户端在不使用 SSL 加密的情况下连接到 CIM 服务器。
 
-
-
-== 开始之前
-
+.开始之前
 * 您必须已具有管理员登录凭据。
 * 您必须已以管理员身份登录到主机系统。
 
 
-
-
-== 关于此任务
-
 如果您的环境需要加密传入和传出 CIM 服务器的流量，则必须先禁用 HTTP 连接，然后验证是否已为 CIM 服务器启用 HTTPS 连接。
 
-
-
-== 步骤
-
+.步骤
 . 访问 NetApp SMI-S Provider 。
 . 完成以下操作之一：
 +

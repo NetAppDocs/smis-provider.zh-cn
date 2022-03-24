@@ -12,27 +12,11 @@ summary: sms config show 命令可列出当前的 CIM 服务器配置信息。
 [role="lead"]
 `smis config show` 命令可列出当前的 CIM 服务器配置信息。
 
-
-
-== 语法
-
 `smis config show`
-
-
-
-== 位置
 
 `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
 
-
-
-== 权限级别
-
 管理员（ Windows ）
-
-
-
-== 示例
 
 `smis config show` 及其输出：
 

@@ -12,18 +12,12 @@ summary: 在配置 SMI-S Provider 之前，您必须至少向 CIMOM 存储库添
 [role="lead"]
 在配置 SMI-S Provider 之前，您必须至少向 CIMOM 存储库添加一个存储系统，然后验证存储系统是否正常工作。
 
-
-
-== 开始之前
-
+.开始之前
 * 您必须已以管理员身份登录。
 * 您必须已访问 SMI-S Provider 。
 
 
-
-
-== 步骤
-
+.步骤
 . 至少将一个存储系统添加到 CIMOM 存储库：
 +
 [cols="2*"]

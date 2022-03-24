@@ -12,18 +12,12 @@ summary: 您可以使用 SMI-S Provider 启动，停止和重新启动 CIM 服�
 [role="lead"]
 您可以使用 SMI-S Provider 启动，停止和重新启动 CIM 服务器并查看其状态。
 
-
-
-== 开始之前
-
+.开始之前
 * 您必须已具有管理员登录凭据。
 * 您必须已以管理员身份登录到主机系统。
 
 
-
-
-== 步骤
-
+.步骤
 . 访问 NetApp SMI-S Provider 。
 . 完成以下操作之一：
 +

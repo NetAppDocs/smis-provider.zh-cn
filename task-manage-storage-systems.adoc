@@ -12,17 +12,10 @@ summary: 您可以使用 NetApp SMI-S Provider 命令在 CIMOM 存储库中添�
 [role="lead"]
 您可以使用 NetApp SMI-S Provider 命令在 CIMOM 存储库中添加，删除和列出存储系统。您还可以列出存储系统的 NFS 和 CIFS 导出以及导出的 LUN 。
 
-
-
-== 开始之前
-
+.开始之前
 * 您必须已具有管理员登录凭据。
 * 您必须已以管理员身份登录到主机系统。
 
-
-
-
-== 关于此任务
 
 对于 ONTAP ，您必须为 SVM 指定管理 IP 地址，而不是为集群 IP 地址，并且必须为 vsadmin 用户提供凭据。SMI-S Provider 不支持集群 IP 地址或节点管理 IP 地址，也不支持节点管理或节点 SVM 。
 
@@ -31,10 +24,7 @@ summary: 您可以使用 NetApp SMI-S Provider 命令在 CIMOM 存储库中添�
 将管理 LIF 添加到 SMI-S Provider 时，应将其数据协议值设置为 `none` 。
 
 ====
-
-
-== 步骤
-
+.步骤
 . 访问 NetApp SMI-S Provider 。
 . 完成以下操作之一：
 +

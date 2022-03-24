@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: smi-s provider, first time, validate, preliminary, configuration 
 summary: 首次使用 SMI-S Provider 之前，必须验证初始配置。 
 ---
-= 预配置验证
+= 概述
 :icons: font
 :imagesdir: ./media/
 

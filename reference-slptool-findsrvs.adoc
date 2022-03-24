@@ -12,37 +12,18 @@ summary: slptool findsrvs 命令可查找在网络上运行的 WBEM 服务。
 [role="lead"]
 `slptool findsrvs` 命令可查找在网络上运行的 WBEM 服务。
 
-
-
-== 语法
-
 `slptool findsrvs _service_`
-
-
-
-== 位置
 
 `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
 
-
-
-== 权限级别
-
 具有有效用户名和密码的用户
 
-
-
-== Parameters
-
+.Parameters
 * ` * _service_*`
 +
 指定服务类型。
 
 
-
-
-
-== 示例
 
 `slptool findsrvs` 命令及其输出：
 

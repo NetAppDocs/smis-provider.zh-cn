@@ -6,7 +6,6 @@
   <block id="135b308ed83c53f1516b7c754566d1c4" category="section-title">开始之前</block>
   <block id="994bc0ff42c205594c4814030a17efe0" category="list-text">您必须已具有管理员登录凭据。</block>
   <block id="26773937c2e2d4c88812921132664b11" category="list-text">您必须已以管理员身份登录到主机系统。</block>
-  <block id="bbe48fb854ea022537208eeeff822f91" category="section-title">关于此任务</block>
   <block id="2c490b3eac6005d8eb9fbc14dbe36f9c" category="paragraph">当 `Pegasus_disable_indication` 设置为 `false` 时， NetApp SMI-S Provider 会启用警报（`ontap_Alertindication` ），文件系统配额（`ontap_FSQuotaindication` ）和生命周期指示。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="section-title">步骤</block>
   <block id="56b362d7bdbaa18e1b3561d819b06f58" category="list-text">访问 NetApp SMI-S Provider 。</block>
@@ -50,16 +49,12 @@
   <block id="180678484046c8a3ab98f0203e6e9339" category="summary">SMIS initiators 命令可显示存储系统的光纤通道和 iSCSI 端口信息。</block>
   <block id="16ff291e6d6d13f763ca86e4e8eb8ba4" category="doc">SMIS 启动程序</block>
   <block id="1587d4e99e358031eaea1724b454fbaa" category="paragraph">`smis initiators` 命令可显示存储系统的光纤通道和 iSCSI 端口信息。</block>
-  <block id="92e9d6227d5534e7afc27a11179c808e" category="section-title">语法</block>
   <block id="156f23c674849579c407d5cecbca0755" category="paragraph">` [-t ｛ * http* | * https * ｝ ]`</block>
-  <block id="ce5bf551379459c1c61d2a204061c455" category="section-title">位置</block>
   <block id="cd6755b2c9f54bad96cb3bc8b5a98590" category="paragraph">`C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`</block>
-  <block id="916e2ff82dbb18426a464d80b54d1291" category="section-title">权限级别</block>
   <block id="59ce60cbfbc99e9cb8dc6496fa7b9c6f" category="paragraph">具有有效用户名和密码的用户</block>
   <block id="3225a10b07f1580f10dee4abc3779e6c" category="section-title">Parameters</block>
   <block id="7bd03536986773d36c70ec1b56ba369b" category="list-text">` * （ -t ｛ http ： https ｝ ） *`</block>
   <block id="cf5409b8ffde932c63f101760e4f30c1" category="paragraph">要使用的协议： HTTPS （默认）或 HTTP</block>
-  <block id="0a52730597fb4ffa01fc117d9e71e3a9" category="section-title">示例</block>
   <block id="676405883234ee0a42883953471df3fa" category="paragraph">`smis initiators` 命令及其缩写输出：</block>
   <block id="3e24f09af977e3a1af1e1cc6f13f637c" category="doc">运行时库问题</block>
   <block id="9ff702207c5c34d0a659bd2093b21d08" category="list-text">* 问题描述 *</block>
@@ -148,7 +143,6 @@
   <block id="2e0328b56b7df525664960879f95f5d1" category="paragraph">SMIS 工具的默认超时值为 180 秒。</block>
   <block id="15edb1059f99e2228e68e3675566c5dd" category="summary">您可以将这些选项与 slptool 命令结合使用。</block>
   <block id="782cf12ad9621d4dbedc43983800f6e7" category="doc">slptool</block>
-  <block id="d0d353e5cf2fcbacba08bc1c92a12307" category="paragraph">您可以将这些选项与 `slptool` 命令结合使用。</block>
   <block id="4842f8fa99c29d1241eea4652830125e" category="paragraph">`slptool` options_subcommand_</block>
   <block id="eb569f08830457ab3c7049a3b391c4b6" category="paragraph">管理员（ Windows ）</block>
   <block id="dae8ace18bdcbcc6ae5aece263e14fe8" category="section-title">选项</block>
@@ -359,7 +353,6 @@
   <block id="ce7b7453e7d182fcfcfa37f70a3827c2" category="doc">对 SMI-S Provider 进行故障排除</block>
   <block id="1c8b1ceffcc2e5c41818948735527a7f" category="summary">您可以使用 cimconfig 命令管理 CIMOM 配置设置。输入 cimconfig 命令或为 NetApp SMI-S Provider 配置值创建环境变量后，必须使用 SMIS cimserver restart 命令重新启动 CIM 服务器。</block>
   <block id="95cdbdc16fcdaafb435475409dea8c94" category="doc">cimconfig</block>
-  <block id="8f2ee1d8bcd811b5741f3d753e03018b" category="paragraph">您可以使用 `cimconfig` 命令管理 CIMOM 配置设置。输入 `cimconfig` 命令或为 NetApp SMI-S Provider 配置值创建环境变量后，必须使用 `smis cimserver restart` 命令重新启动 CIM 服务器。</block>
   <block id="ef64b539714bc207f3683e87baca5652" category="paragraph">`cimconfig _options_`</block>
   <block id="b00916f5307aa32dbca536f03d14c7ff" category="list-text">* — c*</block>
   <block id="1c31447f2eb1c48c57a46f3a61518e99" category="paragraph">指定配置设置适用场景为当前 CIMOM 配置。</block>
@@ -431,9 +424,7 @@
   <block id="7cad355a706b81e0e0fa33d6480aa45f" category="paragraph">如果使用新的 GPO 更新安全基础架构，则可能会发生此问题描述。如果它们在 SMI-S Provider 主机重新启动后生效，则 SCVMM 主机可能不信任 SMI-S Provider 或主机。</block>
   <block id="4cd0860930e09cd27dfcee8471ac354b" category="list-text">卸载 SMI-S Provider 并重新安装。</block>
   <block id="f77f4c33944f06bd53375ca2dde35154" category="list-text">在 SCVMM 中为 SMI-S Provider 运行重新扫描操作。</block>
-  <block id="6d9deec510a9dbd5670d2464c1902c8a" category="summary">您可以使用 cimconfig 命令配置 CIMOM 设置，例如启用和禁用 HTTP 和 HTTPS 以及更改 HTTP 和 HTTPS 端口号。</block>
   <block id="6a38d5667ddfdd47d4e489f85f431cd1" category="doc">CIMOM 命令</block>
-  <block id="3dce8828c67441b48d9742719e386d00" category="paragraph">您可以使用 `cimconfig` 命令配置 CIMOM 设置，例如启用和禁用 HTTP 和 HTTPS 以及更改 HTTP 和 HTTPS 端口号。</block>
   <block id="9184b8f3aad09d0dfd024d22eb2c70e4" category="doc">存储池（卷）的总受管空间差异</block>
   <block id="cef45fe00693880d7c9e967f4584427a" category="paragraph">如果您使用的是另一种存储管理工具，例如 FilerView ，则可能会发现为存储池（卷）的总受管空间报告的大小与 SMI-S Provider 返回的大小不同。</block>
   <block id="956ed70b442d136dd2a48113d0e2fa43" category="paragraph">之所以出现这种差异，是因为 SMI-S 提供程序返回的大小包含 WAFL 和 Snapshot 预留，而 FilerView 和其他工具仅显示可用空间，而不显示 WAFL 和 Snapshot 预留。</block>
@@ -454,12 +445,10 @@
   <block id="db348a1845bc8863a15226d1296f5943" category="summary">借助 NetApp SMI-S Provider ，您可以更轻松地管理和监控存储系统以及管理存储系统的 LUN 和卷。</block>
   <block id="a6a30f6fc1ea5086f1f6a22630def76e" category="doc">使用 NetApp SMI-S Provider</block>
   <block id="df0ce33f18f070a6ddb1ef19fb303e98" category="paragraph">您可以使用 NetApp SMI-S Provider 使用 System Center 2016 - Virtual Machine Manager 或 System Center 2016 - Virtual Machine Manager 管理存储控制器。</block>
-  <block id="11bc05d561d9d50782c6c96be8f925a3" category="summary">您可以使用 slptool 命令显示有关 WBEM 服务的信息。</block>
   <block id="f367b7dd9d33500bed829af817d25418" category="doc">slp 命令</block>
   <block id="44875d713d6680857ff840765882108e" category="paragraph">您可以使用 `slptool` 命令显示有关 WBEM 服务的信息。</block>
   <block id="36bc4391121621ccbd43a1d20890bbfb" category="summary">您可以安装 NetApp SMI-S Provider 软件，以便管理运行 Data ONTAP 的存储系统。默认情况下， NetApp SMI-S Provider 软件安装在 C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus 目录中。</block>
   <block id="b7ceff6488201ada2adc1183d4779baa" category="doc">在 Windows 主机上安装 NetApp SMI-S Provider</block>
-  <block id="346ed59a2eefbd3567dc9ec78ac266ca" category="paragraph">您可以安装 NetApp SMI-S Provider 软件，以便管理运行 Data ONTAP 的存储系统。默认情况下， NetApp SMI-S Provider 软件安装在 `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus` 目录中。</block>
   <block id="e9c2e2fe706f7cb451b683459ed09ff9" category="paragraph">您必须已拥有以下凭据和软件：</block>
   <block id="b08dc0dbe07b37cce50f2429165603b4" category="list-text">Windows 管理员帐户的登录凭据</block>
   <block id="99b057df2c522b2a7b89ebfdd2f864f4" category="list-text">NetApp SMI-S Provider 软件包</block>
@@ -680,7 +669,6 @@
   <block id="2404e95dd016724f713868519e1ef7ce" category="paragraph">重新启动 CIM 服务器。</block>
   <block id="ca405589dcd974768e24cc65b8a0eb5f" category="list-text">* 状态 *</block>
   <block id="e3e3ed21d218d78f0b06fa5e0fad5c74" category="paragraph">获取 CIM 服务器的状态。</block>
-  <block id="dbbcf46b590e39b73cffaf7b7db5fa9a" category="summary">您可以在 Windows 主机上安装 NetApp SMI-S Provider 。但是，您不能还原或降级到早期版本。</block>
   <block id="f212745ed87111d0afe9888395028611" category="doc">安装 NetApp SMI-S Provider</block>
   <block id="f82d8520c4ff1fabe883e81ff945126f" category="summary">SMIS exports 命令可显示存储系统的网络连接存储（ NAS ）导出。</block>
   <block id="0e9399f4b71116079d9243ed16264d69" category="doc">SMIS 导出</block>
@@ -821,7 +809,6 @@
   <block id="86bb67cb5a15d1e42ce1716ea8249d24" category="paragraph">` * cimconfig -s https Port=5556 -p*`</block>
   <block id="18ee0f99deeb67b9b7a6ef5a3679a09d" category="summary">您可以使用 CIMUser 选项添加，删除，修改和列出 CIM 服务器用户。</block>
   <block id="b07eb8a32f2cf3bb81c70d37e7d0aaba" category="doc">CIMSUser</block>
-  <block id="a98644a52e80c4640e56c2623f13054c" category="paragraph">您可以使用 `CIMUser` 选项添加，删除，修改和列出 CIM 服务器用户。</block>
   <block id="9552caf388402734ab598332ecd8156b" category="paragraph">`CIMUser _options_`</block>
   <block id="53c04e8ac52d6bd33683c9dbf79535ac" category="list-text">* — A*</block>
   <block id="88553736fbb741bf0629274dee170888" category="paragraph">添加 CIM 用户。</block>
@@ -902,4 +889,8 @@
   <block id="1456d67be31dd1251336fefc3219f261" category="paragraph">有关早期版本的 NetApp SMI-S Provider 的文档，请参见<block ref="c1cc34bfdb0a4a31c8960c236e9f731a" category="inline-link-rx"></block>。</block>
   <block id="336d68bc1f4a7a4dd4d6826a8c11877e" category="doc">《 NetApp SMI-S Provider 发行说明》</block>
   <block id="6e3b9e20f7f45cc7004fb8412900830e" category="paragraph">。<block ref="b5aeaaea80149eaf6be32e7995332412" category="inline-link-rx"></block> 描述新功能，升级说明，已修复的问题，已知限制和已知问题。</block>
+  <block id="3b878279a04dc47d60932cb294d96259" category="doc">概述</block>
+  <block id="7944dd24fa0a41aefb89e769af345698" category="paragraph">您可以使用 `cimconfig` 命令配置 CIMOM 设置，例如启用和禁用 HTTP 和 HTTPS 以及更改 HTTP 和 HTTPS 端口号。输入 `cimconfig` 命令或为 NetApp SMI-S Provider 配置值创建环境变量后，必须使用 `smis cimserver restart` 命令重新启动 CIM 服务器。</block>
+  <block id="5a70b73b0330c1b99f99d9417a0348a0" category="paragraph">您可以使用 `CIMUser` 命令添加，删除，删除，修改和列出 CIM 服务器用户，以及管理其密码。</block>
+  <block id="b7c334318e075f9c3e093acfe23e8a85" category="paragraph">您可以安装 NetApp SMI-S Provider 软件，以便管理运行 Data ONTAP 的存储系统。但是，您不能还原或降级到早期版本。默认情况下， NetApp SMI-S Provider 软件安装在 `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus` 目录中。</block>
 </blocks>

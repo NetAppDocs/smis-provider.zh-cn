@@ -12,39 +12,20 @@ summary: SMIS CRPs 命令介绍 NetApp SMI-S Provider 支持的已注册 CIM 配
 [role="lead"]
 `smis` 命令可描述 NetApp SMI-S Provider 支持的已注册 CIM 配置文件，包括 NetApp SMI-S Provider 配置文件。
 
-
-
-== 语法
-
 SMIS CRP.
 
 ` [-t ｛ * http* | * https * ｝ ]`
 
-
-
-== 位置
-
 `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
-
-
-
-== 权限级别
 
 具有有效用户名和密码的用户
 
-
-
-== Parameters
-
+.Parameters
 * ` * （ -t ｛ http ： https ｝ ） *`
 +
 要使用的协议： HTTPS （默认）或 HTTP
 
 
-
-
-
-== 示例
 
 `smis` 命令及其输出：
 

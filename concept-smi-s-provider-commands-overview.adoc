@@ -1,10 +1,10 @@
 ---
-permalink: concept-smi-s-provider-commands.html 
+permalink: concept-smi-s-provider-commands-overview.html 
 sidebar: sidebar 
 keywords: smis, commands, manage, storage, system, display, cim object manager 
 summary: 您可以使用 SMIS 命令管理存储系统并显示有关 CIM 对象管理器的信息。 
 ---
-= SMI-S Provider 命令
+= 概述
 :icons: font
 :imagesdir: ./media/
 

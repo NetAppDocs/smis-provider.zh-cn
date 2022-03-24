@@ -12,32 +12,17 @@ summary: SMIS delete 命令可删除存储系统。
 [role="lead"]
 `smis delete` 命令可删除存储系统。
 
-
-
-== 语法
-
 `smisdelete`
 
 ` _storage_sys_`
 
 ` [-t ｛ * http* | * https * ｝ ]`
 
-
-
-== 位置
-
 `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
-
-
-
-== 权限级别
 
 管理员（ Windows ）
 
-
-
-== Parameters
-
+.Parameters
 * ` * _storage_sys_*`
 +
 要添加的存储系统的名称或 IP 地址
@@ -47,10 +32,6 @@ summary: SMIS delete 命令可删除存储系统。
 要使用的协议： HTTPS （默认）或 HTTP
 
 
-
-
-
-== 示例
 
 删除标记为 mgt-1 的存储系统：
 

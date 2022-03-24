@@ -12,37 +12,18 @@ summary: SMIS CIMOM 命令用于描述 CIM 对象管理器。
 [role="lead"]
 `smis CIMOM` 命令用于描述 CIM 对象管理器。
 
-
-
-== 语法
-
 SMIS CIMOM ` [-t ｛ * http* | * https * ｝ ]`
-
-
-
-== 位置
 
 `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
 
-
-
-== 权限级别
-
 具有有效用户名和密码的用户
 
-
-
-== Parameters
-
+.Parameters
 * ` * （ -t ｛ http ： https ｝ ） *`
 +
 要使用的协议： HTTPS （默认）或 HTTP
 
 
-
-
-
-== 示例
 
 `smis CIMOM` 命令及其输出：
 

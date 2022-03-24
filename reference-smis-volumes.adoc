@@ -12,10 +12,6 @@ summary: SMIS volumes 命令可列出存储系统的传统卷和灵活卷。
 [role="lead"]
 `smis volumes` 命令可列出存储系统的传统卷和灵活卷。
 
-
-
-== 语法
-
 `smis volumes`
 
 ` [-t ｛ * http* | * https * ｝ ]`
@@ -25,31 +21,16 @@ summary: SMIS volumes 命令可列出存储系统的传统卷和灵活卷。
 对于集群模式 Data ONTAP ，您必须使用 `smis pools` 命令，而不是 `smis volumes` 命令。
 
 ====
-
-
-== 位置
-
 `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
-
-
-
-== 权限级别
 
 具有有效用户名和密码的用户
 
-
-
-== Parameters
-
+.Parameters
 * ` * （ -t ｛ http ： https ｝ ） *`
 +
 要使用的协议： HTTPS （默认）或 HTTP
 
 
-
-
-
-== 示例
 
 `smis volumes` 命令及其缩写输出：
 

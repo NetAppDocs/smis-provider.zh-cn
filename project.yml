@@ -14,8 +14,9 @@ sidebar:
   - title: 发行说明
     url: "/releasenotes.html"
   - title: NetApp SMI-S Provider 概述
-    url: "/concept-data-ontap-smi-s-agent-overview.html"
     entries:
+    - title: 概述
+      url: "/concept-overview.html"
     - title: 此版本中的新增功能
       url: "/reference-new-in-this-release-smis.html"
     - title: 使用 NetApp SMI-S Provider
@@ -33,8 +34,9 @@ sidebar:
   - title: 部署工作流
     url: "/concept-deployment-workflow.html"
   - title: 准备部署
-    url: "/concept-prepare-for-deployment.html"
     entries:
+    - title: 概述
+      url: "/concept-prepare-for-deployment-overview.html"
     - title: 支持的操作系统版本
       url: "/reference-supported-operating-systems.html"
     - title: 硬件要求
@@ -46,18 +48,17 @@ sidebar:
     - title: 下载 NetApp SMI-S Provider 软件包
       url: "/task-download-smi-s-provider.html"
   - title: 安装 NetApp SMI-S Provider
-    url: "/concept-install-and-uninstall-ontap-smi-s-agent.html"
     entries:
     - title: 在 Windows 主机上安装 NetApp SMI-S Provider
       url: "/task-install-smi-s-agent-on-a-windows-host.html"
   - title: 卸载 NetApp SMI-S Provider
-    url: "/concept-uninstall-smi-s-provider.html"
     entries:
     - title: 从 Windows 主机卸载 NetApp SMI-S Provider
       url: "/task-uninstall-smi-s-agent-from-a-windows-host.html"
   - title: 预配置验证
-    url: "/concept-preconfiguration-task-overview.html"
     entries:
+    - title: 概述
+      url: "/concept-preconfiguration-task-overview.html"
     - title: 验证 CIM 服务器状态
       url: "/task-verify-the-cim-server-status.html"
     - title: 添加 CIM 服务器用户
@@ -71,15 +72,17 @@ sidebar:
   - title: 管理存储系统
     url: "/task-manage-storage-systems.html"
   - title: 管理 CIM 服务器用户
-    url: "/task-manage-cim-server-users.html"
     entries:
+    - title: 概述
+      url: "/task-manage-cim-server-users-overview.html"
     - title: CIM 用户的类型以及关联的操作
       url: "/reference-types-of-cim-users-and-associated-operations.html"
   - title: 管理 CIMOM 配置设置
     url: "/task-manage-cimom-configuration-settings.html"
   - title: 管理日志记录和跟踪
-    url: "/concept-manage-logging-and-tracing.html"
     entries:
+    - title: 概述
+      url: "/concept-manage-logging-and-tracing-overview.html"
     - title: 配置日志设置
       url: "/task-configure-log-settings.html"
       entries:
@@ -100,8 +103,9 @@ sidebar:
     - title: 启用或禁用 SMI-S 命令的审核日志
       url: "/task-enable-or-disable-audit-log-for-smi-s-commands.html"
   - title: 管理 SMI-S Provider 高级设置
-    url: "/concept-manage-smi-s-agent-advanced-settings.html"
     entries:
+    - title: 概述
+      url: "/concept-manage-smi-s-agent-advanced-settings-overview.html"
     - title: 指定 SMI-S Provider 自动缓存刷新间隔
       url: "/task-specify-the-smi-s-agent-cache-refresh-interval.html"
     - title: 指定具体的作业生命周期值
@@ -115,26 +119,26 @@ sidebar:
     - title: 在 SMI-S Provider 中启用指示
       url: "/task-enable-indications-in-smi-s-agent.html"
   - title: 管理 SLp
-    url: "/concept-manage-slp.html"
     entries:
+    - title: 概述
+      url: "/concept-manage-slp-overview.html"
     - title: 指定 slp 配置选项
       url: "/concept-specify-slp-configuration-options.html"
       entries:
       - title: slp.conf 文件管理
         url: "/reference-editing-the-slp-conf-file.html"
   - title: CIMOM 命令
-    url: "/concept-cimom-commands.html"
     entries:
     - title: cimconfig
       url: "/reference-cimconfig-command-options.html"
   - title: CIM 用户命令
-    url: "/concept-cim-user-commands.html"
     entries:
     - title: CIMSUser
       url: "/reference-cimuser-command-options.html"
   - title: SMI-S Provider 命令
-    url: "/concept-smi-s-provider-commands.html"
     entries:
+    - title: 概述
+      url: "/concept-smi-s-provider-commands-overview.html"
     - title: SMIS 添加
       url: "/reference-smis-add.html"
     - title: SMIS addsecure
@@ -178,7 +182,6 @@ sidebar:
     - title: SMIS 卷
       url: "/reference-smis-volumes.html"
   - title: slp 命令
-    url: "/concept-slp-commands.html"
     entries:
     - title: slptool
       url: "/reference-slptool-command-options.html"
@@ -187,8 +190,9 @@ sidebar:
     - title: slptool findsrvs
       url: "/reference-slptool-findsrvs.html"
   - title: 对 SMI-S Provider 进行故障排除
-    url: "/concept-troubleshoot-smi-s-agent.html"
     entries:
+    - title: 概述
+      url: "/concept-troubleshoot-smi-s-agent-overview.html"
     - title: 访问被拒绝错误
       url: "/reference-access-is-denied-error.html"
     - title: 加载共享库时可能出现的错误

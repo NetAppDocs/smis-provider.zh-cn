@@ -12,29 +12,13 @@ summary: SMIS slpd 命令可启动或停止 slp 守护进程。
 [role="lead"]
 `smis slpd` 命令可启动或停止 slp 守护进程。
 
-
-
-== 语法
-
 `smis slpd`
 
 ` ｛ * 开始 * | * 停止 * ｝`
 
-
-
-== 位置
-
 `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
 
-
-
-== 权限级别
-
 管理员（ Windows ）
-
-
-
-== 示例
 
 启动 slp 守护进程：
 

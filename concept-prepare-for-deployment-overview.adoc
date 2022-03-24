@@ -1,10 +1,10 @@
 ---
-permalink: concept-prepare-for-deployment.html 
+permalink: concept-prepare-for-deployment-overview.html 
 sidebar: sidebar 
 keywords: netapp, smi-s provider, verify, supported, operating system, platform, licenses, minimum, requirements 
 summary: 在部署 NetApp SMI-S Provider 之前，您必须验证您是否具有受支持的操作系统和平台，是否具有所需的许可证以及主机是否满足最低要求。 
 ---
-= 准备部署
+= 概述
 :icons: font
 :imagesdir: ./media/
 

@@ -12,42 +12,23 @@ summary: SMIS namespaces 命令可列出已注册的 CIMOM 命名空间。
 [role="lead"]
 `smis namespaces` 命令可列出已注册的 CIMOM 命名空间。
 
-
-
-== 语法
-
 SMIS 命名空间
 
 ` [-t ｛ * http* | * https * ｝ ]`
-
-
-
-== 位置
 
 `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
 
 * Windows ： `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
 
 
-
-
-== 权限级别
-
 具有有效用户名和密码的用户
 
-
-
-== Parameters
-
+.Parameters
 * ` * （ -t ｛ http ： https ｝ ） *`
 +
 要使用的协议： HTTPS （默认）或 HTTP
 
 
-
-
-
-== 示例
 
 `smis namespaces` 命令及其缩写输出：
 

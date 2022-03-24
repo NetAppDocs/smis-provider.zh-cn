@@ -12,39 +12,20 @@ summary: sms licensed 命令列出了存储系统的许可功能。
 [role="lead"]
 `smis licensed` 命令列出了存储系统的许可功能。
 
-
-
-== 语法
-
 已获得 SMIS 许可
 
 ` [-t ｛ * http* | * https * ｝ ]`
 
-
-
-== 位置
-
 `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
-
-
-
-== 权限级别
 
 具有有效用户名和密码的用户
 
-
-
-== Parameters
-
+.Parameters
 * ` * （ -t ｛ http ： https ｝ ） *`
 +
 要使用的协议： HTTPS （默认）或 HTTP
 
 
-
-
-
-== 示例
 
 `smis licensed` 命令及其缩写输出：
 

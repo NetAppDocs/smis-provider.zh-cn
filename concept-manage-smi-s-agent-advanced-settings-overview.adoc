@@ -1,10 +1,10 @@
 ---
-permalink: concept-manage-smi-s-agent-advanced-settings.html 
+permalink: concept-manage-smi-s-agent-advanced-settings-overview.html 
 sidebar: sidebar 
 keywords: manage, advance, smi-s provider, smis-s cache, refresh, interval, ontapi, timeout, thread, service, queue 
 summary: 您可以管理 SMI-S Provider 的高级设置，例如指定 SMI-S 缓存刷新间隔， ONTAPI 超时以及每个消息服务队列的最大线程数。 
 ---
-= 管理 SMI-S Provider 高级设置
+= 概述
 :icons: font
 :imagesdir: ./media/
 
