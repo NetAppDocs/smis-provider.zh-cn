@@ -5,6 +5,7 @@ keywords: smis list, command, display, storage, add
 summary: SMIS list 命令可显示已添加的存储系统。 
 ---
 = SMIS 列表
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

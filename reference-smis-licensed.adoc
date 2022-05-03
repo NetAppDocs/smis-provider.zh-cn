@@ -5,6 +5,7 @@ keywords: smis licensed, command, lists, licensed, storage systems
 summary: sms licensed 命令列出了存储系统的许可功能。 
 ---
 = 已获得 SMIS 许可
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

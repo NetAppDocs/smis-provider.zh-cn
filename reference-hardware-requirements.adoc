@@ -5,6 +5,7 @@ keywords: smi-s provider, smi-s agent
 summary: 在安装 NetApp SMI-S Provider 之前，您必须验证 Windows 主机是否满足最低硬件要求。 
 ---
 = 硬件要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

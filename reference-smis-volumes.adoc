@@ -5,6 +5,7 @@ keywords: smis volume, command, list, traditional, storage systems
 summary: SMIS volumes 命令可列出存储系统的传统卷和灵活卷。 
 ---
 = SMIS 卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

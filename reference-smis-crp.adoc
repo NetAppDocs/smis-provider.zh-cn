@@ -5,6 +5,7 @@ keywords: smis crp, command, describe, cim registered, profile, netapp smi-s pro
 summary: SMIS CRPs 命令介绍 NetApp SMI-S Provider 支持的已注册 CIM 配置文件，包括 NetApp SMI-S Provider 配置文件。 
 ---
 = SMIS CRP.
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

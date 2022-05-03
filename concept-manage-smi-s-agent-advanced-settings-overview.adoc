@@ -5,6 +5,7 @@ keywords: manage, advance, smi-s provider, smis-s cache, refresh, interval, onta
 summary: 您可以管理 SMI-S Provider 的高级设置，例如指定 SMI-S 缓存刷新间隔， ONTAPI 超时以及每个消息服务队列的最大线程数。 
 ---
 = 概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

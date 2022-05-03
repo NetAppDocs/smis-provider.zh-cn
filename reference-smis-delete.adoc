@@ -5,6 +5,7 @@ keywords: smis debate, command, storage system
 summary: SMIS delete 命令可删除存储系统。 
 ---
 = SMIS 删除
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

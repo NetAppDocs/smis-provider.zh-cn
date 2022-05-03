@@ -5,6 +5,7 @@ keywords: install, netapp smi-s provider, verify, cim server, automatic, access
 summary: 安装 NetApp SMI-S Provider 后，您必须验证访问 SMI-S Provider 后 CIM 服务器是否会自动启动。 
 ---
 = 验证 CIM 服务器状态
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

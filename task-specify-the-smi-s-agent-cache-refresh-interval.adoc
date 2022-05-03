@@ -5,6 +5,7 @@ keywords: smi-s provider, automatic, retrieves, information, storage systems, 30
 summary: 默认情况下， SMI-S Provider 每五分钟（ 300 秒）自动从存储系统检索一次信息。您可以将自动缓存刷新间隔（ cache_refresh_SEC 环境变量）设置为 300 到 86400 秒（ 24 小时）之间的值。 
 ---
 = 指定 SMI-S Provider 自动缓存刷新间隔
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

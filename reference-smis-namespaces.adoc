@@ -5,6 +5,7 @@ keywords: smis namespace, command, list, registered, namespace, cimom
 summary: SMIS namespaces 命令可列出已注册的 CIMOM 命名空间。 
 ---
 = SMIS 命名空间
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

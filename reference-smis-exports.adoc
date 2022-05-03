@@ -5,6 +5,7 @@ keywords: smis exports, command display, network attached storage
 summary: SMIS exports 命令可显示存储系统的网络连接存储（ NAS ）导出。 
 ---
 = SMIS 导出
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

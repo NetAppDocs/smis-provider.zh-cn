@@ -5,6 +5,7 @@ keywords: netapp smi-s provider, cim-xml, encoding, https, service, location, pr
 summary: NetApp SMI-S Provider 使用基于 HTTPS 和服务位置协议（ Service Location Protocol ， slp ）的 IM-XML 编码。 
 ---
 = NetApp SMI-S Provider 协议
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

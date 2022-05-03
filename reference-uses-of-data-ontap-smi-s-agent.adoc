@@ -5,6 +5,7 @@ keywords: netapp smi-s provider, manage, monitor, storage systems, lun
 summary: 借助 NetApp SMI-S Provider ，您可以更轻松地管理和监控存储系统以及管理存储系统的 LUN 和卷。 
 ---
 = 使用 NetApp SMI-S Provider
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

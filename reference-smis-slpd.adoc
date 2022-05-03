@@ -5,6 +5,7 @@ keywords: smis slpd, command, start, stop, slp daemon
 summary: SMIS slpd 命令可启动或停止 slp 守护进程。 
 ---
 = SMIS slpd
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

@@ -5,6 +5,7 @@ keywords: smis pools, command, list, storage, pools
 summary: SMIS Pools 命令可列出存储系统的存储池。 
 ---
 = SMIS 池
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

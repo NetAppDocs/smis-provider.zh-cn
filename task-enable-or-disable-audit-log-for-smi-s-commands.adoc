@@ -5,6 +5,7 @@ keywords: incoming smi-s command, record, log files, auditor, wbem client
 summary: 所有传入的 SMI-S 命令都会记录在审核日志文件中，这样，审核人员就可以跟踪 WBEM 客户端操作和提供程序使用的活动。您可以通过设置动态配置属性来启用或禁用这些传入命令的日志记录。 
 ---
 = 启用或禁用 SMI-S 命令的审核日志
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

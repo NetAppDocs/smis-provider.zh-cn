@@ -5,6 +5,7 @@ keywords: troubleshooting, issue, encounter
 summary: NetApp SMI-S Provider 遇到的问题。 
 ---
 = 非默认防火墙必须手动添加端口作为例外情况
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

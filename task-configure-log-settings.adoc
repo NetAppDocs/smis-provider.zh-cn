@@ -5,6 +5,7 @@ keywords: system message, directory, netapp si-s provider, cim server log
 summary: 默认情况下，系统会记录所有系统消息。此外，默认情况下，系统消息日志位于安装 NetApp SMI-S Provider 的目录中的 logs 目录中。您可以更改写入 CIM 服务器日志的系统消息的位置和级别。例如，您可以选择将日志存储在您指定的目录中，并且只将致命系统消息写入 CIM 服务器日志。 
 ---
 = 配置日志设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

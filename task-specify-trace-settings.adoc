@@ -5,6 +5,7 @@ keywords: trace, enable, important, gathering, information, troubleshooting, per
 summary: 启用跟踪对于收集故障排除信息非常重要。但是，启用跟踪可能会影响性能，因此请仔细考虑必须跟踪的内容以及需要启用跟踪的时间长度。 
 ---
 = 指定跟踪设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

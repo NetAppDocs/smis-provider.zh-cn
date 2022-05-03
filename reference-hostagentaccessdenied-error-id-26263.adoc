@@ -5,6 +5,7 @@ keywords: troubleshooting, issue, encounter
 summary: NetApp SMI-S Provider 遇到的问题。 
 ---
 = HostAgentAccessDenied （ ID ： 26263 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

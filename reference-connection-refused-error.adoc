@@ -5,6 +5,7 @@ keywords: troubleshooting, issue, encounter
 summary: NetApp SMI-S Provider 遇到的问题。 
 ---
 = 连接被拒绝
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

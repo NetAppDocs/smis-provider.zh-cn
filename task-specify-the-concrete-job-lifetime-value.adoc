@@ -5,6 +5,7 @@ keywords: smi-s provider, asynchronous, operation, concrete job, increase, lifet
 summary: SMI-S Provider 可通过创建具体作业来跟踪异步操作的进度。您可以将具体作业的使用寿命从默认值 60 分钟（ 3600 秒）增加到 86400 秒（ 24 小时）。 
 ---
 = 指定具体的作业生命周期值
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

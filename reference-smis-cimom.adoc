@@ -5,6 +5,7 @@ keywords: smis cimon, command, cim object manager
 summary: SMIS CIMOM 命令用于描述 CIM 对象管理器。 
 ---
 = SMIS CIMOM
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

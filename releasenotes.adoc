@@ -5,6 +5,7 @@ keywords: netapp smi-s provider, relnotes, limitations, fixes, known issues
 summary: 提供有关 NetApp SMI-S Provider 5.2.6 软件的功能，限制和已知问题的信息。 
 ---
 = 《 NetApp SMI-S Provider 发行说明》
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

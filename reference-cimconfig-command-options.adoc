@@ -5,6 +5,7 @@ keywords: cimconfig, command, cimom configuration, settings, variable, mis cimse
 summary: 您可以使用 cimconfig 命令管理 CIMOM 配置设置。输入 cimconfig 命令或为 NetApp SMI-S Provider 配置值创建环境变量后，必须使用 SMIS cimserver restart 命令重新启动 CIM 服务器。 
 ---
 = cimconfig
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

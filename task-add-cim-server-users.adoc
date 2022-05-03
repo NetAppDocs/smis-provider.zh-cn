@@ -5,6 +5,7 @@ keywords: validate, storage systems, cim user, cim server
 summary: 在验证存储系统之前，您必须添加有权使用 CIM 服务器的 CIM 用户。 
 ---
 = 添加 CIM 服务器用户
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

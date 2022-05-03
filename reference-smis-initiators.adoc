@@ -5,6 +5,7 @@ keywords: smis initiators, display, fibre channel, iscsi, storage systems
 summary: SMIS initiators 命令可显示存储系统的光纤通道和 iSCSI 端口信息。 
 ---
 = SMIS 启动程序
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

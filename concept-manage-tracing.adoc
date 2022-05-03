@@ -5,6 +5,7 @@ keywords: configure, smi-s provider, trace, files, components, trace, write, tra
 summary: 您可以配置 SMI-S Provider 管理跟踪文件的方式，例如指定要跟踪的组件，将跟踪消息写入到的目标，跟踪级别以及跟踪文件位置。 
 ---
 = 管理跟踪
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

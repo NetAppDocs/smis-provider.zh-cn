@@ -5,6 +5,7 @@ keywords: smi-s provider, commands, add, delete, list, storage, systems, cimom r
 summary: 您可以使用 NetApp SMI-S Provider 命令在 CIMOM 存储库中添加，删除和列出存储系统。您还可以列出存储系统的 NFS 和 CIFS 导出以及导出的 LUN 。 
 ---
 = 管理存储系统
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

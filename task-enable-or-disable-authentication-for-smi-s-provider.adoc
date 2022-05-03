@@ -5,6 +5,7 @@ keywords: smi-s provider, authentication, enable, errors, system, disable
 summary: 默认情况下， SMI-S Provider 会启用身份验证。如果身份验证导致系统出现错误，您可以选择禁用它。如果已禁用身份验证，而您希望重新启用它，则可以执行此操作。 
 ---
 = 启用或禁用 NetApp SMI-S Provider 的身份验证
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

@@ -5,6 +5,7 @@ keywords: messages, specify, logged
 summary: 您可以指定所记录的消息类型（例如，您只希望记录致命的系统消息）。 
 ---
 = 日志记录级别
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

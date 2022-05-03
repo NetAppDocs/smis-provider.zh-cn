@@ -5,6 +5,7 @@ keywords: specify, comments, trace, target, change, location
 summary: 您可以指定要跟踪的组件，跟踪目标和跟踪级别。或者，如果您不想使用默认跟踪文件名称和位置，则可以更改跟踪文件的名称和位置。 
 ---
 = 跟踪设置值
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

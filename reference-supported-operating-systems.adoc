@@ -5,6 +5,7 @@ keywords: installing, smi-s provider, verify, windows, host, operating systems
 summary: 在安装 SMI-S Provider 之前，您必须验证 Windows 主机是否正在运行受支持的操作系统。 
 ---
 = 支持的操作系统版本
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 :pp: &#43;&#43;

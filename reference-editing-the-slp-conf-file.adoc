@@ -5,6 +5,7 @@ keywords: 'slp.conf, configuration, additional options, manage, service location
 summary: slp.conf 配置文件提供了其他选项，可用于管理服务位置协议守护进程（ slpd ）服务器。 
 ---
 = slp.conf 文件管理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

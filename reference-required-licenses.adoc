@@ -5,6 +5,7 @@ keywords: smi-s provider, required, license
 summary: 要使用 NetApp SMI-S Provider ，您必须具有所需的许可证。 
 ---
 = 所需许可证
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

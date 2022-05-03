@@ -5,6 +5,7 @@ keywords: client, application, discover, cimom server, shared objects, device sp
 summary: 当主机上的客户端应用程序使用 slp （基于 HTTP 的 CIM-XML 编码）发现 CIMOM 服务器时，客户端会向 CIMOM 查询共享对象（以 CIM 语言建模的对象）。CIMOM 会加载共享对象，并使用设备专用 API 查询存储系统以获取请求的信息。 
 ---
 = NetApp SMI-S Provider 如何与主机交互
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

@@ -5,6 +5,7 @@ keywords: smi-s provider, configure, least storage, cimom repository storage, wo
 summary: 在配置 SMI-S Provider 之前，您必须至少向 CIMOM 存储库添加一个存储系统，然后验证存储系统是否正常工作。 
 ---
 = 验证存储系统是否正常工作
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

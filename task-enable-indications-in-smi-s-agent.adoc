@@ -5,6 +5,7 @@ keywords: netApp smi-s provider, lifecycle, disable, default, indication
 summary: 默认情况下，警报，文件系统配额和生命周期指示处于禁用状态。您可以通过将环境变量 Pegasus_disable_indications 设置为 false 来启用这些指示。 
 ---
 = 在 SMI-S Provider 中启用指示
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

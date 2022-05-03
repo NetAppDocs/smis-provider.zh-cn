@@ -5,6 +5,7 @@ keywords: netApp smis-s provider, fileshare, ntfs-only volume
 summary: 在 Windows 上使用文件共享（ CIFS 共享）时，创建文件共享的卷必须为仅限 NTFS 的卷。 
 ---
 = 在 Windows 上使用文件共享的要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

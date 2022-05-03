@@ -5,6 +5,7 @@ keywords: troubleshooting, issue, encounter
 summary: NetApp SMI-S Provider 遇到的问题。 
 ---
 = 不允许执行克隆 / 快照操作
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

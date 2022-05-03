@@ -5,6 +5,7 @@ keywords: smi-s provider, ontap api, calls, storage systems, ontapi, default, 30
 summary: SMI-S 提供程序对存储系统进行 ONTAP API （ ONTAPI ）调用。默认情况下， ONTAPI 超时为 300 秒。您可以将超时设置为介于 60 到 300 秒之间的值。 
 ---
 = 指定 ONTAPI 超时值
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

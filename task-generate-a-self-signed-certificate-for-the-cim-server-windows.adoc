@@ -5,6 +5,7 @@ keywords: ssl authentication, enable, cim server, installation, self-signed cert
 summary: 默认情况下， CIM 服务器启用 SSL 身份验证。在 SMI-S Provider 安装期间，将在 pegasus 目录中安装 CIM 服务器的自签名证书。您可以生成自己的自签名证书并使用它，而不是默认证书。 
 ---
 = 为 CIM 服务器生成自签名证书
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

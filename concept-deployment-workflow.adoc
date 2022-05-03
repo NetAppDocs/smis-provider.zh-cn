@@ -5,6 +5,7 @@ keywords: manage, monitor, storage, systems, smi-s provider, software, validate,
 summary: 在使用 SMI-S Provider 管理和监控存储系统之前，您必须先安装 SMI-S Provider 软件并验证初始配置。 
 ---
 = 部署工作流
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

@@ -5,6 +5,7 @@ keywords: smi-s provider, various types, control, access
 summary: 使用 SMI-S Provider 时，您可以为用户分配各种类型的用户，以控制其对 CIM 服务器的访问。 
 ---
 = CIM 用户的类型以及关联的操作
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

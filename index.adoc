@@ -5,6 +5,7 @@ keywords: netapp smi-s provider, documentation, installation, command based inte
 summary: 介绍如何安装和管理 NetApp SMI-S Provider ， NetApp SMI-S Provider 是一个基于命令的界面，用于检测和管理 NetApp 存储系统。 
 ---
 = NetApp SMI-S Provider 文档
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

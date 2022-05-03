@@ -5,6 +5,7 @@ keywords: slptool, findsrvs, command, wbem, service, run, network
 summary: slptool findsrvs 命令可查找在网络上运行的 WBEM 服务。 
 ---
 = slptool findsrvs
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

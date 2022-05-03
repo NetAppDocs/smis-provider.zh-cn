@@ -5,6 +5,7 @@ keywords: encountering, problem, netapp smi-s provider, error message, troublesh
 summary: 如果您在使用 NetApp SMI-S Provider 时遇到问题，应使用收到的任何错误消息帮助进行故障排除。 
 ---
 = 概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

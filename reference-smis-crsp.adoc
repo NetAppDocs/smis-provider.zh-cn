@@ -5,6 +5,7 @@ keywords: smis crsp, cim-resgistered subprofiles, netapp smi-s provider
 summary: SMIS crsp 命令介绍 NetApp SMI-S Provider 支持的已注册 CIM 子配置文件，包括 NetApp SMI-S Provider 子配置文件。 
 ---
 = SMIS 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

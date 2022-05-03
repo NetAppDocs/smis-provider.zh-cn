@@ -5,6 +5,7 @@ keywords: netapp smi-s provider, installing, download
 summary: 在安装 NetApp SMI-S Provider 之前，您必须从 NetApp 支持站点下载软件包。 
 ---
 = 下载 NetApp SMI-S Provider 软件包
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

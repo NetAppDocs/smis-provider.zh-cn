@@ -5,6 +5,7 @@ keywords: new, release
 summary: 此版本中的新增功能 
 ---
 = 此版本中的新增功能
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

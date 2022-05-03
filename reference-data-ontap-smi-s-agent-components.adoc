@@ -5,6 +5,7 @@ keywords: smi-s provider
 summary: NetApp SMI-S Provider 包含三个组件，可用于管理和监控存储系统： CIMOM ，提供程序对象和存储库。 
 ---
 = NetApp SMI-S Provider 组件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

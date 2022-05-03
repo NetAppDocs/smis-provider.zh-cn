@@ -5,6 +5,7 @@ keywords: troubleshooting, issue, encounter
 summary: NetApp SMI-S Provider 遇到的问题。 
 ---
 = SCVMM 重新扫描操作无法找到 SMI-S Provider 或与之通信
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

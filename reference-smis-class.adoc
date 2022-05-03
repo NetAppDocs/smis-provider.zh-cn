@@ -5,6 +5,7 @@ keywords: smis class, command, lists, information,
 summary: sms class 命令可列出有关指定类或所有类的信息。 
 ---
 = SMIS 类
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

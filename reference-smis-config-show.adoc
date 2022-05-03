@@ -5,6 +5,7 @@ keywords: smis config show, list, current cim server, configuration, information
 summary: sms config show 命令可列出当前的 CIM 服务器配置信息。 
 ---
 = SMIS config show
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

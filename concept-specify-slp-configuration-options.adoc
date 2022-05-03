@@ -5,6 +5,7 @@ keywords: editing, slp.conf, configuration, file, manage, service location proto
 summary: 您可以编辑 slp.conf 配置文件以管理服务位置协议守护进程（ slpd ）服务。 
 ---
 = 指定 slp 配置选项
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

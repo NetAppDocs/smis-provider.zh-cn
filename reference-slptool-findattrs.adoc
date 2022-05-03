@@ -5,6 +5,7 @@ keywords: slptool, findattrs, command, wbem attributes, run, network
 summary: slptool findattrs 命令可查找在网络上运行的 WBEM 属性。 
 ---
 = slptool 查找数据
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

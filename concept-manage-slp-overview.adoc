@@ -5,6 +5,7 @@ keywords: slp, service broadcasts, wbem services, slp, ebable, client, applicati
 summary: 此 slp 服务广播 WBEM 服务。启用此 slp 服务后，客户端应用程序可以发现此 CIMOM 服务器。您也可以使用 slp.conf 文件指定 slp 配置设置。 
 ---
 = 概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

@@ -5,6 +5,7 @@ keywords: netapp smi-s provider
 summary: NetApp SMI-S Provider 遇到的问题。 
 ---
 = NetApp SMI-S Provider 启动需要很长时间
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

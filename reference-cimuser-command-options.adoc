@@ -5,6 +5,7 @@ keywords: cimuser, options, add, remove, modify, list, cim server
 summary: 您可以使用 CIMUser 选项添加，删除，修改和列出 CIM 服务器用户。 
 ---
 = CIMSUser
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

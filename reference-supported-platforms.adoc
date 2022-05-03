@@ -5,6 +5,7 @@ keywords: netApp smi-s provider, cluster, platforms
 summary: NetApp SMI-S Provider 支持运行 Data ONTAP 8.3.2 和 ONTAP 9 及更高版本的集群平台。 
 ---
 = 支持的集群平台
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

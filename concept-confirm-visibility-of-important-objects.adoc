@@ -5,6 +5,7 @@ keywords: manage, storage, system, confirm, important, logic, physical, object, 
 summary: 添加受管存储系统后，您应确认可以在 NetApp SMI-S Provider 中看到所有重要的逻辑和物理对象。 
 ---
 = 确认重要对象的可见性
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

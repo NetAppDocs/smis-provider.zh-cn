@@ -5,6 +5,7 @@ keywords: configure, smi-s provider, trace files, specify, levels, message loggi
 summary: 您可以配置 SMI-S Provider 管理日志和跟踪文件的方式，例如指定要记录的消息级别以及日志保存到的目录。您还可以指定要跟踪的组件，跟踪消息写入的目标，跟踪级别以及跟踪文件位置。 
 ---
 = 概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

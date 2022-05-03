@@ -5,6 +5,7 @@ keywords: smi-s provider, to manage, cimom configuration, enable, disable, http,
 summary: 您可以使用 SMI-S Provider 管理 CIMOM 配置，例如启用或禁用 HTTP 和 HTTPS 连接以及更改 HTTP 和 HTTPS 端口号。默认情况下， HTTP 连接处于启用状态，允许客户端在不使用 SSL 加密的情况下连接到 CIM 服务器。 
 ---
 = 管理 CIMOM 配置设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

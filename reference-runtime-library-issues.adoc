@@ -5,6 +5,7 @@ keywords: troubleshooting, issue, encounter
 summary: NetApp SMI-S Provider 遇到的问题。 
 ---
 = 运行时库问题
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 :pp: &#43;&#43;

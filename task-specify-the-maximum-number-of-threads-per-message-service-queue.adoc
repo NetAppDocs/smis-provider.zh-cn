@@ -5,6 +5,7 @@ keywords: default, smi-s provider, 80 threads, per message, service queue, machi
 summary: 默认情况下， SMI-S Provider 允许每个消息服务队列使用 80 个线程。您可以将最大线程值指定为 1 到 5000 。增加最大线程数可能会影响 SMI-S Provider 计算机的性能，因此请仔细考虑是否需要增加此值。 
 ---
 = 指定每个消息服务队列的最大线程数
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
