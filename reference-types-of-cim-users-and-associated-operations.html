@@ -169,7 +169,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/smis-provider/issues/new?body=Page%3A%20[CIM 用户的类型以及关联的操作](https://docs.netapp.com/zh-cn/smis-provider/reference-types-of-cim-users-and-associated-operations.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/smis-provider/images/discuss-sm.svg" class="github-icon" />请求文档变更</a><a target="_blank" href="https://github.com/NetAppDocs/smis-provider/blob/main/reference-types-of-cim-users-and-associated-operations.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/smis-provider/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/smis-provider/images/article-sm.svg" class="github-icon" />提供者指南</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/smis-provider/issues/new?body=Page%3A%20[CIM 用户的类型以及关联的操作](https://docs.netapp.com/zh-cn/smis-provider/reference-types-of-cim-users-and-associated-operations.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/smis-provider/images/discuss-sm.svg" alt="" class="github-icon" />请求文档变更</a><a target="_blank" href="https://github.com/NetAppDocs/smis-provider/blob/main/reference-types-of-cim-users-and-associated-operations.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/smis-provider/images/edit-sm.svg" alt="" class="github-icon" />在 GitHub 上编辑</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/smis-provider/images/article-sm.svg" alt="" class="github-icon" />提供者指南</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">在此页面上</div>
@@ -258,11 +258,13 @@
           <div id="react-search" 
           data-search-html="/zh-cn/smis-provider/search.html"
           data-type="widget" 
-          data-placeholder="搜索文档" 
-          data-no-results-found="未找到与 {query} 匹配的结果。" 
-          data-did-you-mean="搜索 {suggestion}。" 
-          data-no-results-found-did-you-mean="未找到与 {query} 匹配的结果。您是否要搜索 {suggestion}?" 
-          data-results-found="找到 {hitCount} 个结果"  
+          data-placeholder="搜索文档"
+          data-no-results-found="未找到与 {query} 匹配的结果。"
+          data-did-you-mean="搜索 {suggestion}。"
+          data-no-results-found-did-you-mean="未找到与 {query} 匹配的结果。您是否要搜索 {suggestion}?"
+          data-results-found="找到 {hitCount} 个结果"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
           data-sk-es-pf-indexes=""
           data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
@@ -277,35 +279,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">简体中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">简体中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/smis-provider/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/smis-provider/reference-types-of-cim-users-and-associated-operations.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/smis-provider/reference-types-of-cim-users-and-associated-operations.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/smis-provider/reference-types-of-cim-users-and-associated-operations.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/smis-provider/reference-types-of-cim-users-and-associated-operations.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/smis-provider/reference-types-of-cim-users-and-associated-operations.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-cn/smis-provider/reference-types-of-cim-users-and-associated-operations.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/smis-provider/reference-types-of-cim-users-and-associated-operations.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/smis-provider/reference-types-of-cim-users-and-associated-operations.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/smis-provider/reference-types-of-cim-users-and-associated-operations.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/smis-provider/reference-types-of-cim-users-and-associated-operations.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -349,7 +343,7 @@
   <div class="col-md-3" id="sidebar-height">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    <img src="/zh-cn/smis-provider/images/pdf.png" width="16" height="16"/>可用的 PDF<span>
+    <img src="/zh-cn/smis-provider/images/pdf.png" alt="" width="16" height="16"/>可用的 PDF<span>
     </span>
   </a>
 </div>
@@ -359,7 +353,7 @@
         
         
         <a target="_blank" href="/zh-cn/smis-provider/pdfs/fullsite-sidebar/NetApp_SMI_S_Provider_文档.pdf" >
-          <img src="/zh-cn/smis-provider/images/pdf.png" width="16" height="16"/>此文档站点的 PDF</a>
+          <img src="/zh-cn/smis-provider/images/pdf.png" alt="" width="16" height="16"/>此文档站点的 PDF</a>
 
 
 
@@ -376,7 +370,7 @@
               href="/zh-cn/smis-provider/pdfs/sidebar/NetApp_SMI_S_Provider_概述.pdf" 
             
           >
-            <img src="/zh-cn/smis-provider/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/smis-provider/images/pdf.png" alt="" width="16" height="16"/>
             NetApp SMI-S Provider 概述
           </a>
           
@@ -396,8 +390,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -419,7 +411,7 @@
               href="/zh-cn/smis-provider/pdfs/sidebar/准备部署.pdf" 
             
           >
-            <img src="/zh-cn/smis-provider/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/smis-provider/images/pdf.png" alt="" width="16" height="16"/>
             准备部署
           </a>
           
@@ -435,8 +427,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -456,14 +446,12 @@
               href="/zh-cn/smis-provider/pdfs/sidebar/安装_NetApp_SMI_S_Provider.pdf" 
             
           >
-            <img src="/zh-cn/smis-provider/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/smis-provider/images/pdf.png" alt="" width="16" height="16"/>
             安装 NetApp SMI-S Provider
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -483,14 +471,12 @@
               href="/zh-cn/smis-provider/pdfs/sidebar/卸载_NetApp_SMI_S_Provider.pdf" 
             
           >
-            <img src="/zh-cn/smis-provider/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/smis-provider/images/pdf.png" alt="" width="16" height="16"/>
             卸载 NetApp SMI-S Provider
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -510,7 +496,7 @@
               href="/zh-cn/smis-provider/pdfs/sidebar/预配置验证.pdf" 
             
           >
-            <img src="/zh-cn/smis-provider/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/smis-provider/images/pdf.png" alt="" width="16" height="16"/>
             预配置验证
           </a>
           
@@ -524,8 +510,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -549,25 +533,16 @@
               href="/zh-cn/smis-provider/pdfs/sidebar/管理_CIM_服务器用户.pdf" 
             
           >
-            <img src="/zh-cn/smis-provider/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/smis-provider/images/pdf.png" alt="" width="16" height="16"/>
             管理 CIM 服务器用户
           </a>
           
 
 
-    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
-  <a target="_blank" href="/zh-cn/smis-provider/pdfs/pages/reference-types-of-cim-users-and-associated-operations.pdf" >
-    <img src="/zh-cn/smis-provider/images/pdf.png" width="16" height="16"/>
-    PDF of this page
-  </a>
-</li>
-
-</ul>
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
   
 
 
-
-          
         </li>
       </ul>
     
@@ -589,7 +564,7 @@
               href="/zh-cn/smis-provider/pdfs/sidebar/管理日志记录和跟踪.pdf" 
             
           >
-            <img src="/zh-cn/smis-provider/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/smis-provider/images/pdf.png" alt="" width="16" height="16"/>
             管理日志记录和跟踪
           </a>
           
@@ -607,14 +582,12 @@
               href="/zh-cn/smis-provider/pdfs/sidebar/配置日志设置.pdf" 
             
           >
-            <img src="/zh-cn/smis-provider/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/smis-provider/images/pdf.png" alt="" width="16" height="16"/>
             配置日志设置
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -634,7 +607,7 @@
               href="/zh-cn/smis-provider/pdfs/sidebar/管理跟踪.pdf" 
             
           >
-            <img src="/zh-cn/smis-provider/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/smis-provider/images/pdf.png" alt="" width="16" height="16"/>
             管理跟踪
           </a>
           
@@ -650,14 +623,12 @@
               href="/zh-cn/smis-provider/pdfs/sidebar/指定跟踪设置.pdf" 
             
           >
-            <img src="/zh-cn/smis-provider/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/smis-provider/images/pdf.png" alt="" width="16" height="16"/>
             指定跟踪设置
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -669,8 +640,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -680,8 +649,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -701,7 +668,7 @@
               href="/zh-cn/smis-provider/pdfs/sidebar/管理_SMI_S_Provider_高级设置.pdf" 
             
           >
-            <img src="/zh-cn/smis-provider/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/smis-provider/images/pdf.png" alt="" width="16" height="16"/>
             管理 SMI-S Provider 高级设置
           </a>
           
@@ -719,8 +686,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -740,7 +705,7 @@
               href="/zh-cn/smis-provider/pdfs/sidebar/管理_SLp.pdf" 
             
           >
-            <img src="/zh-cn/smis-provider/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/smis-provider/images/pdf.png" alt="" width="16" height="16"/>
             管理 SLp
           </a>
           
@@ -758,14 +723,12 @@
               href="/zh-cn/smis-provider/pdfs/sidebar/指定_slp_配置选项.pdf" 
             
           >
-            <img src="/zh-cn/smis-provider/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/smis-provider/images/pdf.png" alt="" width="16" height="16"/>
             指定 slp 配置选项
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -773,8 +736,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -794,14 +755,12 @@
               href="/zh-cn/smis-provider/pdfs/sidebar/CIMOM_命令.pdf" 
             
           >
-            <img src="/zh-cn/smis-provider/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/smis-provider/images/pdf.png" alt="" width="16" height="16"/>
             CIMOM 命令
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -821,14 +780,12 @@
               href="/zh-cn/smis-provider/pdfs/sidebar/CIM_用户命令.pdf" 
             
           >
-            <img src="/zh-cn/smis-provider/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/smis-provider/images/pdf.png" alt="" width="16" height="16"/>
             CIM 用户命令
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -848,7 +805,7 @@
               href="/zh-cn/smis-provider/pdfs/sidebar/SMI_S_Provider_命令.pdf" 
             
           >
-            <img src="/zh-cn/smis-provider/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/smis-provider/images/pdf.png" alt="" width="16" height="16"/>
             SMI-S Provider 命令
           </a>
           
@@ -896,8 +853,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -917,7 +872,7 @@
               href="/zh-cn/smis-provider/pdfs/sidebar/slp_命令.pdf" 
             
           >
-            <img src="/zh-cn/smis-provider/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/smis-provider/images/pdf.png" alt="" width="16" height="16"/>
             slp 命令
           </a>
           
@@ -927,8 +882,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -948,7 +901,7 @@
               href="/zh-cn/smis-provider/pdfs/sidebar/对_SMI_S_Provider_进行故障排除.pdf" 
             
           >
-            <img src="/zh-cn/smis-provider/images/pdf.png" width="16" height="16"/>
+            <img src="/zh-cn/smis-provider/images/pdf.png" alt="" width="16" height="16"/>
             对 SMI-S Provider 进行故障排除
           </a>
           
@@ -1002,8 +955,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1012,11 +963,10 @@
 
 
 
-
 </li></ul>
   <div class="zip-pdf-link-container" style="display: none;">   
     <a href="#" id="zipPdf">
-      <img src="/zh-cn/smis-provider/images/pdf-zip.png" width="16" height="16"/>
+      <img src="/zh-cn/smis-provider/images/pdf-zip.png" alt="" width="16" height="16"/>
       <pre>收集单独的 PDF 文档<span class="zip-size"></span></pre>
     </a><div id="zip-link-popup" class="hide">
     <div class="inner-modal">
@@ -1049,7 +999,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/index.html">
         NetApp SMI-S Provider 文档
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/smis-provider/releasenotes.html">
@@ -1363,6 +1313,9 @@
     
   
 
+<span>提供者
+</span>
+
 
 </p>
 
@@ -1613,4 +1566,5 @@
     </script>
     <script src='/zh-cn/smis-provider/js/www-ntap.js'></script>
     <script src='/zh-cn/smis-provider/js/tabbed-blocks.js'></script>
+    <script src='/zh-cn/smis-provider/js/sidebar.js'></script>
   </body></html>
