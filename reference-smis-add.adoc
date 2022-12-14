@@ -13,6 +13,7 @@ summary: SMIS add 命令可将具有 HTTP 连接的存储系统添加到您的�
 [role="lead"]
 `smis add` 命令可将具有 HTTP 连接的存储系统添加到您的配置中，以便您可以管理和监控设备。除非有必要，否则应使用 `smis addsecure` ，而不是 `smis add` 。
 
+.语法
 `smis add`
 
 ` _storage_sys storage_sys_uster_` + ` （ -t ｛ * http* _ * * * * ｝ ）`
@@ -22,8 +23,10 @@ summary: SMIS add 命令可将具有 HTTP 连接的存储系统添加到您的�
 使用美国以外语言的操作系统英语不能使用 `add` 命令。
 
 ====
+.位置
 `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
 
+.权限级别
 管理员（ Windows ）
 
 .Parameters
@@ -61,6 +64,7 @@ summary: SMIS add 命令可将具有 HTTP 连接的存储系统添加到您的�
 
 在禁用 SSL 加密连接之前，应考虑环境的安全需求。
 
+.示例
 通过 HTTP 使用 IPv4 添加 IP 地址为 10.32.1.4 的存储系统：
 
 [listing]
@@ -69,6 +73,7 @@ smis add 10.32.1.4 user2
 ----
 此时将显示一条确认消息，指出已成功添加存储系统。如果发生错误，则会显示一条错误消息。
 
+.示例
 使用基于 HTTP 的 IPv6 添加存储系统：
 
 [listing]
@@ -78,6 +83,7 @@ smis add 1001:2::3:4 user2
 ----
 此时将显示一条确认消息，指出已成功添加存储系统。如果发生错误，则会显示一条错误消息。
 
+.示例
 在非英语系统上，通过 HTTP 添加 IP 地址为 10.32.1.4 的存储系统：
 
 [listing]

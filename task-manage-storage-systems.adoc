@@ -18,6 +18,7 @@ summary: 您可以使用 NetApp SMI-S Provider 命令在 CIMOM 存储库中添�
 * 您必须已以管理员身份登录到主机系统。
 
 
+.关于此任务
 对于 ONTAP ，您必须为 SVM 指定管理 IP 地址，而不是为集群 IP 地址，并且必须为 vsadmin 用户提供凭据。SMI-S Provider 不支持集群 IP 地址或节点管理 IP 地址，也不支持节点管理或节点 SVM 。
 
 [NOTE]

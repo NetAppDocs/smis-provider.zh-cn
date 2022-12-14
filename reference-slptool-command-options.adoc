@@ -13,10 +13,13 @@ summary: 您可以将这些选项与 slptool 命令结合使用。
 [role="lead"]
 您可以使用 `slptool` 命令显示有关 WBEM 服务的信息。
 
+.语法
 `slptool` options_subcommand_
 
+.位置
 `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
 
+.权限级别
 管理员（ Windows ）
 
 .选项

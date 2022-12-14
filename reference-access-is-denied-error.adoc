@@ -10,6 +10,7 @@ summary: NetApp SMI-S Provider 遇到的问题。
 :imagesdir: ./media/
 
 
+[role="lead"]
 * * 消息 *
 +
 `访问被拒绝。`

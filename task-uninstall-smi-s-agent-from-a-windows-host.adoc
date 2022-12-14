@@ -13,6 +13,7 @@ summary: 您可以根据需要卸载 SMI-S Provider 。例如，根据现有安�
 [role="lead"]
 您可以根据需要卸载 SMI-S Provider 。例如，根据现有安装的版本，您可能需要先卸载 SMI-S Provider 的现有安装，然后才能安装最新版本。
 
+.关于此任务
 如果您计划卸载 SMI-S Provider 并希望全新重新安装，则必须手动删除 CIM 服务器中的所有内容。
 
 如果您不希望全新重新安装， SMI-S Provider 会在卸载后保留配置，用户和其他数据库文件。

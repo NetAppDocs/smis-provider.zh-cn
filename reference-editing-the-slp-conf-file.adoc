@@ -13,8 +13,10 @@ summary: slp.conf 配置文件提供了其他选项，可用于管理服务位�
 [role="lead"]
 `slp.conf` 配置文件提供了其他选项，可用于管理服务位置协议守护进程（ slpd ）服务器。
 
+.位置
 `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\cfg`
 
+.权限级别
 具有有效用户名和密码的用户
 
 
@@ -44,6 +46,7 @@ summary: slp.conf 配置文件提供了其他选项，可用于管理服务位�
 
 
 
+.示例
 以下是 `slp.conf` 配置文件的缩写示例：
 
 [listing]

@@ -13,12 +13,15 @@ summary: SMIS initiators 命令可显示存储系统的光纤通道和 iSCSI 端
 [role="lead"]
 `smis initiators` 命令可显示存储系统的光纤通道和 iSCSI 端口信息。
 
+.语法
 SMIS 启动程序
 
 ` [-t ｛ * http* | * https * ｝ ]`
 
+.位置
 `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
 
+.权限级别
 具有有效用户名和密码的用户
 
 .Parameters
@@ -28,6 +31,7 @@ SMIS 启动程序
 
 
 
+.示例
 `smis initiators` 命令及其缩写输出：
 
 [listing]

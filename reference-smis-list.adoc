@@ -13,12 +13,15 @@ summary: SMIS list 命令可显示已添加的存储系统。
 [role="lead"]
 `smis list` 命令可显示已添加的存储系统。
 
+.语法
 SMIS 列表
 
 ` [-t ｛ * http* | * https * ｝ ]`
 
+.位置
 `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
 
+.权限级别
 具有有效用户名和密码的用户
 
 .Parameters
@@ -28,6 +31,7 @@ SMIS 列表
 
 
 
+.示例
 `smis list` 命令及其输出：
 
 [listing]

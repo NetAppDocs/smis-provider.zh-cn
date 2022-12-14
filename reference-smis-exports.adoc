@@ -13,10 +13,13 @@ summary: SMIS exports 命令可显示存储系统的网络连接存储（ NAS �
 [role="lead"]
 `smis exports` 命令可显示存储系统的网络连接存储（ NAS ）导出。
 
+.语法
 SMIS 导出 ` [-t ｛ * http* | * https * ｝ ]`
 
+.位置
 `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
 
+.权限级别
 具有有效用户名和密码的用户
 
 .Parameters
@@ -26,6 +29,7 @@ SMIS 导出 ` [-t ｛ * http* | * https * ｝ ]`
 
 
 
+.示例
 `smis exports` 命令及其输出：
 
 [listing]

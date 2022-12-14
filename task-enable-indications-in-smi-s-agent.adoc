@@ -18,6 +18,7 @@ summary: 默认情况下，警报，文件系统配额和生命周期指示处�
 * 您必须已以管理员身份登录到主机系统。
 
 
+.关于此任务
 当 `Pegasus_disable_indication` 设置为 `false` 时， NetApp SMI-S Provider 会启用警报（`ontap_Alertindication` ），文件系统配额（`ontap_FSQuotaindication` ）和生命周期指示。
 
 .步骤

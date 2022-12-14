@@ -13,6 +13,7 @@ summary: 安装 NetApp SMI-S Provider 后，您必须验证访问 SMI-S Provider
 [role="lead"]
 安装 NetApp SMI-S Provider 后，您必须验证访问 SMI-S Provider 后 CIM 服务器是否会自动启动。
 
+.开始之前
 您必须已具有管理员登录凭据。
 
 .步骤

@@ -13,10 +13,13 @@ summary: 您可以使用 cimconfig 命令管理 CIMOM 配置设置。输入 cimc
 [role="lead"]
 您可以使用 `cimconfig` 命令配置 CIMOM 设置，例如启用和禁用 HTTP 和 HTTPS 以及更改 HTTP 和 HTTPS 端口号。输入 `cimconfig` 命令或为 NetApp SMI-S Provider 配置值创建环境变量后，必须使用 `smis cimserver restart` 命令重新启动 CIM 服务器。
 
+.语法
 `cimconfig _options_`
 
+.位置
 `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
 
+.权限级别
 管理员（ Windows ）
 
 .选项
@@ -58,6 +61,7 @@ summary: 您可以使用 cimconfig 命令管理 CIMOM 配置设置。输入 cimc
 
 
 
+.示例
 将最大日志文件大小更改为 15000 KB ：
 
 [listing]

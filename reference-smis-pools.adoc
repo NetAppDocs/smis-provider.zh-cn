@@ -13,12 +13,15 @@ summary: SMIS Pools 命令可列出存储系统的存储池。
 [role="lead"]
 `smis pools` 命令可列出存储系统的存储池。
 
+.语法
 `sMis Pools`
 
 ` [-t ｛ * http* | * https * ｝ ]`
 
+.位置
 `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
 
+.权限级别
 具有有效用户名和密码的用户
 
 .Parameters
@@ -28,6 +31,7 @@ summary: SMIS Pools 命令可列出存储系统的存储池。
 
 
 
+.示例
 `smis pools` 命令及其缩写输出：
 
 [listing]

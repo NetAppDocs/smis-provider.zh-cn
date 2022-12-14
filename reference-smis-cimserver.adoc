@@ -13,12 +13,15 @@ summary: SMIS cimserver 命令用于启动，停止，重新启动或获取 CIM 
 [role="lead"]
 `smis cimserver` 命令用于启动，停止，重新启动或获取 CIM 服务器的状态。
 
+.语法
 `smis cimserver`
 
 ` ｛ * 开始 * ｝ * 停止 *` * 重新启动 * * * * 状态 * ｝
 
+.位置
 `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus\bin`
 
+.权限级别
 管理员（ Windows ）
 
 .Parameters
