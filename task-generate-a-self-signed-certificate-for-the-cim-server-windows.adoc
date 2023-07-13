@@ -19,6 +19,33 @@ summary: 默认情况下， CIM 服务器启用 SSL 身份验证。在 SMI-S Pro
 
 
 .步骤
+. 下载 `openssl.cnf` 文件： link:http://web.mit.edu/crypto/openssl.cnf["http://web.mit.edu/crypto/openssl.cnf"^]
+. 移动 `openssl.cnf` 文件到bin目录：
++
+`*%PEGASUS_HOME%\bin\openssl.cnf*`
+
+. 设置 `OPENSSL_CONF` 的位置的环境变量 `openssl.cnf` 文件：
++
+`*C:\ >set OPENSSL_CONF=%PEGASUS_HOME%\bin\openssl.cnf*`
+
++
+此操作仅会在当前命令提示符会话期间设置环境变量。如果要永久设置环境变量、可以使用以下选项之一：
+
++
+** 导航到*属性>环境变量*并更新*系统*下的变量。
+** 使用命令提示符永久设置变量：
++
+`*setx OPENSSL_CONF “%PEGASUS_HOME%\bin\openssl.cnf*`。
+
++
+变量在打开新的命令提示符会话时设置。
+
+
+
+. 导航到 `%PEGASUS_HOME%\bin` 目录：
++
+`*C:\cd %pegasus_home%\bin*`
+
 . 生成私钥：
 +
 ` * openssl genrsa -out cimom.key 2048*`
