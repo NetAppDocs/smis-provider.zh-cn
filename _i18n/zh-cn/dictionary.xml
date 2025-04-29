@@ -30,12 +30,7 @@
   <block id="39886d4eb2e3e0df0226ae521aff498d" category="paragraph">如果 `https 端口` 未设置为 5989 ，请输入以下命令：</block>
   <block id="a844ae38553a46283a09852e419c1e3b" category="paragraph">`cimconfig -s https Port=5989 -p`</block>
   <block id="8ba2aeabfaeefcb034351a0847a41488" category="paragraph">如果提供程序已停止工作且仍处于挂起状态，请打开任务管理器并结束此过程，然后重新启动提供程序。</block>
-  <block id="e14a9944fe8690b0f4a896ee4dd1b1bc" category="summary">NetApp SMI-S Provider 支持运行 Data ONTAP 8.3.2 和 ONTAP 9 及更高版本的集群平台。</block>
-  <block id="6ac98480cf75c6dae666143ef19e1b44" category="doc">支持的集群平台</block>
   <block id="62861fc78ada9051faca6fd4990e1665" category="paragraph">要使 NetApp SMI-S Provider 创建存储卷（ LUN ）的克隆，您必须已在存储系统上安装 FlexClone 许可证。</block>
-  <block id="39a815a66b6abb4cbca8976fc7695c9e" category="paragraph">NetApp SMI-S Provider 支持以下平台：</block>
-  <block id="6b2c2280811e36eb16c24d5aa7a083b0" category="list-text">FAS 系列系统</block>
-  <block id="e5c7df601f61f29bd5487de4001b15d8" category="list-text">V 系列存储系统</block>
   <block id="483fa710d6223ec73718131f768d782a" category="doc">HostAgentAccessDenied （ ID ： 26263 ）</block>
   <block id="4c2a8fe7eaf24721cc7a9f0175115bd4" category="section-title">message</block>
   <block id="607e31cb929ef6a163ec4dbf21bfdbee" category="paragraph">`从 _SCVMM _ _ （计算机） _ 注册用户 _name_ 的存储提供程序 _SMIS_provider_machine_ 失败，错误代码为 HostAgentAccessDenied 。为存储发现指定有效的提供程序，端口和用户凭据。ID ： 26263`</block>
@@ -277,7 +272,6 @@
   <block id="992f99e76d782026d10813b89cf90cdc" category="paragraph">例如，要添加名为 "`Chris` " 的 CIM 服务器用户：</block>
   <block id="c506910979386a24184c6dbf0c3e93da" category="paragraph">` * CIMUser -a -u Chris *`</block>
   <block id="dcca715816190ebf9dcab8ec1989cd39" category="list-text">出现提示时，输入并重新输入密码。</block>
-  <block id="24293140a3816d75c19d74064899984b" category="summary">通过 NetApp SMI-S Provider 5.2.5 ，您可以管理和监控存储系统，并管理存储系统的 LUN 和卷， CMIMOM 配置设置以及 CIM 服务器用户。</block>
   <block id="72f7ffffe5d6a7aaa530f33b20be146d" category="doc">NetApp SMI-S Provider 概述</block>
   <block id="c79b9638e429df89a219f67e64877677" category="paragraph">NetApp SMI-S Provider 是一个基于命令的界面，用于检测和管理运行 ONTAP 软件的平台。SMI-S Provider 使用基于 Web 的企业管理（ WBEM ）协议，通过这些协议，您可以管理，监控和报告存储元素。</block>
   <block id="a316d32069744858b73bc2472339bb1d" category="paragraph">NetApp SMI-S Provider 遵循由两个组织标准化的架构：</block>
@@ -293,8 +287,6 @@
   <block id="7730b695d01e614f5ca99b68c96b377e" category="paragraph">如果您分配存储容量并向主机组中的主机授予阵列访问权限，则会发生此错误。如果出现此警告，则无法将虚拟机放置在存储系统上。</block>
   <block id="4937a7033ec39bd8589c2df73c921a89" category="list-text">在每个主机上，将每个存储系统的 IP 地址添加到 iSCSI 启动程序应用程序中。</block>
   <block id="7d36242dbaa9912fc085b5ff7c002458" category="list-text">如果需要，在每个存储系统上，为每个主机创建一个唯一的 igroup ，并使用相应主机中的正确 iSCSI 节点名称进行链接。</block>
-  <block id="f4a55e7cbbe39eb8f955afd704ea726a" category="list-text">对于连接到 Data ONTAP 的每个主机，打开 MPIO 应用程序并添加以下硬件 ID ：</block>
-  <block id="25c100de8cdfff7216dbf6a699030071" category="list-text">对于集群模式 Data ONTAP ，输入 ` * NetApp LUN C-Mode*` 。</block>
   <block id="ffd73db9cb7d1dec7d0b41031a0865f5" category="list-text">重新启动主机。</block>
   <block id="96ee3206e5a288b7c11d4de582d14ec9" category="list-text">删除此提供程序。</block>
   <block id="0bc3df559d8caef1f69d55ee3c5b77e1" category="list-text">再次设置存储池。</block>
@@ -311,7 +303,6 @@
   <block id="738fec68f2c0323ebece5138b2290be2" category="paragraph">如果您不希望全新重新安装， SMI-S Provider 会在卸载后保留配置，用户和其他数据库文件。</block>
   <block id="7e2a994657c3cb1b74140df49210abda" category="list-text">以管理员身份登录。</block>
   <block id="4de0a229b09daf73d106e4499b5eab63" category="list-text">使用 Windows 添加 / 删除程序实用程序从 Windows 主机卸载 NetApp SMI-S Provider 。</block>
-  <block id="1cedcb17c92a3535c2610261b466714a" category="summary">您可以管理 SMI-S Provider 的高级设置，例如指定 SMI-S 缓存刷新间隔， ONTAPI 超时以及每个消息服务队列的最大线程数。</block>
   <block id="64dcf446a7778f30264ca7a94586a6e1" category="doc">管理 SMI-S Provider 高级设置</block>
   <block id="42c81e79f364b151f80c02c552b5850d" category="summary">在使用 SMI-S Provider 管理和监控存储系统之前，您必须先安装 SMI-S Provider 软件并验证初始配置。</block>
   <block id="ab3ccb0be518e752d20f706d36d252c9" category="doc">部署工作流</block>
@@ -382,7 +373,6 @@
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">专利</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">有关 NetApp 拥有的专利的最新列表，请访问：</block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隐私政策</block>
-  <block id="24efa7ee4511563b16144f39706d594f" category="section-title">通知</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。</block>
   <block id="c3cb8bf1ed7183e77f46d5e7e662b2c1" category="summary">介绍如何安装和管理 NetApp SMI-S Provider ， NetApp SMI-S Provider 是一个基于命令的界面，用于检测和管理 NetApp 存储系统。</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetApp 支持站点</block>
@@ -444,10 +434,8 @@
   <block id="155f23a4622d9e88b8c1a5c1526d3e64" category="paragraph">`smis cimserver start`</block>
   <block id="db348a1845bc8863a15226d1296f5943" category="summary">借助 NetApp SMI-S Provider ，您可以更轻松地管理和监控存储系统以及管理存储系统的 LUN 和卷。</block>
   <block id="a6a30f6fc1ea5086f1f6a22630def76e" category="doc">使用 NetApp SMI-S Provider</block>
-  <block id="df0ce33f18f070a6ddb1ef19fb303e98" category="paragraph">您可以使用 NetApp SMI-S Provider 使用 System Center 2016 - Virtual Machine Manager 或 System Center 2016 - Virtual Machine Manager 管理存储控制器。</block>
   <block id="f367b7dd9d33500bed829af817d25418" category="doc">slp 命令</block>
   <block id="44875d713d6680857ff840765882108e" category="paragraph">您可以使用 `slptool` 命令显示有关 WBEM 服务的信息。</block>
-  <block id="36bc4391121621ccbd43a1d20890bbfb" category="summary">您可以安装 NetApp SMI-S Provider 软件，以便管理运行 Data ONTAP 的存储系统。默认情况下， NetApp SMI-S Provider 软件安装在 C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus 目录中。</block>
   <block id="b7ceff6488201ada2adc1183d4779baa" category="doc">在 Windows 主机上安装 NetApp SMI-S Provider</block>
   <block id="e9c2e2fe706f7cb451b683459ed09ff9" category="paragraph">您必须已拥有以下凭据和软件：</block>
   <block id="b08dc0dbe07b37cce50f2429165603b4" category="list-text">Windows 管理员帐户的登录凭据</block>
@@ -489,9 +477,6 @@
   <block id="74dd40aa9a6635d79204e610e8324c38" category="list-text">Microsoft Windows Server 2016</block>
   <block id="1ee2c5253c485a81cfff8c8e3e23a23f" category="list-text">Microsoft Windows Server 2019</block>
   <block id="89ff2866e74db001ea07e0b7fdde9ac5" category="paragraph">Microsoft Visual C ｛ pp ｝ 2010 运行时库会在 SMI-S Provider 安装期间自动安装。为了避免与运行时库相关的潜在问题，您必须安装 Microsoft Visual C ｛ pp ｝ 2010 可重新分配的软件包（ x86 ）。从以下位置：<block ref="b7a41ff45868862feefaef480db2df7e" category="inline-link-rx"></block></block>
-  <block id="dc917e4fa1217c63d38aa1b4aacbe7ba" category="section-title">SCVMM 2016 UR2.1 要求</block>
-  <block id="13601f1842a061432974c3d2a9141b74" category="paragraph">要使用 NetApp SMI-S Provider 5.2.4 及更高版本管理 NetApp 文件服务器，需要 System Center Virtual Machine Manager （ SCVMM ） 2016 Update Rollup （ UR） 2.1 。</block>
-  <block id="10d506f406f3b135deaa62f78cfd5476" category="paragraph">如果不使用此 `， SCVMM 2016 会将 NetApp 文件服务器中现有文件共享的` 总容量 `和` 可用容量 ` 选项值显示为` * 0 GB* 。</block>
   <block id="05dbd63393cf525e41d034d5de449c98" category="paragraph">要运行 SMI-S Provider ，提供程序主机必须满足以下规格：</block>
   <block id="fd72eadfdaeb4e69b5477af765434a93" category="list-text">提供程序主机不能用于托管 Hyper-V 节点。</block>
   <block id="b74c30689c8afa829d128cf3e62d6817" category="list-text">SCVMM 不能在提供程序主机上运行。</block>
@@ -555,9 +540,7 @@
   <block id="252a5d2c10241ca715834e346795020e" category="paragraph">高数据详细信息</block>
   <block id="e4da3b7fbbce2345d7772b0674a318d5" category="paragraph">5.</block>
   <block id="3760243c0ec28bcb0e1a0c201dd5d0db" category="paragraph">高数据详细信息 + 方法输入和退出</block>
-  <block id="f7f67a4b989755c831e2703c64ac314b" category="summary">thesmis disks 命令可显示存储系统的磁盘信息。SMIS 磁盘仅在与 Data ONTAP 7- 模式控制器结合使用时才起作用。</block>
   <block id="001e1f541b1e42bd39ea2ea40c19ea63" category="doc">SMIS 磁盘</block>
-  <block id="d21c1931b01f62c3b9c02c100019a202" category="paragraph">``smis disks`` 命令可显示存储系统的磁盘信息。`smis disks` 仅在与 Data ONTAP 7- 模式控制器结合使用时才起作用。</block>
   <block id="1ac1bc188887b49a916919759fa511f6" category="paragraph">`smis disks` 命令及其缩写输出：</block>
   <block id="e805a7074bd5f3f2f6002db7b0f11fd5" category="summary">SMIS LUNs 命令可显示存储系统的 LUN 信息。</block>
   <block id="ecb4091a0d7fe12a01800c4c519c074d" category="doc">SMIS LUN</block>
@@ -565,10 +548,6 @@
   <block id="d1a0d4852e62844a3ab6d7da1573e44b" category="paragraph">`smis luns` 命令及其缩写输出：</block>
   <block id="7e58f3c32490291520a1a61221da598d" category="doc">filer return ：无 ONTAP 元素响应</block>
   <block id="6e2039d962c6e75488fd40f9c951c19a" category="paragraph">`Filer 返回：响应` 中没有 ONTAP 元素。</block>
-  <block id="e229a1324a21093601dc13ac94ed1e4b" category="paragraph">如果 ONTAPI 超时，则会显示此消息。默认 ONTAPI 超时为 60 秒，在某些情况下可能过短。</block>
-  <block id="520c461e0dad01779322190a189497d5" category="paragraph">通过设置环境变量 `ONTAPI_timeout_SEC` 将 ONTAPI 超时更改为大于 60 秒的值，然后重新启动 SMI-S Provider 。</block>
-  <block id="4dd620f035497b4c26fd3db7a737531e" category="summary">SMI-S 提供程序对存储系统进行 ONTAP API （ ONTAPI ）调用。默认情况下， ONTAPI 超时为 300 秒。您可以将超时设置为介于 60 到 300 秒之间的值。</block>
-  <block id="2968f0fa1a0d4ef15b62ef7173cea84f" category="doc">指定 ONTAPI 超时值</block>
   <block id="c23ac41b72372a7f3c20cb975800351a" category="list-text">使用新的超时值（以秒为单位）创建名为 `ONTAPI_timeout_SEC` 的系统或用户环境变量。</block>
   <block id="fb44665cf49d63acda1cdb213857d17b" category="doc">无法使用非默认 HTTP 或 HTTPS 端口添加存储系统</block>
   <block id="a1324d13680ad51ed3e3b999a3eca7f8" category="paragraph">您不能在非默认端口上添加运行 HTTP 或 HTTPS 的存储系统。</block>
@@ -602,10 +581,8 @@
   <block id="651259a98991e0b35e4f51aa4d4a4319" category="paragraph">` * cimconfig -s logdir=new_log_directory -p*` 如果 ` _new_log_directory_` 包含空格，则必须用引号（` "_new log directory_"` ）将其括起来。</block>
   <block id="6f37785193648cc0fab41c9b222a7a2f" category="paragraph">例如，如果要将日志目录更改为 `serverlogs` ，则应输入以下命令：</block>
   <block id="882d7437047d18007764dd5615ed4aba" category="paragraph">` * cimconfig -s logdir=serverlogs -p*`</block>
-  <block id="591f96ef7fe1cdb42aa58f385466c717" category="summary">提供有关 NetApp SMI-S Provider 5.2.6 软件的功能，限制和已知问题的信息。</block>
   <block id="58c8d351ba9d95afd9752aa88bf6e0f7" category="doc">在 SCVMM 中， SMB 共享大小降至 0</block>
   <block id="d19b0ea77723113b53c5f3b5bcfc71cb" category="paragraph">在 System Center Virtual Machine Manager （ SCVMM ）中，新的或现有的 SMB 3.0 共享大小可以降至 0 。</block>
-  <block id="286cd1d6f9ece4f567a343b0e19efe60" category="paragraph">如果由于 I/O 较重，问题描述中的配额重新初始化需要很长时间，则会发生此 Data ONTAP ，在 SCVMM 中，新的或现有的 SMB 3.0 共享大小可能会降至 0 。因此，无法在新的或现有的 SMB 3.0 共享上配置新的 VM 。</block>
   <block id="cc5ade6a333e0665a7013fb0305400d6" category="list-text">关闭配额。</block>
   <block id="448805fdc8b90fe55f76dbffe9cd446f" category="list-text">在托管 SMB 共享的每个卷上添加一个类型为 "`tree` " 的默认配额规则。</block>
   <block id="4d2cce1528ba318942044838d5da6b76" category="list-text">为已添加默认配额规则的卷启用配额，然后重新启动 SMI-S Provider 。</block>
@@ -750,11 +727,7 @@
   <block id="3ad2edd8ea9cf578e52754d637befd85" category="paragraph">如果已启动 CIM 服务器，则会显示以下消息：</block>
   <block id="cd0961a3af19616ad066d6455a90f4f9" category="paragraph">`NetApp SMI-S Provider 正在运行。`</block>
   <block id="928c1baab03e0230f3715e3de77b083f" category="summary">此版本中的新增功能</block>
-  <block id="bd94701c8c3439968ac328f6961957c3" category="list-text">没有可用于 SMI-S Provider 5.2.5 的升级路径。</block>
-  <block id="c55ff83f0b706c2e4f6784a3eea0d431" category="list-text">您必须在新安装中部署 SMI-S Provider 5.2.5 。</block>
-  <block id="4dcc4ed93f208d25fc9635019b96fb17" category="paragraph">* 对于 Windows 用户： *</block>
   <block id="3073a5fe9dd6b21d2236fe4d631b4b80" category="list-text">此版本与 Windows Server 2012 或 System Center Virtual Machine Manager （ SCVMM ） 2012 不兼容。</block>
-  <block id="0ccb5ab6332965b00555d89124eca6f4" category="list-text">SMI-S Provider 5.2.5 支持 Windows Server 2016 ， Windows Server 2019 ， SCVMM 2016 和 SCVMM 2019 。</block>
   <block id="475d549be2964d0228a25ed173ba7b08" category="summary">在安装 NetApp SMI-S Provider 之前，您必须从 NetApp 支持站点下载软件包。</block>
   <block id="f2efbfa9469f6b1841c97b04674b1de4" category="doc">下载 NetApp SMI-S Provider 软件包</block>
   <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="inline-link">NetApp 支持</block>
@@ -787,7 +760,6 @@
   <block id="df08bacfdfa0f59296d2b2a817363f77" category="doc">SMI-S Provider 中使用的克隆技术</block>
   <block id="510d66d307c0496d6ba81658c7a5b619" category="paragraph">SMI-S Provider 仅使用 FlexClone 技术在该存储系统上创建 LUN 克隆。如果您没有 FlexClone 许可证， SMI-S Provider 不会使用 LUN 克隆技术生成克隆，并会生成以下错误消息：</block>
   <block id="d1da6127cf9130c3e6cbddab213daefb" category="paragraph">`存储系统未启用 FlexClone 许可证。`</block>
-  <block id="ddd332cc6425680fe389737022cab8af" category="paragraph">如果您的 LUN 克隆是使用 LUN 克隆技术创建的，然后 Data ONTAP 版本升级到 7.3.1 或更高版本，则不能使用 SMI-S Provider 拆分这些克隆。它们必须由存储系统管理员管理。</block>
   <block id="6b0fd0a659080ed97cfc94fb21d6fc96" category="summary">您可以使用 SMI-S Provider 管理 CIMOM 配置，例如启用或禁用 HTTP 和 HTTPS 连接以及更改 HTTP 和 HTTPS 端口号。默认情况下， HTTP 连接处于启用状态，允许客户端在不使用 SSL 加密的情况下连接到 CIM 服务器。</block>
   <block id="16d818bdfd52f3614e92671e0206fa1b" category="doc">管理 CIMOM 配置设置</block>
   <block id="7d6b3d18bec2ce6be3374ea0a9815106" category="paragraph">如果您的环境需要加密传入和传出 CIM 服务器的流量，则必须先禁用 HTTP 连接，然后验证是否已为 CIM 服务器启用 HTTPS 连接。</block>
@@ -827,7 +799,6 @@
   <block id="f4c8242274a5433176fc6575733f6559" category="summary">SMIS volumes 命令可列出存储系统的传统卷和灵活卷。</block>
   <block id="0f44b667bbfb5498165b4f0f5ca52339" category="doc">SMIS 卷</block>
   <block id="b78d25f27659bc706823fea082d9eb72" category="paragraph">`smis volumes` 命令可列出存储系统的传统卷和灵活卷。</block>
-  <block id="30789a6a7e76c03ee51006ffbbdd390c" category="paragraph">对于集群模式 Data ONTAP ，您必须使用 `smis pools` 命令，而不是 `smis volumes` 命令。</block>
   <block id="0f2d51f976100876529d8e039c4b9c36" category="paragraph">`smis volumes` 命令及其缩写输出：</block>
   <block id="3e3944372596c51dc61c2fe5a9f8063d" category="summary">SMIS list 命令可显示已添加的存储系统。</block>
   <block id="83d793b4ffc76972ddb8695c302c33bf" category="doc">SMIS 列表</block>
@@ -844,9 +815,6 @@
   <block id="80feca2aef5bfe7af61ecef2104515dc" category="summary">了解 NetApp SMI-S Provider 管理的最大系统数量有助于您了解其性能功能。</block>
   <block id="8df995b0877455c8e157e1650dc377d4" category="doc">NetApp SMI-S Provider 规模估算和性能</block>
   <block id="98bc8ee199ee6b2e16fe0a72065bc977" category="paragraph">* 规模估算 *</block>
-  <block id="7b5949a309ff956607ccd7a05549a643" category="paragraph">NetApp SMI-S 提供程序最多可以管理集群模式 Data ONTAP 中的以下数量的对象：</block>
-  <block id="be3aa891f1e256500ac418272b5eba57" category="list-text">100 个 Storage Virtual Machine （ SVM ）（无指示）</block>
-  <block id="6d566731c48802fe3821e33a4c29bfb3" category="list-text">10 个 Storage Virtual Machine （带指示）</block>
   <block id="5e21a9906ddd54cf24a9de122b49eeb1" category="list-text">1 ， 500 个 LUN （每个 FlexVol 卷）</block>
   <block id="aa8573942cd1ed77a581b629e3ba2237" category="list-text">200 个 CIFS 文件共享（每个 FlexVol 卷）</block>
   <block id="ee001510f4b124ecdffc864a0edba76b" category="paragraph">如果 FlexVol 同时包含 qtree 和卷，则 qtree 将显示为目录。删除卷时，请务必小心，不要意外删除 qtree 。</block>
@@ -878,21 +846,14 @@
   <block id="111bb0fad8beadbe3d12694d63ed1d33" category="sidebar">NetApp SMI-S Provider 文档</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">发行说明</block>
   <block id="f16f70c449d9f0048b9a3659fcb12389" category="sidebar">指定跟踪设置</block>
-  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
-  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
-  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
-  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="e746749730e661dd557a1c067c4dbe7d" category="inline-link">NetApp SMI-S Provider 注意事项</block>
-  <block id="de70f78d604c1f59e6de2a196d7084c8" category="paragraph"><block ref="de70f78d604c1f59e6de2a196d7084c8" category="inline-link-rx"></block></block>
   <block id="b51493aaf7964eeecd1d7dfd7e847d13" category="doc">NetApp SMI-S Provider 文档</block>
   <block id="3222e2c38626bc2823512833cc493f15" category="paragraph">欢迎使用 NetApp SMI-S 提供程序信息库。此处提供了有关 NetApp SMI-S Provider 软件的文档，其中包括如何安装和管理 NetApp SMI-S Provider ， NetApp SMI-S Provider 是一个基于命令的界面，用于检测和管理 NetApp 存储系统。</block>
   <block id="1456d67be31dd1251336fefc3219f261" category="paragraph">有关早期版本的 NetApp SMI-S Provider 的文档，请参见<block ref="c1cc34bfdb0a4a31c8960c236e9f731a" category="inline-link-rx"></block>。</block>
   <block id="336d68bc1f4a7a4dd4d6826a8c11877e" category="doc">《 NetApp SMI-S Provider 发行说明》</block>
-  <block id="6e3b9e20f7f45cc7004fb8412900830e" category="paragraph">。<block ref="b5aeaaea80149eaf6be32e7995332412" category="inline-link-rx"></block> 描述新功能，升级说明，已修复的问题，已知限制和已知问题。</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="doc">概述</block>
   <block id="7944dd24fa0a41aefb89e769af345698" category="paragraph">您可以使用 `cimconfig` 命令配置 CIMOM 设置，例如启用和禁用 HTTP 和 HTTPS 以及更改 HTTP 和 HTTPS 端口号。输入 `cimconfig` 命令或为 NetApp SMI-S Provider 配置值创建环境变量后，必须使用 `smis cimserver restart` 命令重新启动 CIM 服务器。</block>
   <block id="5a70b73b0330c1b99f99d9417a0348a0" category="paragraph">您可以使用 `CIMUser` 命令添加，删除，删除，修改和列出 CIM 服务器用户，以及管理其密码。</block>
-  <block id="b7c334318e075f9c3e093acfe23e8a85" category="paragraph">您可以安装 NetApp SMI-S Provider 软件，以便管理运行 Data ONTAP 的存储系统。但是，您不能还原或降级到早期版本。默认情况下， NetApp SMI-S Provider 软件安装在 `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus` 目录中。</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">关于此任务</block>
   <block id="92e9d6227d5534e7afc27a11179c808e" category="paragraph-title">语法</block>
   <block id="ce5bf551379459c1c61d2a204061c455" category="paragraph-title">位置</block>
@@ -911,4 +872,52 @@
   <block id="5940103c9703f3197b9db75e060cdcbc" category="paragraph">变量在打开新的命令提示符会话时设置。</block>
   <block id="5d46f0ef9c5d5b1b112b901048bd8b85" category="list-text">导航到<block ref="0a36b8ad7af6adf0c1d5daa0a3240994" prefix=" " category="inline-code"></block> 目录：</block>
   <block id="82e1f4ca9abf9652748d9a698fc051c7" category="paragraph"><block ref="a9bf600e3f42bfde86bd479b9fcaec63" prefix="" category="inline-code"></block></block>
+  <block id="48bc52cab1e5701702bc6f42f3024f6e" category="paragraph">如果您的LUN克隆是使用LUN克隆技术创建的、然后升级ONTAP版本的7.3.1或更高版本、则不能使用SMI-S提供程序拆分这些克隆。它们必须由存储系统管理员管理。</block>
+  <block id="3793e9a4bb699472d6c18b28d016f662" category="summary">您可以管理SMI-S提供程序的高级设置、例如指定SMI-S缓存刷新间隔、ONTAP API调用超时以及每个消息服务队列的最大线程数。</block>
+  <block id="7b6fbb88e3bf9e8b80df39afd6ae70e2" category="summary">通过 NetApp SMI-S Provider 5.2.7 ，您可以管理和监控存储系统，并管理存储系统的 LUN 和卷， CMIMOM 配置设置以及 CIM 服务器用户。</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">开放源代码</block>
+  <block id="627e4a7f98749d4e647b18565a55c01a" category="paragraph"><block ref="627e4a7f98749d4e647b18565a55c01a" category="inline-link-macro-rx"></block></block>
+  <block id="cf0ec6c9da7f221854f606212c7e5489" category="summary">5.2.7中的新增功能</block>
+  <block id="8cdc91a8be8828bc0479b47f30fdae33" category="doc">5.2.7中的新增功能</block>
+  <block id="e948f2d578d6a0f54741eda35d72d355" category="list-text">没有可用于 SMI-S Provider 5.2.7 的升级路径。</block>
+  <block id="101dd88b1b293d47bc2c4e1aa268558e" category="list-text">您必须在新安装中部署 SMI-S Provider 5.2.7 。</block>
+  <block id="4ec696bde1d3e1f41e9b67c2a35eba60" category="list-text">此版本的SMI-S提供程序不支持使用Azure站点恢复进行SnapMirror管理。</block>
+  <block id="4775945e20929f33ad1d62cb4602a93d" category="paragraph">*适用于Windows用户*</block>
+  <block id="b2c38293fdc487e8a8d344b8402c74c5" category="list-text">SMI-S 5.2.7支持Windows Server 2025、Windows Server 2022、Windows Server 2019、Windows Server 2016、SCVMM 2025、SCVMM 2022、SCVMM 2019和SCVMM 2016。</block>
+  <block id="a4c64014c3378c5dd1a4c6bb00bf10a2" category="paragraph">当ONTAP API调用超时时、会出现此消息。默认ONTAP API调用超时为60秒、在某些情况下可能太短。</block>
+  <block id="0afc1caff128363a5d573c8e1df54406" category="paragraph">通过设置环境变量，将ONTAP API调用超时更改为大于60秒的值，<block ref="5ecfd3e48a727110bc36d7f3790545a9" prefix=" " category="inline-code"></block>然后重新启动SMI-S提供程序。</block>
+  <block id="87dfe5752ca71d1f4b3849613b921207" category="paragraph">如果由于I/O负载过重而在ONTAP中重新初始化配额需要很长时间、则在SCVMM中、新的或现有的SMB 3.0共享大小可能会降至0。发生此问题时、无法在新的或现有的SMB 3.0共享上配置新的VM。</block>
+  <block id="66341f3073d04fff4ddc353f99109815" category="paragraph">NetApp SMI-S提供程序可在ONTAP中管理多达以下数量的对象：</block>
+  <block id="0e4114de3f4cb820d8d7a1782e32b659" category="list-text">30个Storage Virtual Machine (SVM) </block>
+  <block id="7de381613d186c65626f4ab272a71cf2" category="list-text">100个SVM (无指示)</block>
+  <block id="8b25443fa653d6b8b9930467ae62d747" category="list-text">10个SVM (有指示)</block>
+  <block id="0639b789908acee0010a728c19ad44b5" category="summary">NetApp SMI-S提供程序支持运行ONTAP 9及更高版本的集群平台。</block>
+  <block id="d9085d6c5079a361332e427a284bb7ad" category="doc">NetApp SMI-S提供程序支持ONTAP系统</block>
+  <block id="1f66c2179d8c6efe8772822bfc2d617e" category="paragraph">NetApp SMI-S提供程序支持FAS系统。</block>
+  <block id="58278fc92b6745b5bcadad3d3f612fc1" category="paragraph">NetApp SMI-S提供程序不支持ASA系统。</block>
+  <block id="b9bc2a483649514f398dbc07af2c87c7" category="summary">Smi磁盘命令可显示存储系统的磁盘信息。Smi磁盘仅在与ONTAP 7-模式控制器结合使用时起作用。</block>
+  <block id="487313fb24a8cbf19d58bad085b12a13" category="paragraph">命令可<block ref="001e1f541b1e42bd39ea2ea40c19ea63" prefix=" " category="inline-code"></block>显示存储系统的磁盘信息。<block ref="001e1f541b1e42bd39ea2ea40c19ea63" prefix=" " category="inline-code"></block>只有ONTAP 7-模式控制器才支持命令。</block>
+  <block id="efad0d1809b94075c94937353c4001ef" category="paragraph">对于ONTAP、您必须使用命令、<block ref="9f0928f5c491149e0d68d561ecf558bc" prefix=" " category="inline-code"></block>而不是<block ref="0f44b667bbfb5498165b4f0f5ca52339" prefix=" " category="inline-code"></block>命令。</block>
+  <block id="6ed0120f37738e825d889dcb299d9251" category="list-text">Microsoft Windows Server 2022</block>
+  <block id="6e6b7efb9f9c24d5ca212d65430689fd" category="list-text">Microsoft Windows Server 2025</block>
+  <block id="fcebb93ad5cad2ad8092153d77893f24" category="section-title">SCVMM UR2.1要求</block>
+  <block id="a66b176f80a3f93d31be0edb241f3215" category="paragraph">要使用NetApp SMI-S 5.2.7及更高版本管理NetApp文件服务器、需要System Center Virtual Machine Manager (SCVMM)更新汇总(UR）2.1。</block>
+  <block id="77e677c64c1986dc2a8a1c9afdb930e8" category="paragraph">如果没有此UR, SCVMM (版本2016、2019、2022或2025)将显示和<block ref="6af63b14f64f6cb255988d8fde2e0437" prefix=" " category="inline-code"></block>选项的值作为<block ref="5406f75e1620d4c00bc95d050311cd8a" prefix=" " category="inline-code"></block>NetApp文件服务器中现有文件共享的值<block ref="207e174801113bba5afa048ccd3450bf" prefix=" " category="inline-code"></block>。</block>
+  <block id="9794792e794e863d0bd2afdc0bc7a283" category="paragraph">您可以使用NetApp SMI-S提供程序通过System Center 2016、2019、2022和2025管理存储控制器。</block>
+  <block id="60f804573e049a0f18647ca5ddadf79f" category="list-text">对于连接到ONTAP的每个主机、打开MPIO应用程序并添加以下硬件ID：</block>
+  <block id="bfdf270b33cb3dc13957bd36fee69058" category="list-text">对于ONTAP，输入<block ref="ade191b1004522550d83e818f2d7139d" prefix=" " category="inline-code"></block>。</block>
+  <block id="cf0d6d290cc1c4520fbbfc002c946664" category="summary">提供有关 NetApp SMI-S Provider 5.2.7 软件的功能，限制和已知问题的信息。</block>
+  <block id="24b5861592ee7b4615fa625b97669f21" category="paragraph"><block ref="f88e2f39ae65eb4268159ba7fe6b9dda" category="inline-link-rx"></block>介绍新增功能、升级说明、已修复的问题、已知限制和已知问题。</block>
+  <block id="c77d93c9bafb13a9882093351ecdb498" category="summary">您可以安装NetApp SMI-S提供程序软件、以便管理运行ONTAP的存储系统。默认情况下， NetApp SMI-S Provider 软件安装在 C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus 目录中。</block>
+  <block id="a29f0f75cbf44d12b1fb98ed37473297" category="paragraph">您可以安装NetApp SMI-S提供程序软件、以便管理运行ONTAP的存储系统。但是，您不能还原或降级到早期版本。默认情况下、NetApp SMI-S提供程序软件安装在目录中<block ref="e93eb95a4a6d54999769913bf79a69c9" prefix=" " category="inline-code"></block>。</block>
+  <block id="738fc2618ae3cc77b3d364faaf5e4b42" category="summary">SMI-S提供程序对存储系统进行ONTAP API调用。默认情况下、ONTAP API调用超时为300秒。您可以将超时设置为介于 60 到 300 秒之间的值。</block>
+  <block id="7162b9fa7c706619cc067c40bb9d383b" category="doc">指定ONTAP API调用超时值</block>
 </blocks>

@@ -2,7 +2,7 @@
 permalink: concept-overview.html 
 sidebar: sidebar 
 keywords: smis-s provider, enable, manage, storage, systems, lun, volumes, cimom configuration, cim server settings 
-summary: 通过 NetApp SMI-S Provider 5.2.5 ，您可以管理和监控存储系统，并管理存储系统的 LUN 和卷， CMIMOM 配置设置以及 CIM 服务器用户。 
+summary: 通过 NetApp SMI-S Provider 5.2.7 ，您可以管理和监控存储系统，并管理存储系统的 LUN 和卷， CMIMOM 配置设置以及 CIM 服务器用户。 
 ---
 = 概述
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 通过 NetApp SMI-S Provider 5.2.5 ，您可以管理和监控存储系
 
 
 [role="lead"]
-通过 NetApp SMI-S Provider 5.2.5 ，您可以管理和监控存储系统，并管理存储系统的 LUN 和卷， CMIMOM 配置设置以及 CIM 服务器用户。
+通过 NetApp SMI-S Provider 5.2.7 ，您可以管理和监控存储系统，并管理存储系统的 LUN 和卷， CMIMOM 配置设置以及 CIM 服务器用户。
 
 NetApp SMI-S Provider 是一个基于命令的界面，用于检测和管理运行 ONTAP 软件的平台。SMI-S Provider 使用基于 Web 的企业管理（ WBEM ）协议，通过这些协议，您可以管理，监控和报告存储元素。
 

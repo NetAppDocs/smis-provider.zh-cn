@@ -2,7 +2,7 @@
 permalink: reference-smis-disks.html 
 sidebar: sidebar 
 keywords: thesmis, disk, command, display, information, storage, systems 
-summary: thesmis disks 命令可显示存储系统的磁盘信息。SMIS 磁盘仅在与 Data ONTAP 7- 模式控制器结合使用时才起作用。 
+summary: Smi磁盘命令可显示存储系统的磁盘信息。Smi磁盘仅在与ONTAP 7-模式控制器结合使用时起作用。 
 ---
 = SMIS 磁盘
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: thesmis disks 命令可显示存储系统的磁盘信息。SMIS 磁盘�
 
 
 [role="lead"]
-``smis disks`` 命令可显示存储系统的磁盘信息。`smis disks` 仅在与 Data ONTAP 7- 模式控制器结合使用时才起作用。
+命令可 `smis disks`显示存储系统的磁盘信息。 `smis disks`只有ONTAP 7-模式控制器才支持命令。
 
 .语法
 SMIS 磁盘

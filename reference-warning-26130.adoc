@@ -28,9 +28,9 @@ summary: NetApp SMI-S Provider 遇到的问题。
 
 . 在每个主机上，将每个存储系统的 IP 地址添加到 iSCSI 启动程序应用程序中。
 . 如果需要，在每个存储系统上，为每个主机创建一个唯一的 igroup ，并使用相应主机中的正确 iSCSI 节点名称进行链接。
-. 对于连接到 Data ONTAP 的每个主机，打开 MPIO 应用程序并添加以下硬件 ID ：
+. 对于连接到ONTAP的每个主机、打开MPIO应用程序并添加以下硬件ID：
 +
-** 对于集群模式 Data ONTAP ，输入 ` * NetApp LUN C-Mode*` 。
+** 对于ONTAP，输入 `*NETAPP LUN C-Mode*`。
 
 
 . 重新启动主机。

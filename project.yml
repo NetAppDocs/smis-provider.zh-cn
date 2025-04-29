@@ -20,13 +20,13 @@ sidebar:
     - title: 此版本中的新增功能
       url: "/reference-new-in-this-release-smis.html"
     - title: 使用 NetApp SMI-S Provider
-      url: "/reference-uses-of-data-ontap-smi-s-agent.html"
+      url: "/reference-uses-of-ontap-smi-s-agent.html"
     - title: NetApp SMI-S Provider 规模估算和性能
       url: "/reference-smi-s-agent-sizing-and-performance-information.html"
     - title: NetApp SMI-S Provider 组件
-      url: "/reference-data-ontap-smi-s-agent-components.html"
+      url: "/reference-ontap-smi-s-agent-components.html"
     - title: NetApp SMI-S Provider 协议
-      url: "/reference-data-ontap-smi-s-agent-protocols.html"
+      url: "/reference-ontap-smi-s-agent-protocols.html"
     - title: NetApp SMI-S Provider 如何与主机交互
       url: "/concept-how-smi-s-provider-interacts-with-a-host.html"
     - title: SMI-S 配置文件
@@ -43,8 +43,8 @@ sidebar:
       url: "/reference-hardware-requirements.html"
     - title: 所需许可证
       url: "/reference-required-licenses.html"
-    - title: 支持的集群平台
-      url: "/reference-supported-platforms.html"
+    - title: NetApp SMI-S提供程序支持ONTAP系统
+      url: "/reference-smi-s-support-ontap-systems.html"
     - title: 下载 NetApp SMI-S Provider 软件包
       url: "/task-download-smi-s-provider.html"
   - title: 安装 NetApp SMI-S Provider
@@ -110,8 +110,8 @@ sidebar:
       url: "/task-specify-the-smi-s-agent-cache-refresh-interval.html"
     - title: 指定具体的作业生命周期值
       url: "/task-specify-the-concrete-job-lifetime-value.html"
-    - title: 指定 ONTAPI 超时值
-      url: "/task-specify-the-ontapi-timeout-value.html"
+    - title: 指定ONTAP API调用超时值
+      url: "/task-specify-the-ontap-api-call-timeout-value.html"
     - title: 指定每个消息服务队列的最大线程数
       url: "/task-specify-the-maximum-number-of-threads-per-message-service-queue.html"
     - title: 启用或禁用 NetApp SMI-S Provider 的身份验证
@@ -242,4 +242,4 @@ sidebar:
     - title: SCVMM 重新扫描操作无法找到 SMI-S Provider 或与之通信
       url: "/reference-scvmm-rescan-operation-failed-to-locate-or-communicate-with-smi-s-provider.html"
   - title: 法律声明
-    url: "/reference-legal-notices.html"
+    url: "/legal-notices.html"

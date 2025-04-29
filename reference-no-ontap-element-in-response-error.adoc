@@ -16,10 +16,10 @@ summary: NetApp SMI-S Provider 遇到的问题。
 
 * * 问题描述 *
 +
-如果 ONTAPI 超时，则会显示此消息。默认 ONTAPI 超时为 60 秒，在某些情况下可能过短。
+当ONTAP API调用超时时、会出现此消息。默认ONTAP API调用超时为60秒、在某些情况下可能太短。
 
 * * 更正操作 *
 +
-通过设置环境变量 `ONTAPI_timeout_SEC` 将 ONTAPI 超时更改为大于 60 秒的值，然后重新启动 SMI-S Provider 。
+通过设置环境变量，将ONTAP API调用超时更改为大于60秒的值， `ONTAPI_TIMEOUT_SEC`然后重新启动SMI-S提供程序。
 
 

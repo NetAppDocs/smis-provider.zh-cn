@@ -15,10 +15,11 @@ summary: 了解 NetApp SMI-S Provider 管理的最大系统数量有助于您了
 
 * 规模估算 *
 
-NetApp SMI-S 提供程序最多可以管理集群模式 Data ONTAP 中的以下数量的对象：
+NetApp SMI-S提供程序可在ONTAP中管理多达以下数量的对象：
 
-* 100 个 Storage Virtual Machine （ SVM ）（无指示）
-* 10 个 Storage Virtual Machine （带指示）
+* 30个Storage Virtual Machine (SVM) 
+* 100个SVM (无指示)
+* 10个SVM (有指示)
 * 1 ， 500 个 LUN （每个 FlexVol 卷）
 * 200 个 CIFS 文件共享（每个 FlexVol 卷）
 

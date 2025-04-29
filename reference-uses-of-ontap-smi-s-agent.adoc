@@ -13,4 +13,4 @@ summary: 借助 NetApp SMI-S Provider ，您可以更轻松地管理和监控存
 [role="lead"]
 借助 NetApp SMI-S Provider ，您可以更轻松地管理和监控存储系统以及管理存储系统的 LUN 和卷。
 
-您可以使用 NetApp SMI-S Provider 使用 System Center 2016 - Virtual Machine Manager 或 System Center 2016 - Virtual Machine Manager 管理存储控制器。
+您可以使用NetApp SMI-S提供程序通过System Center 2016、2019、2022和2025管理存储控制器。

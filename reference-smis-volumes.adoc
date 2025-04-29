@@ -20,7 +20,7 @@ summary: SMIS volumes 命令可列出存储系统的传统卷和灵活卷。
 
 [NOTE]
 ====
-对于集群模式 Data ONTAP ，您必须使用 `smis pools` 命令，而不是 `smis volumes` 命令。
+对于ONTAP、您必须使用命令、 `smis pools`而不是 `smis volumes`命令。
 
 ====
 .位置
