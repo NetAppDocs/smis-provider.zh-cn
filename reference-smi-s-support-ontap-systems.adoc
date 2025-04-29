@@ -1,5 +1,5 @@
 ---
-permalink: reference-supported-platforms.html 
+permalink: reference-smi-s-support-ontap-systems.html 
 sidebar: sidebar 
 keywords: netApp smi-s provider, cluster, platforms, support for ONTAP systems 
 summary: NetApp SMI-S提供程序支持运行ONTAP 9及更高版本的集群平台。 

@@ -1,5 +1,5 @@
 ---
-permalink: reference-data-ontap-smi-s-agent-components.html 
+permalink: reference-ontap-smi-s-agent-components.html 
 sidebar: sidebar 
 keywords: smi-s provider 
 summary: NetApp SMI-S Provider 包含三个组件，可用于管理和监控存储系统： CIMOM ，提供程序对象和存储库。 

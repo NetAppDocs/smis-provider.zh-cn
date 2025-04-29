@@ -1,5 +1,5 @@
 ---
-permalink: task-specify-the-ontapi-timeout-value.html 
+permalink: task-specify-the-ontap-api-call-timeout-value.html 
 sidebar: sidebar 
 keywords: smi-s provider, ontap api, calls, storage systems, default, 300 sec 
 summary: SMI-S提供程序对存储系统进行ONTAP API调用。默认情况下、ONTAP API调用超时为300秒。您可以将超时设置为介于 60 到 300 秒之间的值。 

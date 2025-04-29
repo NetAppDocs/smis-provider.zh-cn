@@ -1,5 +1,5 @@
 ---
-permalink: reference-data-ontap-smi-s-agent-protocols.html 
+permalink: reference-ontap-smi-s-agent-protocols.html 
 sidebar: sidebar 
 keywords: netapp smi-s provider, cim-xml, encoding, https, service, location, protocol 
 summary: NetApp SMI-S Provider 使用基于 HTTPS 和服务位置协议（ Service Location Protocol ， slp ）的 IM-XML 编码。 
