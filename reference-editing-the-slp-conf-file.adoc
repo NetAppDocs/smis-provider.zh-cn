@@ -25,7 +25,7 @@ summary: slp.conf 配置文件提供了其他选项，可用于管理服务位�
 
 通过 `slp.conf` 配置文件，您可以更改主机在收到 slp 请求时侦听的接口数以及主机用于多路广播的 IP 地址数。
 
-使用文本编辑器打开 `slp.conf` 。
+使用文本编辑器打开 `slp.conf` 文件。
 
 .Parameters
 * *`接口` *
@@ -51,7 +51,6 @@ summary: slp.conf 配置文件提供了其他选项，可用于管理服务位�
 
 [listing]
 ----
-
 ################################################################
 # OpenSLP configuration file
 # Format and contents conform to specification in IETF RFC 2614 so

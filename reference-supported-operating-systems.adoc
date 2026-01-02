@@ -12,6 +12,8 @@ summary: 在安装 SMI-S Provider 之前，您必须验证 Windows 主机是否�
 
 
 [role="lead"]
+我们建议您将 SMI-S Provider 安装在其专用的 Windows 虚拟机 (VM) 上。该虚拟机可以位于同一域中，以便进行安全便捷的管理。
+
 在安装 SMI-S Provider 之前，您必须验证 Windows 主机是否正在运行受支持的操作系统。
 
 [cols="3*"]
@@ -22,36 +24,23 @@ summary: 在安装 SMI-S Provider 之前，您必须验证 Windows 主机是否�
  a| 
 Windows
  a| 
-* Microsoft Windows Server 2016
-* Microsoft Windows Server 2019
-* Microsoft Windows Server 2022
 * Microsoft Windows Server 2025
+* Microsoft Windows Server 2022
+* Microsoft Windows Server 2019
+* Microsoft Windows Server 2016
 
  a| 
-Microsoft Visual C ｛ pp ｝ 2010 运行时库会在 SMI-S Provider 安装期间自动安装。为了避免与运行时库相关的潜在问题，您必须安装 Microsoft Visual C ｛ pp ｝ 2010 可重新分配的软件包（ x86 ）。从以下位置： http://www.microsoft.com[]
+在 SMI-S 提供程序安装过程中，会自动安装 Microsoft Visual C{pp} 2010 运行时库。为避免与运行时库相关的潜在问题，您必须从以下位置安装 Microsoft Visual C++ 2010 可再发行组件包 (x86)： http://www.microsoft.com[]
 
 |===
 
 
-== SCVMM UR2.1要求
-
-要使用NetApp SMI-S 5.2.7及更高版本管理NetApp文件服务器、需要System Center Virtual Machine Manager (SCVMM)更新汇总(UR）2.1。
-
-如果没有此UR, SCVMM (版本2016、2019、2022或2025)将显示和 `Available Capacity`选项的值作为 `*0 GB*`NetApp文件服务器中现有文件共享的值 `Total Capacity`。
+== 确保提供商主机符合规格
 
 要运行 SMI-S Provider ，提供程序主机必须满足以下规格：
 
-* 提供程序主机不能用于托管 Hyper-V 节点。
-* SCVMM 不能在提供程序主机上运行。
+* 该提供程序不能直接安装在 Hyper-V 节点上。或者，您可以将其安装在 Hyper-V 虚拟机上。
+* System Center Virtual Machine Manager (SCVMM) 不得在提供商主机上运行。
 * 提供程序主机不能运行内存密集型的其他程序。
-* 提供程序主机不能运行任何其他供应商提供的 SMI-S 提供程序。
-
-
-支持以下虚拟机管理程序：
-
-* Microsoft Windows Server 2016 Hyper-V
-* VMware ESX 5.0
-* VMware ESX 5.1
-* VMware ESX 5.5
-* VMware ESX 6.0
+* 提供程序主机不得运行来自任何其他供应商的 SMI-S 提供程序。
 
