@@ -11,11 +11,15 @@ summary: 默认情况下， CIM 服务器启用 SSL 身份验证。在 SMI-S Pro
 
 
 [role="lead"]
-默认情况下， CIM 服务器启用 SSL 身份验证。在 SMI-S Provider 安装期间，会在 `pegasus` 目录中安装 CIM 服务器的自签名证书。您可以生成自己的自签名证书并使用它，而不是默认证书。
+默认情况下，CIM 服务器启用 SSL 身份验证。在 SMI-S 提供程序安装过程中，会将 CIM 服务器的自签名证书安装到系统中。 `pegasus` 目录。您需要生成自己的自签名证书，而不是使用默认证书。
+
+
+CAUTION: 安装 SMI-S 提供程序时，默认安装的自签名证书已过时。因此，在 System Center Virtual Machine Manager (SCVMM) 的“添加存储设备”中，与 SMI-S 提供程序的 SSL 连接失败。您需要为 CIM 服务器生成自签名证书，然后重新启动 SMI-S 提供程序服务。更多信息，请参阅 link:https://kb.netapp.com/data-mgmt/SMI-S/SMI-S_Issues/CSMIS-3["NetApp知识库文章：“CSMIS-3： NetApp SMI-S Provider 5.2.7 中的 cimom.cert 在安装时已过期。”"^]
 
 .开始之前
 * 您必须已以管理员身份登录。
 * 您必须已访问 SMI-S Provider 。
+* 您必须在 Windows 主机上下载并安装 OpenSSL。
 
 
 .步骤
@@ -63,6 +67,10 @@ summary: 默认情况下， CIM 服务器启用 SSL 身份验证。在 SMI-S Pro
 您可以提供不同的证书有效天数。
 
 . 将 `CIMOM.key` 和 `CIMOM.cert` 文件复制到 `pegasus` 目录（ Windows ： `C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus` ）。
+. 重启 SMI-S 提供程序服务：
++
+`smis cimserver restart`
+
 
 
 
