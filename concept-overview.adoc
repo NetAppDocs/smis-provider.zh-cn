@@ -17,7 +17,7 @@ NetApp SMI-S Provider 是一个基于命令的界面，用于检测和管理运�
 
 NetApp SMI-S Provider 遵循由两个组织标准化的架构：
 
-* http://www.dmtf.org/home["分布式管理任务组（ DMTF ）"^]
+* http://www.dmtf.org["分布式管理任务组（ DMTF ）"^]
 * http://www.snia.org/home["存储网络行业协会（ Storage Networking Industry Association ， SNIA ）"^]
 
 
