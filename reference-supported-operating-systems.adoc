@@ -35,6 +35,7 @@ Windows
 |===
 
 
+[[ensure-the-provider-host-machine-meets-the-specifications]]
 == 确保提供商主机符合规格
 
 要运行 SMI-S Provider ，提供程序主机必须满足以下规格：

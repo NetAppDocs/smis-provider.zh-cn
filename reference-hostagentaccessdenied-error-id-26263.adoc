@@ -12,12 +12,14 @@ summary: NetApp SMI-S Provider 遇到的问题。
 
 
 
+[[message]]
 == message
 
 `从 _SCVMM _ _ （计算机） _ 注册用户 _name_ 的存储提供程序 _SMIS_provider_machine_ 失败，错误代码为 HostAgentAccessDenied 。为存储发现指定有效的提供程序，端口和用户凭据。ID ： 26263`
 
 
 
+[[description]]
 == Description
 
 如果在 SCVMM 中指定用户连接到 SMI-S Provider ，但该用户不属于 SMIS 信任存储，则会出现此消息。
@@ -26,6 +28,7 @@ summary: NetApp SMI-S Provider 遇到的问题。
 
 
 
+[[corrective-action]]
 == 更正操作
 
 使用 `CIMUser` 命令将本地管理员用户（在 SMI-S Provider 计算机上）添加到 CIM 服务器数据库： `CIMUser -a -u _admin user_-w _password_` 。然后，在将 NetApp SMI-S Provider 添加到 SCVMM 时，您必须使用该管理用户。

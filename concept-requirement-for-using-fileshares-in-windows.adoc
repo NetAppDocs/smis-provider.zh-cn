@@ -19,6 +19,7 @@ summary: 在 Windows 上使用文件共享（ CIFS 共享）时，创建文件�
 
 
 
+[[creating-a-volume-to-be-used-for-cifs-shares-and-scvmm]]
 == 创建用于 CIFS 共享和 SCVMM 的卷
 
 在创建要用于 CIFS 共享和 System Center Virtual Machine Manager （ SCVMM ）的卷时，此卷必须为 NTFS 类型。要使用 NTFS 创建卷，请输入以下内容： ` vol_create -vserver <vserver_name> -volume <volume_name> -aggregate <aggr_name> -size<volume_size> -security-style ntfs_`

@@ -32,6 +32,7 @@ summary: NetApp SMI-S Provider 遇到的问题。
 
 
 
+[[adding-a-storage-system-that-uses-port-8000-for-http-traffic]]
 == 添加使用端口 8000 传输 HTTP 流量的存储系统
 
 `cimcli ci -n root/ONTAP ontap_FilerData hostname=10.0.0.167.12 port=8000 username=root password=netapp1 ！comMechanism=HTTP -u root -p netapp1 ！-l localhost ： 5989 -s -timeout 180`

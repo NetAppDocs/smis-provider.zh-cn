@@ -21,6 +21,7 @@ summary: slp.conf 配置文件提供了其他选项，可用于管理服务位�
 
 
 
+[[description]]
 == Description
 
 通过 `slp.conf` 配置文件，您可以更改主机在收到 slp 请求时侦听的接口数以及主机用于多路广播的 IP 地址数。

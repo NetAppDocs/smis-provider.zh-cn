@@ -56,6 +56,7 @@ summary: SMIS addsecure 命令可将具有 HTTPS 连接的存储系统添加到�
 
 
 
+[[storage-system-agent-and-agent-client-protocol]]
 == 存储系统代理和代理 - 客户端协议
 
 `smis add` 和 `smis addsecure` 命令可确定存储系统与提供程序之间使用的协议。` 项（ -t ｛ * http* | * https* ｝ ）` 参数用于确定提供程序与客户端之间使用的协议。

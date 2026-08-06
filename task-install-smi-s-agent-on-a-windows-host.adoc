@@ -33,6 +33,7 @@ summary: 您可以安装NetApp SMI-S提供程序软件、以便管理运行ONTAP
 
 
 
+[[result]]
 == 结果
 
 NetApp SMI-S Provider 将在安装过程即将结束时自动启动。
