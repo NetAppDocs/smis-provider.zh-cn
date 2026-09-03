@@ -304,7 +304,6 @@
   <block id="64dcf446a7778f30264ca7a94586a6e1" category="doc">管理 SMI-S Provider 高级设置</block>
   <block id="42c81e79f364b151f80c02c552b5850d" category="summary">在使用 SMI-S Provider 管理和监控存储系统之前，您必须先安装 SMI-S Provider 软件并验证初始配置。</block>
   <block id="ab3ccb0be518e752d20f706d36d252c9" category="doc">部署工作流</block>
-  <block id="04c2ee750a71bee087a7164fa9418c8b" category="image-alt">SMI 提供程序工作流</block>
   <block id="11db62ef1b82524e398ad3812618f7ea" category="doc">NetApp SMI-S Provider 启动需要很长时间</block>
   <block id="a3519a79e1fa4e9109ec373b28d1609d" category="paragraph">在已在管理存储系统的 Windows 系统上，使用 `smis cimserver` 命令启动 NetApp SMI-S Provider 时，只有在填充提供程序本地缓存后，此命令才会返回。填充缓存时，它最多会等待 15 分钟，并且您无法使用 NetApp SMI-S Provider ，直到它返回为止。</block>
   <block id="f9ac0617143317e28bbf839b5d2db80a" category="paragraph">建议使用 `smis cimserver` 命令启动 NetApp SMI-S Provider 。</block>
@@ -655,7 +654,6 @@
   <block id="37735049e65188a885df4388c67153a4" category="summary">当主机上的客户端应用程序使用 slp （基于 HTTP 的 CIM-XML 编码）发现 CIMOM 服务器时，客户端会向 CIMOM 查询共享对象（以 CIM 语言建模的对象）。CIMOM 会加载共享对象，并使用设备专用 API 查询存储系统以获取请求的信息。</block>
   <block id="9016abb1e0944872fd232fd72ca5bc80" category="doc">NetApp SMI-S Provider 如何与主机交互</block>
   <block id="14f75c43461428b4df3f6d3980b25d02" category="paragraph">下图显示了在 SMI-S Provider 收到查询或命令时 NetApp SMI-S Provider 如何与 WBEM 管理客户端进行交互。</block>
-  <block id="707facb1331bad235d191a85d3686ab2" category="image-alt">SMI 代理和主机交互</block>
   <block id="cacc10f2bbbb96e6d2a0d9b4aef02b69" category="summary">如果启用了跟踪，则默认情况下会保存七个跟踪文件。如果需要保存更多跟踪文件，可以通过设置环境变量 Pegasus_trace_file_UM 来增加所保存的最大跟踪文件数。如果增加保存的跟踪文件的最大数量，则必须确保系统的硬盘驱动器上有足够的空间来容纳跟踪文件。</block>
   <block id="28b9df3d45d41cf4deb33c545836d2a7" category="doc">指定保存的跟踪文件数</block>
   <block id="03ef8ba810aaf28989881c22a0a0d0b4" category="paragraph">如果启用了跟踪，则默认情况下会保存七个跟踪文件。如果需要保存更多跟踪文件，可以通过设置环境变量 `Pegasus_trace_file_NUM` 来增加所保存的最大跟踪文件数。如果增加保存的跟踪文件的最大数量，则必须确保系统的硬盘驱动器上有足够的空间来容纳跟踪文件。</block>
@@ -917,4 +915,6 @@
   <block id="cc2ad876e77ac64c0d4f8e5e89900549" category="list-text">您必须在 Windows 主机上下载并安装 OpenSSL。</block>
   <block id="c104915e9f0d8e0313edcca7765f005e" category="list-text">重启 SMI-S 提供程序服务：</block>
   <block id="fa623328d311ec4315ab82a9a7303cbe" category="list-text"><block ref="fa623328d311ec4315ab82a9a7303cbe" category="inline-link-rx"></block></block>
+  <block id="f08445df01bad5aee6547cb7953d07d6" category="image-alt">显示 SMI-S Provider 部署、预配置验证和管理任务工作流程的图表</block>
+  <block id="459eb66f775af707f84ca3f4c3f5f129" category="image-alt">显示向 SMI-S Provider CIMOM、存储库、提供程序 DLL 和存储系统发送查询的主机的图表</block>
 </blocks>
