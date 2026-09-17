@@ -10,6 +10,9 @@ summary: NetApp SMI-S Provider 遇到的问题。
 :imagesdir: ./media/
 
 
+[role="lead"]
+在 SMB 共享上部署 VM 期间出现的  `Network path not found` 消息通常表示 DNS 问题，即主机在 DNS 服务器上尚无记录。通过更新 DNS 记录或主机文件来解决此问题。
+
 * * 消息 *
 +
 `未找到网络路径`

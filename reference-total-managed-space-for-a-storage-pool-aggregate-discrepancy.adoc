@@ -10,6 +10,9 @@ summary: NetApp SMI-S Provider 遇到的问题。
 :imagesdir: ./media/
 
 
+[role="lead"]
+NetApp SMI-S Provider 报告的存储池（卷）的总托管空间可能与其他存储管理工具（例如 FilerView）显示的大小不同，因为 SMI-S Provider 包括 WAFL 和 Snapshot 预留。这种差异属于预期行为，无需采取任何纠正措施。
+
 * * 问题描述 *
 +
 如果您使用的是另一种存储管理工具，例如 FilerView ，则可能会发现为存储池（卷）的总受管空间报告的大小与 SMI-S Provider 返回的大小不同。

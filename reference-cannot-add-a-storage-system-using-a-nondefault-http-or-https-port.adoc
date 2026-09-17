@@ -10,6 +10,9 @@ summary: NetApp SMI-S Provider 遇到的问题。
 :imagesdir: ./media/
 
 
+[role="lead"]
+当系统在非默认端口上使用 HTTP 或 HTTPS 时，无法将 NetApp 存储系统添加到 NetApp SMI-S Provider。通过显式指定非默认端口来添加存储系统。
+
 * * 问题描述 *
 +
 您不能在非默认端口上添加运行 HTTP 或 HTTPS 的存储系统。

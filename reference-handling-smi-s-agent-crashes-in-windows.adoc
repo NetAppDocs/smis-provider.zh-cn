@@ -10,6 +10,9 @@ summary: NetApp SMI-S Provider 遇到的问题。
 :imagesdir: ./media/
 
 
+[role="lead"]
+NetApp SMI-S Provider 偶尔会在 Windows 环境中崩溃。收集崩溃时生成的转储、日志和跟踪文件，并将其发送给技术支持进行进一步分析。
+
 * * 问题描述 *
 +
 SMI-S Provider 在 Windows 中崩溃。

@@ -10,4 +10,7 @@ summary: 提供有关 NetApp SMI-S Provider 5.2.7 软件的功能，限制和已
 :imagesdir: ./media/
 
 
+[role="lead"]
+NetApp SMI-S Provider 发行说明描述了每个发行版的新功能、升级说明、修复问题和已知限制。在此处查找 NetApp SMI-S Provider 5.2.7 的当前发行说明。
+
  https://library.netapp.com/ecm/ecm_download_file/ECMLP3344664["《 NetApp SMI-S Provider 发行说明》"^]介绍新增功能、升级说明、已修复的问题、已知限制和已知问题。

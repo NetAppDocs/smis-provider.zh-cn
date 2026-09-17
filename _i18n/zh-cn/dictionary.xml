@@ -917,4 +917,25 @@
   <block id="fa623328d311ec4315ab82a9a7303cbe" category="list-text"><block ref="fa623328d311ec4315ab82a9a7303cbe" category="inline-link-rx"></block></block>
   <block id="f08445df01bad5aee6547cb7953d07d6" category="image-alt">显示 SMI-S Provider 部署、预配置验证和管理任务工作流程的图表</block>
   <block id="459eb66f775af707f84ca3f4c3f5f129" category="image-alt">显示向 SMI-S Provider CIMOM、存储库、提供程序 DLL 和存储系统发送查询的主机的图表</block>
+  <block id="d26eee2514f3dd37a93c40c728f5a8c5" category="paragraph">当系统在非默认端口上使用 HTTP 或 HTTPS 时，无法将 NetApp 存储系统添加到 NetApp SMI-S Provider。通过显式指定非默认端口来添加存储系统。</block>
+  <block id="1cd82397cae3db03b58feb940f0022ea" category="paragraph">NetApp SMI-S Provider 在所需的连接设置被禁用或配置错误<block ref="34b1a7479022ab3b3d758f635041ccfc" prefix=" " category="inline-code"></block>时，或当提供程序停止响应时，可能无法连接。验证连接设置并重新启动提供程序以解决此问题。</block>
+  <block id="663419dd84a40a70ebcb4666f5884421" category="paragraph">NetApp SMI-S Provider 在 HTTPS 连接被禁用、HTTPS 端口配置错误或提供程序已停止响应时，可能无法连接到<block ref="408b3166c86346ae572cff1ee36c50c9" prefix=" " category="inline-code"></block>。验证您的 HTTPS 连接设置并重启提供程序以解决此问题。</block>
+  <block id="859e211676b9270bb44705de45dec6ea" category="paragraph">执行 LUN 克隆拆分操作时，可能会遇到不允许执行克隆或 Snapshot 副本操作的错误。等待 LUN 克隆拆分完成，然后重试此操作。</block>
+  <block id="5a224855a0b2764912dabe880b2fe0c3" category="paragraph">A<block ref="1867e4a765d502c76e2b022504c37d92" prefix=" " category="inline-code"></block> 消息指示 NetApp SMI-S Provider 使用的 CIM 服务器尚未启动。验证 CIM 服务器状态，并在需要时启动它。</block>
+  <block id="5781eaff519890e7a40144fa2aff5f7d" category="paragraph">包含特殊字符的密码可能会导致<block ref="e05dab3c02f28008e9d45ec2a755535d" prefix=" " category="inline-code"></block>命令在 Windows 环境中失败。请将此类密码用双引号括起来，以便成功输入。</block>
+  <block id="783c5a8b02c07746853b9f7c07ca21ee" category="paragraph">NetApp SMI-S Provider 偶尔会在 Windows 环境中崩溃。收集崩溃时生成的转储、日志和跟踪文件，并将其发送给技术支持进行进一步分析。</block>
+  <block id="29a24dd002df53358c86debe42022ae0" category="paragraph">当 System Center Virtual Machine Manager (SCVMM) 尝试使用不属于 SMI-S Provider 信任存储的用户帐户连接到 NetApp SMI-S Provider 时，会出现<block ref="79a72628495f8c2d936aaea7b80ff832" prefix=" " category="inline-code"></block>错误（ID: 26263）。向信任存储中添加有效的 CIM 用户以解决此错误。</block>
+  <block id="57489a279357cd6615ae9b8a79785bd6" category="paragraph">在 SMB 共享上部署 VM 期间出现的 <block ref="35671582279b0a1d59acf722bbd8bdf6" prefix=" " category="inline-code"></block> 消息通常表示 DNS 问题，即主机在 DNS 服务器上尚无记录。通过更新 DNS 记录或主机文件来解决此问题。</block>
+  <block id="4d58529507620862342116c5304d3d19" category="paragraph">NetApp SMI-S Provider 5.2.7 引入了新的要求和限制，包括支持的 Windows 和 System Center Virtual Machine Manager (SCVMM) 版本。在部署或升级到此版本之前，请查阅这些更改。</block>
+  <block id="cec26b74f46fe43b65e27b340ec4e0c8" category="paragraph">当 NetApp SMI-S Provider 进行的 ONTAP API 调用超时时，会出现此<block ref="7e58f3c32490291520a1a61221da598d" prefix=" " category="inline-code"></block>消息。增加超时值以解决此问题。</block>
+  <block id="769d46b9ca10cfef8e0eb1d0e556ccbb" category="paragraph">NetApp SMI-S Provider 在未将存储系统添加到 CIMOM 存储库时，可能不会响应查询。验证存储系统是否已注册，并在需要时添加。</block>
+  <block id="6a41238725963e682283eefc76d01b8c" category="paragraph">如果使用默认 Windows 防火墙以外的防火墙，则除非将所需端口添加为例外，否则 NetApp SMI-S Provider 可能无法与客户端通信或发送指示。将这些端口添加到防火墙配置中可解决此问题。</block>
+  <block id="6a22c07e5952964f6bf540459804f4a3" category="paragraph">NetApp SMI-S Provider 可能在 Windows 上遇到运行时库问题。安装所需的 Microsoft Visual C{pp} 可再发行软件包以解决这些问题。</block>
+  <block id="b2a4275a7633a07d705a19e3b00ebf49" category="paragraph">在极少数情况下，在安全基础设施更新后，System Center Virtual Machine Manager (SCVMM) 无法定位 NetApp SMI-S Provider 或与其进行通信。要解决此问题，请重新安装该 Provider 并在 SCVMM 中运行重新扫描操作。</block>
+  <block id="061582c7a0a177db328bf532bfa9efd4" category="paragraph">当由于 I/O 繁重导致 ONTAP 中配额重新初始化耗时过长时，System Center Virtual Machine Manager (SCVMM) 中的 SMB 3.0 共享大小可能会降至 0，从而阻止新 VM 的置备。通过调整配额设置来解决此问题。</block>
+  <block id="d04b6f0767a45722d52e569f1016d74c" category="paragraph">NetApp SMI-S Provider 可能最多需要 15 分钟才能在已管理存储系统的 Windows 系统上启动，因为该<block ref="539dd095e3626609596c19bb68975d4b" prefix=" " category="inline-code"></block>命令需要等待提供程序本地缓存填充完毕。请使用<block ref="539dd095e3626609596c19bb68975d4b" prefix=" " category="inline-code"></block>命令（这是启动提供程序的建议方法），并预留足够的时间等待提供程序变为可用状态。</block>
+  <block id="d91c9eee149815ff522b71aa4e1389d5" category="paragraph">NetApp SMI-S Provider 报告的存储池（卷）的总托管空间可能与其他存储管理工具（例如 FilerView）显示的大小不同，因为 SMI-S Provider 包括 WAFL 和 Snapshot 预留。这种差异属于预期行为，无需采取任何纠正措施。</block>
+  <block id="6b9a7e33b136d15333a1b5ea897e1536" category="paragraph">在 System Center Virtual Machine Manager (SCVMM) 中的单个文件共享上预配大量 VM 时，若每个连接的用户会话数达到最大限制，则会出现<block ref="d6bea59fb7c3e2297074e152f32b36f6" prefix=" " category="inline-code"></block>消息。请增加此限制以支持更大规模的 VM 部署。</block>
+  <block id="3d30ad5f2e0a9dd55e0a8cd699fdd7a8" category="paragraph">当存储容量分配给主机组时，会发生警告 26130，其中没有任何主机可以访问存储阵列，从而阻止您在存储系统上放置虚拟机。向每个主机授予所需的访问权限以解决此警告。</block>
+  <block id="415be26ab3c45e9b0e674fcda56c11bb" category="paragraph">NetApp SMI-S Provider 发行说明描述了每个发行版的新功能、升级说明、修复问题和已知限制。在此处查找 NetApp SMI-S Provider 5.2.7 的当前发行说明。</block>
 </blocks>

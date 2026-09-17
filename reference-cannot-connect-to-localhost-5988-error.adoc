@@ -10,6 +10,9 @@ summary: NetApp SMI-S Provider 遇到的问题。
 :imagesdir: ./media/
 
 
+[role="lead"]
+NetApp SMI-S Provider 在所需的连接设置被禁用或配置错误 `localhost:5988`时，或当提供程序停止响应时，可能无法连接。验证连接设置并重新启动提供程序以解决此问题。
+
 * * 消息 *
 +
 `无法连接到 localhost ： 5988 。连接失败。正在尝试连接到 localhost ： 5988`

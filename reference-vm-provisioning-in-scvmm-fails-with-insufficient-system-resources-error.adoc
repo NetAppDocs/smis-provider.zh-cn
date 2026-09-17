@@ -10,6 +10,9 @@ summary: NetApp SMI-S Provider 遇到的问题。
 :imagesdir: ./media/
 
 
+[role="lead"]
+在 System Center Virtual Machine Manager (SCVMM) 中的单个文件共享上预配大量 VM 时，若每个连接的用户会话数达到最大限制，则会出现 `Insufficient system resources exist to complete the requested service`消息。请增加此限制以支持更大规模的 VM 部署。
+
 * * 消息 *
 +
 `系统资源不足，无法完成请求的服务`

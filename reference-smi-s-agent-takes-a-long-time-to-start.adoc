@@ -10,6 +10,9 @@ summary: NetApp SMI-S Provider 遇到的问题。
 :imagesdir: ./media/
 
 
+[role="lead"]
+NetApp SMI-S Provider 可能最多需要 15 分钟才能在已管理存储系统的 Windows 系统上启动，因为该 `smis cimserver`命令需要等待提供程序本地缓存填充完毕。请使用 `smis cimserver`命令（这是启动提供程序的建议方法），并预留足够的时间等待提供程序变为可用状态。
+
 * * 问题描述 *
 +
 在已在管理存储系统的 Windows 系统上，使用 `smis cimserver` 命令启动 NetApp SMI-S Provider 时，只有在填充提供程序本地缓存后，此命令才会返回。填充缓存时，它最多会等待 15 分钟，并且您无法使用 NetApp SMI-S Provider ，直到它返回为止。

@@ -10,6 +10,9 @@ summary: NetApp SMI-S Provider 遇到的问题。
 :imagesdir: ./media/
 
 
+[role="lead"]
+执行 LUN 克隆拆分操作时，可能会遇到不允许执行克隆或 Snapshot 副本操作的错误。等待 LUN 克隆拆分完成，然后重试此操作。
+
 * * 消息 *
 +
 `在卷中执行 LUN 克隆拆分操作时，不允许执行克隆 / 快照操作。请等待一段时间，然后重试。`

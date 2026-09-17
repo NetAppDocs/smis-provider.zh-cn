@@ -10,6 +10,9 @@ summary: NetApp SMI-S Provider 遇到的问题。
 :imagesdir: ./media/
 
 
+[role="lead"]
+A `Connection refused` 消息指示 NetApp SMI-S Provider 使用的 CIM 服务器尚未启动。验证 CIM 服务器状态，并在需要时启动它。
+
 * * 消息 *
 +
 `连接被拒绝`

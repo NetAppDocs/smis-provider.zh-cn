@@ -10,6 +10,9 @@ summary: NetApp SMI-S Provider 遇到的问题。
 :imagesdir: ./media/
 
 
+[role="lead"]
+当 NetApp SMI-S Provider 进行的 ONTAP API 调用超时时，会出现此 `Filer return: No ontap element in response`消息。增加超时值以解决此问题。
+
 * * 消息 *
 +
 `Filer 返回：响应` 中没有 ONTAP 元素。

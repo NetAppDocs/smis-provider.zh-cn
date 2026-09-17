@@ -10,6 +10,9 @@ summary: NetApp SMI-S Provider 遇到的问题。
 :imagesdir: ./media/
 
 
+[role="lead"]
+当存储容量分配给主机组时，会发生警告 26130，其中没有任何主机可以访问存储阵列，从而阻止您在存储系统上放置虚拟机。向每个主机授予所需的访问权限以解决此警告。
+
 
 
 [[message]]

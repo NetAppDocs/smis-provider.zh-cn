@@ -10,6 +10,9 @@ summary: NetApp SMI-S Provider 遇到的问题。
 :imagesdir: ./media/
 
 
+[role="lead"]
+NetApp SMI-S Provider 在未将存储系统添加到 CIMOM 存储库时，可能不会响应查询。验证存储系统是否已注册，并在需要时添加。
+
 * * 问题描述 *
 +
 查询时，服务器不响应。

@@ -10,6 +10,9 @@ summary: NetApp SMI-S Provider 遇到的问题。
 :imagesdir: ./media/
 
 
+[role="lead"]
+当 System Center Virtual Machine Manager (SCVMM) 尝试使用不属于 SMI-S Provider 信任存储的用户帐户连接到 NetApp SMI-S Provider 时，会出现 `HostAgentAccessDenied`错误（ID: 26263）。向信任存储中添加有效的 CIM 用户以解决此错误。
+
 
 
 [[message]]

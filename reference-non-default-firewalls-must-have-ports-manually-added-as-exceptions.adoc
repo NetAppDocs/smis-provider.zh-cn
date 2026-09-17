@@ -10,6 +10,9 @@ summary: NetApp SMI-S Provider 遇到的问题。
 :imagesdir: ./media/
 
 
+[role="lead"]
+如果使用默认 Windows 防火墙以外的防火墙，则除非将所需端口添加为例外，否则 NetApp SMI-S Provider 可能无法与客户端通信或发送指示。将这些端口添加到防火墙配置中可解决此问题。
+
 * * 问题描述 *
 +
 如果您使用的防火墙不是默认 Windows 防火墙，则可能会遇到以下问题：

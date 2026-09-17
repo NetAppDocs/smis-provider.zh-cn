@@ -10,6 +10,9 @@ summary: NetApp SMI-S Provider 遇到的问题。
 :imagesdir: ./media/
 
 
+[role="lead"]
+当由于 I/O 繁重导致 ONTAP 中配额重新初始化耗时过长时，System Center Virtual Machine Manager (SCVMM) 中的 SMB 3.0 共享大小可能会降至 0，从而阻止新 VM 的置备。通过调整配额设置来解决此问题。
+
 * * 问题描述 *
 +
 在 System Center Virtual Machine Manager （ SCVMM ）中，新的或现有的 SMB 3.0 共享大小可以降至 0 。

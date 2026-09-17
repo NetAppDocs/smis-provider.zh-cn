@@ -11,6 +11,9 @@ summary: NetApp SMI-S Provider 遇到的问题。
 :pp: &#43;&#43;
 
 
+[role="lead"]
+NetApp SMI-S Provider 可能在 Windows 上遇到运行时库问题。安装所需的 Microsoft Visual C{pp} 可再发行软件包以解决这些问题。
+
 * * 问题描述 *
 +
 您遇到运行时库问题。

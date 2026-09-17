@@ -10,6 +10,9 @@ summary: NetApp SMI-S Provider 遇到的问题。
 :imagesdir: ./media/
 
 
+[role="lead"]
+NetApp SMI-S Provider 在 HTTPS 连接被禁用、HTTPS 端口配置错误或提供程序已停止响应时，可能无法连接到 `localhost:5989`。验证您的 HTTPS 连接设置并重启提供程序以解决此问题。
+
 * * 消息 *
 +
 `无法连接到 localhost ： 5989 。连接失败。正在尝试连接到 localhost ： 5989`
