@@ -12,7 +12,6 @@
   <block id="ccf6fa61cfac4827cab18b713647f22c" category="list-text">将 `Pegasus_disable_indications` 环境变量设置为 `false` 。</block>
   <block id="303b50921b53d3609d0e06a97d955426" category="list-text">重新启动 CIM 服务器：</block>
   <block id="127244f141478553012a969bb50d8169" category="paragraph">` * SMIS cimserver restart*`</block>
-  <block id="4ca8f8dc1b36b9c411697fcb2f505c44" category="summary">您可以配置 SMI-S Provider 管理跟踪文件的方式，例如指定要跟踪的组件，将跟踪消息写入到的目标，跟踪级别以及跟踪文件位置。</block>
   <block id="ff33a03ec388f99378211d1528ffde50" category="doc">管理跟踪</block>
   <block id="2f46f994932279267adf63af53ef8631" category="summary">NetApp SMI-S Provider 遇到的问题。</block>
   <block id="a276b571413c6c0fe3cdc0eb1cca1726" category="doc">无法连接到 localhost ： 5989</block>
@@ -461,9 +460,6 @@
   <block id="d10e609c9f10971c9ad9a9e63ddc2439" category="list-text">` * _class_name_*`</block>
   <block id="655546f65ee5fb9186411efa5747bec4" category="paragraph">要查看其信息的类的名称</block>
   <block id="c807c0fac735539610e5b517945b000e" category="paragraph">`smis class` 命令及其缩写输出：</block>
-  <block id="ef23db5e5a3a16df609d1db8b2ff882c" category="summary">您可以编辑 slp.conf 配置文件以管理服务位置协议守护进程（ slpd ）服务。</block>
-  <block id="e1cd17773638b5c6ba6a33ec0efa8bed" category="doc">指定 slp 配置选项</block>
-  <block id="c520045e753333a3e19361a8bcc5accb" category="paragraph">您可以编辑 `slp.conf` 配置文件以管理服务位置协议守护进程（ slpd ）服务。</block>
   <block id="44f8fbce4489a6c5b317b3f8b2f2121a" category="summary">在安装 SMI-S Provider 之前，您必须验证 Windows 主机是否正在运行受支持的操作系统。</block>
   <block id="8a83ea3699cafca0e6d30e8c5ffb9259" category="doc">支持的操作系统版本</block>
   <block id="696c660ff8d9323e55146a6dbd4e4088" category="cell">操作系统</block>
@@ -898,7 +894,6 @@
   <block id="bfdf270b33cb3dc13957bd36fee69058" category="list-text">对于ONTAP，输入<block ref="ade191b1004522550d83e818f2d7139d" prefix=" " category="inline-code"></block>。</block>
   <block id="cf0d6d290cc1c4520fbbfc002c946664" category="summary">提供有关 NetApp SMI-S Provider 5.2.7 软件的功能，限制和已知问题的信息。</block>
   <block id="24b5861592ee7b4615fa625b97669f21" category="paragraph"><block ref="f88e2f39ae65eb4268159ba7fe6b9dda" category="inline-link-rx"></block>介绍新增功能、升级说明、已修复的问题、已知限制和已知问题。</block>
-  <block id="c77d93c9bafb13a9882093351ecdb498" category="summary">您可以安装NetApp SMI-S提供程序软件、以便管理运行ONTAP的存储系统。默认情况下， NetApp SMI-S Provider 软件安装在 C ： \Program Files （ x86 ） \NetApp\SMIs\pegasus 目录中。</block>
   <block id="a29f0f75cbf44d12b1fb98ed37473297" category="paragraph">您可以安装NetApp SMI-S提供程序软件、以便管理运行ONTAP的存储系统。但是，您不能还原或降级到早期版本。默认情况下、NetApp SMI-S提供程序软件安装在目录中<block ref="e93eb95a4a6d54999769913bf79a69c9" prefix=" " category="inline-code"></block>。</block>
   <block id="738fc2618ae3cc77b3d364faaf5e4b42" category="summary">SMI-S提供程序对存储系统进行ONTAP API调用。默认情况下、ONTAP API调用超时为300秒。您可以将超时设置为介于 60 到 300 秒之间的值。</block>
   <block id="7162b9fa7c706619cc067c40bb9d383b" category="doc">指定ONTAP API调用超时值</block>
@@ -938,4 +933,7 @@
   <block id="6b9a7e33b136d15333a1b5ea897e1536" category="paragraph">在 System Center Virtual Machine Manager (SCVMM) 中的单个文件共享上预配大量 VM 时，若每个连接的用户会话数达到最大限制，则会出现<block ref="d6bea59fb7c3e2297074e152f32b36f6" prefix=" " category="inline-code"></block>消息。请增加此限制以支持更大规模的 VM 部署。</block>
   <block id="3d30ad5f2e0a9dd55e0a8cd699fdd7a8" category="paragraph">当存储容量分配给主机组时，会发生警告 26130，其中没有任何主机可以访问存储阵列，从而阻止您在存储系统上放置虚拟机。向每个主机授予所需的访问权限以解决此警告。</block>
   <block id="415be26ab3c45e9b0e674fcda56c11bb" category="paragraph">NetApp SMI-S Provider 发行说明描述了每个发行版的新功能、升级说明、修复问题和已知限制。在此处查找 NetApp SMI-S Provider 5.2.7 的当前发行说明。</block>
+  <block id="ee6721a9bb4d509731f29438bd62f95e" category="summary">SMI-S Provider 使用符合 SMI-S v1.7 的配置文件和子配置文件。</block>
+  <block id="cbba47ea1866712504ecb2c8ff66414b" category="summary">NetApp SMI-S Provider 由三个组件组成，使您可以管理和监控存储系统、CIMOM、提供程序对象和存储库。</block>
+  <block id="44ba926fa432704769627324f65ba8a6" category="summary">安装 NetApp SMI-S Provider 软件以管理运行 ONTAP 的存储系统。</block>
 </blocks>

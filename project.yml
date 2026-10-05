@@ -85,17 +85,14 @@ sidebar:
       url: "/concept-manage-logging-and-tracing-overview.html"
     - title: 配置日志设置
       url: "/task-configure-log-settings.html"
-      entries:
-      - title: 日志记录级别
-        url: "/reference-logging-levels.html"
+    - title: 日志记录级别
+      url: "/reference-logging-levels.html"
     - title: 管理跟踪
-      url: "/concept-manage-tracing.html"
       entries:
       - title: 指定跟踪设置
         url: "/task-specify-trace-settings.html"
-        entries:
-        - title: 跟踪设置值
-          url: "/reference-trace-setting-values.html"
+      - title: 跟踪设置值
+        url: "/reference-trace-setting-values.html"
       - title: 指定跟踪文件大小
         url: "/task-specify-trace-file-size.html"
       - title: 指定保存的跟踪文件数
@@ -122,11 +119,8 @@ sidebar:
     entries:
     - title: 概述
       url: "/concept-manage-slp-overview.html"
-    - title: 指定 slp 配置选项
-      url: "/concept-specify-slp-configuration-options.html"
-      entries:
-      - title: slp.conf 文件管理
-        url: "/reference-editing-the-slp-conf-file.html"
+    - title: slp.conf 文件管理
+      url: "/reference-editing-the-slp-conf-file.html"
   - title: CIMOM 命令
     entries:
     - title: cimconfig
